@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Curso{% endblock %}
+
+
+{% block body %}
+
+    <h2>Curso solicitado</h2>
+    <h5>Semestre {{ semestre }}</h5>
+    <hr>
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ path('app_curso_index') }}">Cursos </a></li>
+            <li class="breadcrumb-item active" aria-current="page">Curso solicitado</li>
+        </ol>
+    </nav>
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Semestre</th>
+            <td>{{ curso.semestre.slug }}</td>
+        </tr>
+        <tr>
+            <th>Apellidos</th>
+            <td>{{ curso.apellidos }}</td>
+        </tr>
+        <tr>
+            <th>Nombre</th>
+            <td>{{ curso.nombre }}</td>
+        </tr>
+        <tr>
+            <th>Curso</th>
+            <td>{{ curso.curso }}</td>
+        </tr>
+        <tr>
+            <th>Tema</th>
+            <td>{{ curso.tema }}</td>
+        </tr>
+        <tr>
+            <th>Objetivo</th>
+            <td>{{ curso.objetivo }}</td>
+        </tr>
+        <tr>
+            <th>Temario</th>
+            <td>{{ curso.temario }}</td>
+        </tr>
+        <tr>
+            <th>Bibliografia</th>
+            <td>{{ curso.bibliografia }}</td>
+        </tr>
+        <tr>
+            <th>Requisitos</th>
+            <td>{{ curso.requisitos }}</td>
+        </tr>
+        <tr>
+            <th>Comentarios</th>
+            <td>{{ curso.comentarios }}</td>
+        </tr>
+        <tr>
+            <th>Creado</th>
+            <td>{{ curso.created ? curso.created| format_datetime('full', locale='es') : '' }}</td>
+        </tr>
+        <tr>
+            <th>Modificado</th>
+            <td>{{ curso.created ? curso.created| format_datetime('full', locale='es') : '' }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    {% if is_granted('ROLE_ADMIN') %}
+        <div class="container">
+            <div class="row row-cols-auto">
+                <div class="col"><a class="btn btn-dark" href="{{ path('app_curso_edit', {'slug': curso.slug}) }}"><i class="fa fa-edit"></i> Modificar</a></div>
+                <div class="col">{{ include('curso/_delete_form.html.twig') }}</div>
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock %}

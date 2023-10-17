@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+{% endblock %}
+
+{% block title %}Tutores{% endblock %}
+
+{% block body %}
+    <h2>Tutores</h2>
+    <hr>
+
+    <table id="example" class="mt-5 table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Adscripcion</th>
+                <th>Email</th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for tutor in tutors %}
+            <tr>
+                <td>{{ tutor.nombre }}</td>
+                <td>{{ tutor.apellido }}</td>
+                <td>{{ tutor.adscripcion }}</td>
+                <td>{{ tutor.email }}</td>
+                <td>
+                    <a href="{{ path('app_tutor_show', {'slug': tutor.slug}) }}"><i class="fa fa-search"></i></a>
+                    <a href="{{ path('app_tutor_edit', {'slug': tutor.slug}) }}"><i class="fa-regular fa-edit"></i></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a class="mt-5 btn btn-dark" href="{{ path('app_tutor_new') }}"><i class="fa-regular fa-add"></i> Nuevo tutor</a>
+
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
+    <script type="application/javascript">
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+    </script>
+
+{% endblock %}

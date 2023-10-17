@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tutor{% endblock %}
+
+{% block body %}
+    <h2>Tutor</h2>
+    <hr>
+
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ path('app_tutor_index') }}">Tutores</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ tutor.slug }}</li>
+        </ol>
+    </nav>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ tutor.slug }}</td>
+            </tr>
+            <tr>
+                <th>Nombre(s)</th>
+                <td>{{ tutor.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Apellido(s)</th>
+                <td>{{ tutor.apellido }}</td>
+            </tr>
+            <tr>
+                <th>Adscripción</th>
+                <td>{{ tutor.adscripcion }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ tutor.email |replace({'@':  "<i class='fa fa-at'></i>"|striptags('<i>') })|raw }}</td>
+            </tr>
+            <tr>
+                <th>Área</th>
+                <td>{{ tutor.area }}</td>
+            </tr>
+            <tr>
+                <th>Url</th>
+                <td>{{ tutor.url }}</td>
+            </tr>
+            <tr>
+                <th>Creado</th>
+                <td>{{ tutor.created ? tutor.created| format_datetime('full',locale='es') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Modificado</th>
+                <td>{{ tutor.created ? tutor.created| format_datetime('full', locale='es') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="container">
+        <div class="row row-cols-auto">
+            <div class="col"><a class="btn btn-dark" href="{{ path('app_tutor_edit', {'slug': tutor.slug}) }}"><i class="fa fa-edit"></i> Modificar</a></div>
+            <div class="col">{{ include('tutor/_delete_form.html.twig') }}</div>
+        </div>
+    </div>
+{% endblock %}

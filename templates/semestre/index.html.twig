@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Convocatorias - Semestre{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+{% endblock %}
+
+{% block body %}
+    <h2>Convocatorias</h2>
+
+    <table id="example" class="mt-5 table table-striped" style="width:100%">
+        <thead>
+        <tr>
+            <th class="text-center">Semestre</th>
+            <th class="text-center">Vigencia</th>
+            <th class="text-center">&nbsp;</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for semestre in semestres %}
+            <tr>
+                <td>{{ semestre.semestre }}</td>
+                <td>{{ semestre.vigencia ? semestre.vigencia| format_date('long',locale='es') : '' }}</td>
+                <td class="text-center">
+                    <a href="{{ path('app_semestre_show', {'slug': semestre.slug}) }}"><i class="fa fa-search"></i></a>
+                    <a href="{{ path('app_semestre_edit', {'slug': semestre.slug}) }}"><i class="fa-regular fa-edit"></i></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+    <a class="mt-5 btn btn-dark" href="{{ path('app_semestre_new') }}"><i class="fa-regular fa-add"></i> Nueva convocatoria</a>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
+    <script type="application/javascript">
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+    </script>
+
+{% endblock %}

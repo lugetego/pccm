@@ -1,0 +1,105 @@
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ path('app_curso_index') }}">Cursos </a></li>
+        <li class="breadcrumb-item active" aria-current="page">Solicitar curso</li>
+    </ol>
+</nav>
+{{ form_start(form) }}
+
+{{ form_errors(form.tema) }}
+{{ form_errors(form.temario) }}
+{{ form_errors(form.bibliografia) }}
+<div class="form-control">
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.apellidos, 'Apellidos') }}</label>
+                {{ form_widget(form.apellidos, {'attr': {'class': 'form-control','placeholder':'Apellidos'}}) }}
+                {{ form_errors(form.apellidos) }}
+            </div>
+        </div>
+        <div class="col">
+            <label for="formGroupExampleInput" class="form-label">{{ form_label(form.nombre, 'Nombre') }}</label>
+            <div class="mb-3">
+                {{ form_widget(form.nombre, {'attr': {'class': 'form-control','placeholder':'Nombre'}}) }}
+                {{ form_errors(form.nombre) }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.curso, 'Curso') }}</label>
+                {{ form_widget(form.curso, {'attr': {'class': 'span8 course-selector form-control','placeholder':'Curso'}}) }}
+                {{ form_errors(form.curso) }}
+            </div>
+        </div>
+
+    </div>
+
+    <div id="temas-selectos" class="controls">
+        <br />
+        <legend>La siguiente información es solo para Temas Selectos (* campos obligatorios)</legend>
+
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">{{ form_label(form.tema, 'Tema*') }}</label>
+                    {{ form_widget(form.tema, {'attr': {'class': 'form-control','placeholder':'Tema'}}) }}
+                    {{ form_errors(form.tema) }}
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">{{ form_label(form.objetivo, 'Objetivo') }}</label>
+                    {{ form_widget(form.objetivo, {'attr': {'class': 'form-control','placeholder':'Objetivo'}}) }}
+                    {{ form_errors(form.objetivo) }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">{{ form_label(form.temario, 'Temario*') }}</label>
+                    {{ form_widget(form.temario, {'attr': {'class': 'form-control','placeholder':'Temario'}}) }}
+                    {{ form_errors(form.temario) }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">{{ form_label(form.bibliografia, 'Bibliografía*') }}</label>
+                    {{ form_widget(form.bibliografia, {'attr': {'class': 'form-control','placeholder':'Bibliografía'}}) }}
+                    {{ form_errors(form.bibliografia) }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">{{ form_label(form.requisitos, 'Requisitos') }}</label>
+                    {{ form_widget(form.requisitos, {'attr': {'class': 'form-control','placeholder':'Requisitos'}}) }}
+                    {{ form_errors(form.requisitos) }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">{{ form_label(form.comentarios, 'Comentarios') }}</label>
+                    {{ form_widget(form.comentarios, {'attr': {'class': 'form-control','placeholder':'Comentarios'}}) }}
+                    {{ form_errors(form.comentarios) }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ form_widget(form) }}
+    <button class="mt-5 btn btn-dark"> <i class="fa-regular fa-paper-plane"></i> {{ button_label|default('Solicitar curso') }}</button>
+
+    {{ form_end(form) }}
+

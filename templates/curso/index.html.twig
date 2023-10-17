@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Curso solicitados{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+{% endblock %}
+
+{% block body %}
+    <h2>Cursos solicitados</h2>
+    <h5>Semestre {{ semestre }}</h5>
+    <hr>
+    <table id="example" class="mt-5 table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>Solicitante</th>
+                <th>Curso</th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for curso in cursos %}
+            <tr>
+                <td>{{ curso.apellidos }} {{ curso.nombre }}</td>
+                <td>{{ curso.curso }}</td>
+                <td>
+                    <i class="fa fa-search"></i> <a href="{{ path('app_curso_show', {'slug': curso.slug}) }}"> Ver</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="11">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a class="mt-5 btn btn-dark" href="{{ path('app_curso_new') }}"><i class="fa-regular fa-add"></i> Solicitar curso</a>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
+    <script type="application/javascript">
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+    </script>
+
+{% endblock %}

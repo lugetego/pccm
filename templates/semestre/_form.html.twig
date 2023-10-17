@@ -1,0 +1,93 @@
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ path('app_semestre_index') }}">Convocatorias </a></li>
+        <li class="breadcrumb-item active" aria-current="page">Semestre</li>
+    </ol>
+</nav>
+{{ form_start(form) }}
+
+{{ form_errors(form) }}
+
+<div class="form-control">
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.semestre, 'Semestre') }}</label>
+                {{ form_widget(form.semestre, {'attr': {'class': 'form-control','placeholder':'Semestre'}}) }}
+            </div>
+        </div>
+        <div class="col">
+            <label for="formGroupExampleInput" class="form-label">{{ form_label(form.vigencia, 'Vigencia') }}</label>
+            <div class="mb-3">
+                {{ form_widget(form.vigencia) }}
+                {{ form_errors(form.vigencia) }}
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+    <div class="row">
+
+        <div class="col">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.convocatoriaFile, 'Convocatoria') }}</label>
+                {{ form_widget(form.convocatoriaFile) }}
+                {{ form_errors(form.convocatoriaFile) }}
+            </div>
+        </div>
+        <div class="col">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.calendarioFile, 'Calendario') }}</label>
+                {{ form_widget(form.calendarioFile) }}
+                {{ form_errors(form.calendarioFile) }}
+            </div>
+        </div>
+        <div class="col">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.instructivoFile, 'Instructivo') }}</label>
+                {{ form_widget(form.instructivoFile) }}
+                {{ form_errors(form.instructivoFile) }}
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.reconvocatoriadFile, 'Reingreso doctorado') }}</label>
+                {{ form_widget(form.reconvocatoriadFile) }}
+                {{ form_errors(form.reconvocatoriadFile) }}
+            </div>
+        </div>
+        <div class="col">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.reconvocatoriamFile, 'Reingreso maestría') }}</label>
+                {{ form_widget(form.reconvocatoriamFile) }}
+                {{ form_errors(form.reconvocatoriamFile) }}
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.rcalendarioFile, 'Calendario reingreso') }}</label>
+                {{ form_widget(form.rcalendarioFile) }}
+                {{ form_errors(form.rcalendarioFile) }}
+            </div>
+        </div>
+
+
+    </div>
+    {{ form_widget(form) }}
+
+    <button class="mt-5 btn btn-dark"> <i class="fa-regular fa-paper-plane"></i> {{ button_label|default('Guardar') }}</button>
+    {{ form_end(form) }}
+
+
+
+
+
+
+</div>

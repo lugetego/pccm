@@ -1,0 +1,63 @@
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ path('app_tutor_index') }}">Tutores </a></li>
+        <li class="breadcrumb-item active" aria-current="page">Tutor</li>
+    </ol>
+</nav>
+{{ form_start(form) }}
+<div class="form-control">
+    <div class="row">
+        <div class="col-3">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.titulo, 'Título') }}</label>
+                {{ form_widget(form.titulo, {'attr': {'class': 'form-control','placeholder':'Título'}}) }}
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.nombre, 'Nombre') }}</label>
+                {{ form_widget(form.nombre, {'attr': {'class': 'form-control','placeholder':'Nombre'}}) }}
+            </div>
+        </div>
+        <div class="col">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.apellido, 'Apellido') }}</label>
+                {{ form_widget(form.apellido, {'attr': {'class': 'form-control','placeholder':'Apellido'}}) }}
+            </div>
+        </div>
+        <div class="col">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.email, 'Correo') }}</label>
+                {{ form_widget(form.email, {'attr': {'class': 'form-control','placeholder':'Correo'}}) }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.adscripcion, 'Adscripción') }}</label>
+                {{ form_widget(form.adscripcion, {'attr': {'class': 'form-control','placeholder':'Adscripción'}}) }}
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.area, 'Área') }}</label>
+                {{ form_widget(form.area, {'attr': {'class': 'form-control','placeholder':'Área'}}) }}
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">{{ form_label(form.url, 'URL') }}</label>
+                {{ form_widget(form.url, {'attr': {'class': 'form-control','placeholder':'URL'}}) }}
+            </div>
+        </div>
+    </div>
+
+    {{ form_widget(form) }}
+
+    <button class="mt-5 btn btn-dark"> <i class="fa-regular fa-paper-plane"></i> {{ button_label|default('Guardar') }}</button>
+    {{ form_end(form) }}
+
+
+</div>
+

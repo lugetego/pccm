@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modificar tutor{% endblock %}
+
+{% block body %}
+    <h2>Modificar</h2>
+    <hr>
+    {{ include('tutor/_form.html.twig', {'button_label': 'Update'}) }}
+
+{% endblock %}

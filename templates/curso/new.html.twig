@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Solicitud de curso{% endblock %}
+
+{% block body %}
+    <h2>Solicitud de curso </h2>
+    <h5>Semestre {{ semestre }}</h5>
+    <hr>
+    {{ include('curso/_form.html.twig') }}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('onchange') }}
+{% endblock %}

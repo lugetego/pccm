@@ -1,0 +1,36 @@
+vich_uploader:
+    db_driver: orm
+
+    #mappings:
+    #    products:
+    #        uri_prefix: /images/products
+    #        upload_destination: '%kernel.project_dir%/public/images/products'
+    #        namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
+
+    mappings:
+        semestre_convocatoria:
+            uri_prefix: /submissions
+            upload_destination: '%kernel.project_dir%/public/submissions'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+        semestre_reconvocatoriam:
+            uri_prefix: /submissions
+            upload_destination: '%kernel.project_dir%/public/submissions'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+        semestre_reconvocatoriad:
+            uri_prefix: /submissions
+            upload_destination: '%kernel.project_dir%/public/submissions'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+        semestre_calendario:
+            uri_prefix: /submissions
+            upload_destination: '%kernel.project_dir%/public/submissions'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+        semestre_rcalendario:
+            uri_prefix: /submissions
+            upload_destination: '%kernel.project_dir%/public/submissions'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+        semestre_instructivo:
+            uri_prefix: /submissions
+            upload_destination: '%kernel.project_dir%/public/submissions'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
