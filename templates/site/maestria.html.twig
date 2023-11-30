@@ -1,0 +1,217 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Posgrado Conjunto Ciencias Matemáticas{% endblock %}
+
+{% block alert %}{% endblock %}
+
+{% block banner %}
+    <div class="hero-maestria">
+
+        <div class="container">
+            <div class="hero-text-2 yellow">Maestría en</div>
+            <div class="hero-text-2 yellow">Ciencias Matemáticas</div>
+            <div class="d-flex flex-column flex-sm-row mt-4 align-items-baseline">
+                <div class=""><img src="{{ asset('build/img/unam.png') }}" alt="UNAM" class="hero-universidad"></div>
+                <div class="ms-sm-4 mt-2"><img src="{{ asset('build/img/umich.png') }}" alt="UMICH" class="hero-universidad"></div>
+            </div>
+            <div class="hero-lugar gray mt-3"><i class="bi bi-geo-alt"></i> Morelia, Michoacán.</div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block body %}
+
+
+    <section id="introduccion-maestria">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="yellow mt-100 mb-4 mt-5">Programa de Maestría</h1>
+                    <h4 class="mb-4"><strong>Maestría en Ciencias Matemáticas</strong></h4>
+                    <p><strong>Objetivo:</strong> Dotar al alumno de amplios y profundos conocimientos avanzados tanto de
+                        matemáticas en general, como de un área en particular de esta ciencia. Estos estudios proporcionarán
+                        a los alumnos una formación amplia y sólida en la disciplina y tendrán al menos uno de los siguientes
+                        objetivos: introducirlos a la investigación, formarlos para el ejercicio de la docencia de alto nivel,
+                        y desarrollar en ellos una alta capacidad para el ejercicio profesional con intensidad matemática.
+                        Por su formación, el horizonte laboral del Maestro en Ciencias egresado de este Programa es muy amplio.
+                        Puede participar desarrollando un trabajo profesional de alto nivel en cualquier actividad donde el
+                        análisis, la abstracción y la formación conceptual son relevantes.
+                    </p>
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden d-none d-lg-inline">
+                    <img class="w-100" src="{{ asset('build/img/banner-maestria.png') }}" alt="imagen abstracta introducción">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="maestria-info">
+
+        <div class="contenedor-denominacion">
+            <div class="container">
+                <h4 class="yellow">Denominación de Grado</h4>
+                <h3>Maestro en Ciencias Matemáticas</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <h4 class="yellow mt-5">Plan de Estudios</h4>
+                    <p class="mt-3">El plan de estudios de la Maestría está diseñado para formar profesionales con una
+                        preparación sólida en los campos del conocimiento básicos de la matemática y con un nivel de
+                        profundización en alguna de sus disciplinas. Por esta razón, el estudiante debe cursar al menos
+                        cuatro cursos básicos de al menos tres campos diferentes. Los cursos avanzados le permiten profundizar
+                        en un tema de su interés. El trabajo escrito que debe presentar para obtener el grado es una actividad
+                        dirigida a fortalecer sus habilidades de síntesis, comprensión y reflexión.</p>
+                    <p>El objetivo fundamental del plan de estudios de Maestría es dotar al alumno de una profunda preparación
+                        en un campo del conocimiento de la matemática, con base en una amplia cultura de la disciplina.
+                        Estos estudios proporcionarán al alumno una formación basta y sólida y tendrán al menos uno de los
+                        siguientes objetivos: introducirlo a la investigación; darle la base de conocimientos necesarios para
+                        el ejercicio de la docencia de alta calidad en el nivel medio y superior; o desarrollar en él una alta
+                        capacidad para el ejercicio profesional.</p>
+
+                    <h4 class="yellow">Requisitos</h4>
+
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Ingreso</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Permanencia</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Egreso</button>
+                            <button class="nav-link" id="nav-grado-tab" data-bs-toggle="tab" data-bs-target="#nav-grado" type="button" role="tab" aria-controls="nav-grado" aria-selected="false">Obtención del Grado</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active py-3 content" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Contar con cien por ciento de créditos de una licenciatura en
+                                    Matemáticas o de una que a juicio del Comité Académico sea afín, y tener un promedio no
+                                    menor a 8 en los estudios de licenciatura. En casos excepcionales, a juicio del Comité
+                                    Académico, se podrá eximir a un aspirante del requerimiento del promedio.</li>
+                                <li class="list-group-item">Presentar el examen de conocimientos previos, habilidades y
+                                    aptitudes elaborado por el Subcomité de Admisión con el visto bueno del Comité Académico.
+                                    Este examen se podrá presentar sólo dos veces y en casos excepcionales, a juicio del
+                                    Comité Académico, una tercera vez.</li>
+                                <li class="list-group-item">Cumplir con los requisitos específicos establecidos por el Comité
+                                    Académico con base en las características de cada campo del conocimiento.</li>
+                                <li class="list-group-item">Presentarse a una entrevista con el Subcomité de Admisión. Este
+                                    Subcomité revisará si el alumno reúne los conocimientos y las cualidades suficientes para
+                                    ingresar a la Maestría. En el caso de una respuesta negativa el Subcomité podrá pedir al
+                                    aspirante requisitos adicionales (tales como llevar cursos de la licenciatura, los cuales
+                                    deberán ser aprobados) para su ingreso.</li>
+                                <li class="list-group-item">Recibir carta de aceptación otorgada por el Comité Académico.</li>
+                            </ul>
+
+                            <p class="mt-4">Las decisiones del Subcomité de Admisión deberán ser ratificadas por el Comité Académico.</p>
+
+                        </div>
+                        <div class="tab-pane fade content" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cubrir en un máximo de cuatro semestres la totalidad de los créditos.
+                                    Los estudiantes de tiempo parcial tendrán dos semestres adicionales. De manera extraordinaria
+                                    estos estudios podrán extenderse dos semestres más a juicio del Comité Académico. Concluidos
+                                    los plazos para permanecer inscritos en el plan de estudios de Maestrí a y sólo con el fin
+                                    de presentar el examen de grado, el Comité Académico podrá autorizar por una sola ocasión la
+                                    reinscripción de un alumno, previa opinión favorable de su tutor.</li>
+                                <li class="list-group-item">Realizar las actividades académicas que indica el plan de estudios
+                                    y aquella s otras que establezca el tutor, con el visto bueno del Comité Académico.</li>
+                                <li class="list-group-item">Obtener el título de la licenciatura antes del tercer semestre cuando
+                                    el alumno haya ingresado a la Maestría como pasante.</li>
+                                <li class="list-group-item">Aprobar el examen de comprensión de lectura de textos en inglés que
+                                    aplica el Centro de Enseñanza de Lenguas Extranjeras antes del tercer semestre o contar con
+                                    una constancia aceptada por el Comité Académico.
+                                </li>
+                                <li class="list-group-item">Un alumno podrá reinscribirse a la Maestría cuando interrumpa los
+                                    estudios de Posgrado, el Comité Académico determinará en qué términos se podrá reincorporar
+                                    al Programa.</li>
+                            </ul>
+
+                        </div>
+                        <div class="tab-pane fade content" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <p class="my-3">El alumno deberá haber cursado y aprobado el 100% de los créditos y el total de actividades
+                                académicas contempladas en el plan de estudios, en los plazos establecidos por la normatividad
+                                correspondiente.</p>
+
+                        </div>
+
+                        <div class="tab-pane fade content" id="nav-grado" role="tabpanel" aria-labelledby="nav-grado-tab">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Haber egresado del plan de estudios.</li>
+                                <li class="list-group-item">Aprobar el Examen General de Conocimientos o aprobar el examen de
+                                    defensa de tesis de Maestría.</li>
+                                <li class="list-group-item">Para aquellos alumnos que opten por el Examen General de Conocimientos,
+                                    elaborar una tesina en la que se muestre la solidez de su formación, cuyo contenido deberá
+                                    ser aprobado por el Comité Académico.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mt-5">
+                <h4 class="yellow">Cursos Básicos</h4>
+
+                <div class="col-12 col-lg-6 content">
+                    <div class="mt-3"><strong>Álgebra</strong></div>
+                    <ol>
+                        <li>Algebra Moderna</li>
+                        <li>Algebra Conmutativa</li>
+                    </ol>
+                    <div class="mt-3"><strong>Análisis</strong></div>
+                    <ol>
+                        <li>Análisis Funcional I</li>
+                        <li>Análisis Real I</li>
+                        <li>Análisis Complejo I</li>
+                    </ol>
+                    <div class="mt-3"><strong>Análisis Numérico y Computación Científica (incluyendo Modelación)</strong></div>
+                    <ol>
+                        <li>Análisis Numérico I</li>
+                        <li>Solución Numérica de Ecuaciones Diferenciales Ordinarias I</li>
+                        <li>Solución Numérica de Ecuaciones Diferenciales Parciales (Métodos en Diferencias)</li>
+                    </ol>
+                    <div class="mt-3"><strong>Ecuaciones Diferenciales (ordinarias y parciales)</strong></div>
+                    <ol>
+                        <li>Análisis Asintónico</li>
+                        <li>Ecuaciones Diferenciales Ordinarias</li>
+                        <li>Ecuaciones Diferenciales Parciales</li>
+                    </ol>
+                    <div class="mt-3"><strong>Estadística</strong></div>
+                    <ol>
+                        <li>Inferencia Bayesiana</li>
+                        <li>Inferencia Estadística</li>
+                        <li>Modelos Lineales.</li>
+                    </ol>
+                </div>
+                <div class="col-12 col-lg-6 content">
+                    <div class="mt-3"><strong>Matemáticas Discretas</strong></div>
+                    <ol>
+                        <li>Teoría de las Gráficas</li>
+                        <li>Teoría de Matroides</li>
+                    </ol>
+                    <div class="mt-3"><strong>Probabilidad</strong></div>
+                    <ol>
+                        <li>Probabilidad I</li>
+                        <li>Probabilidad II</li>
+                        <li>Procesos Estocásticos</li>
+                    </ol>
+                    <div class="mt-3"><strong>Sistemas Continuos</strong></div>
+                    <ol>
+                        <li>Introducción a la Mecánica Analítica</li>
+                        <li>Introducción a los Medios Continuos</li>
+                        <li>Modelación Matemática de Sistemas Conjuntos</li>
+                    </ol>
+                    <div class="mt-3"><strong>Topología</strong></div>
+                    <ol>
+                        <li>Topología Algebraica</li>
+                        <li>Topología Diferencial</li>
+                        <li>Topología General</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

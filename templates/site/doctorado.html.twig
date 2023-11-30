@@ -1,0 +1,258 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Posgrado Conjunto Ciencias Matemáticas{% endblock %}
+
+{% block alert %}{% endblock %}
+
+{% block banner %}
+    <div class="hero-doctorado">
+        <div class="container">
+            <div class="hero-text-2 purple">Doctorado en</div>
+            <div class="hero-text-2 purple">Ciencias Matemáticas</div>
+            <div class="d-flex flex-column flex-sm-row mt-4 align-items-baseline">
+                <div class=""><img src="{{ asset('build/img/unam.png') }}" alt="UNAM" class="hero-universidad"></div>
+                <div class="ms-sm-4 mt-2"><img src="{{ asset('build/img/umich.png') }}" alt="UMICH" class="hero-universidad"></div>
+            </div>
+            <div class="hero-lugar purple mt-3 fw-bolder"><i class="bi bi-geo-alt"></i> Morelia, Michoacán.</div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+
+    <section id="introduccion-doctorado">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="mb-4 purple mt-5">Programa de Doctorado</h1>
+                    <h4 class="mb-4"><strong>Doctorado en Ciencias Matemáticas</strong></h4>
+                    <p>El objetivo fundamental del plan de Doctorado es que el alumno realice
+                        investigación original y relevante en matemáticas. En este proceso el alumno adquirirá conocimientos
+                        profundos en el campo de la matemática en el que desarrolle su tesis.
+                    </p>
+                    <p></p>
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden d-none d-lg-inline">
+                    <img class="w-100" src="{{ asset('build/img/banner-doctorado.png') }}" alt="imagen abstracta introducción">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="doctorado-info">
+
+        <div class="contenedor-denominacion">
+            <div class="container">
+                <h4 class="purple">Denominación de Grado</h4>
+                <h3>Doctor(a) en Ciencias Matemáticas</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <h4 class="mt-5 purple">Plan de Estudios</h4>
+                    <p class="mt-3">El plan de estudios del Doctorado está diseñado para formar investigadores y profesionales
+                        de alto nivel con una formación sólida en los campos básicos de la matemática y con un nivel de
+                        profundización en alguna de sus disciplinas y que sepan comunicar sus resultados. Por esta razón,
+                        el estudiante debe aprobar tres exámenes generales en tres diferentes campos, realizar investigación
+                        original, participar en foros públicos y escribir al menos un artículo. Los exámenes generales muestran
+                        el conocimiento avanzado del egresado y los trabajos escritos y presentaciones son actividades dirigidas
+                        a fortalecer sus habilidades de síntesis, comprensión, reflexión y comunicación.</p>
+                    <p class="mt-3">El objetivo fundamental del plan de Doctorado es que el alumno realice investigación original
+                        y relevante en matemáticas. En este proceso el alumno adquirirá conocimientos profundos en el campo
+                        de la matemática en el que desarrolle su tesis.</p>
+
+                    <h4 class="purple mb-4">Perfiles del Doctorado</h4>
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab1" role="tablist">
+                            <button class="nav-link active" id="nav-ingreso-tab" data-bs-toggle="tab" data-bs-target="#nav-ingreso" type="button" role="tab" aria-controls="nav-ingreso" aria-selected="true">Perfil de Ingreso</button>
+                            <button class="nav-link" id="nav-intermedio-tab" data-bs-toggle="tab" data-bs-target="#nav-intermedio" type="button" role="tab" aria-controls="nav-intermedio" aria-selected="true">Perfiles Intermedios</button>
+                            <button class="nav-link" id="nav-graduado-tab" data-bs-toggle="tab" data-bs-target="#nav-graduado" type="button" role="tab" aria-controls="nav-graduado" aria-selected="true">Perfil del Graduado</button>
+                            <button class="nav-link" id="nav-duracion-tab" data-bs-toggle="tab" data-bs-target="#nav-duracion" type="button" role="tab" aria-controls="nav-duracion" aria-selected="true">Duración</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tab1Content">
+                        <div class="tab-pane fade show active py-3 content" id="nav-ingreso" role="tabpanel" aria-labelledby="nav-ingreso-tab">
+                            <p class="mt-3">El aspirante deberá poseer conocimientos avanzados de matemáticas. Será capaz de
+                                hacer demostraciones matemáticas. Comprenderá los resultados fundamentales de algún campo o
+                                tema de las matemáticas. Tendrá buen nivel de comunicación escrita. Podrá leer textos de
+                                matemáticas en inglés. Este perfil se espera que lo cumplan estudiantes con estudios de
+                                maestría en Matemáticas o posgrados afines a ésta.</p>
+                        </div>
+                        <div class="tab-pane fade show py-3 content" id="nav-intermedio" role="tabpanel" aria-labelledby="nav-intermedio-tab">
+                            <ul>
+                                <li>Será capaz de presentar exámenes que demuestren sus conocimientos generales de las matemáticas
+                                    y del campo del conocimiento de su interés y su capacidad para mantenerse actualizado ante
+                                    los avances de la disciplina.</li>
+                                <li>Podrá conocer el estado actual de la investigación sobre un tema de su interés.</li>
+                                <li>Será capaz de adquirir conocimientos que lo lleven a la frontera de la investigación
+                                    científica de su campo del conocimiento de interés.</li>
+                                <li>Podrá escribir un proyecto de investigación con claridad.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade show py-3 content" id="nav-graduado" role="tabpanel" aria-labelledby="nav-graduado-tab">
+                            <p class="mt-3">El graduado en este programa habrá adquirido habilidades tales como:</p>
+                            <ul>
+                                <li>Poder plantearse objetivos de investigación en la frontera del conocimiento científico actual.</li>
+                                <li>Tener una metodología de investigación. Podrá plantearse conjeturas de trabajo y resolverlas en forma novedosa.</li>
+                                <li>Poder discernir qué conocimientos adicionales son necesarios para el logro de sus objetivos.</li>
+                                <li>Tener la capacidad de localizar y adquirir estos conocimientos.</li>
+                                <li>Producirá nuevos conocimientos a nivel internacional.</li>
+                                <li>Podrá expresar sus resultados de investigación en forma escrita para expertos en el campo
+                                    del conocimiento y para revistas de investigación.</li>
+                                <li>El horizonte laboral de los egresados del Doctorado de este Programa se encuentra en las
+                                    instituciones de educación superior y en las instituciones en las cuales se realice investigación
+                                    en matemáticas o en disciplinas afines. Asimismo, el Doctor en Ciencias podrá aplicar sus
+                                    conocimientos en la conducción de estudios y proyectos tanto en el sector público, como en el sector privado.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade show py-3 content" id="nav-duracion" role="tabpanel" aria-labelledby="nav-duracion-tab">
+                            <p class="mt-3">El plan de trabajo que se debe desarrollar en el Doctorado en Ciencias se realizará
+                                en ocho semestres y abarcará el número de actividades académicas que se establezcan entre el
+                                alumno y el comité tutor, para que el primero lleve a cabo su proyecto de investigación y su
+                                formación académica.</p>
+                        </div>
+                    </div>
+
+                    <h4 class="purple">Estructura y organización del plan de estudios</h4>
+
+                    <p class="mt-3"><strong>Descripción general de la estructura y organización académica del plan</strong><br>
+                        La estructura del plan de estudios es la siguiente.</p>
+                    <ul>
+                        <li>Las actividades académicas del plan de estudios del Doctorado incluyendo la graduación se cubrirán en ocho semestres.</li>
+                        <li>En general, el plan de estudios de Doctorado no incluye la acreditación de actividades académicas.</li>
+                        <li>El alumno de doctorado elaborará con su Comité Tutor un plan de trabajo de acuerdo con sus intereses académicos.</li>
+                        <li>Deberá aprobar el examen de candidatura antes del quinto semestre. La primera etapa del examen de
+                            candidatura deberá aprobarla a más tardar en el tercer semestre.</li>
+                    </ul>
+                    <p class="mt-3"><strong>Mecanismos de flexibilidad del plan de estudios</strong><br>
+                        El plan de trabajo del estudiante de doctorado es elaborado conjuntamente con su Comité Tutor. No hay
+                        ninguna actividad obligatoria ni se contempla la acreditación de actividades académicas. Parte de su
+                        trabajo de investigación lo puede realizar en otra entidad o institución.</p>
+
+
+                    <h4 class="purple">Plan de trabajo de las actividades académicas</h4>
+                    <p class="mt-3">En general, el plan de estudios de Doctorado no incluye la acreditación de actividades
+                        académicas. Sin embargo, el Comité Tutor podrá incluir en el plan de trabajo realizar actividades
+                        académicas del plan de estudios de maestría. El alumno que en sus actividades académicas tenga cursos
+                        asignados, deberá registrarse oficialmente y aprobarlos. Además, su plan de trabajo puede incluir
+                        actividades académicas como seminarios, talleres, actividades docentes y aquellas otras que
+                        proporcionen una sólida formación académica en los conocimientos generales de la disciplina y en los
+                        específicos del campo de interés del alumno y lo preparen de cara a la Candidatura al grado de Doctor.
+                    </p>
+                    <p class="mt-3">Los alumnos del plan de estudios de Maestría y que deseen cursar los estudios de Doctorado,
+                        deberán cubrir los requisitos de ingreso revisados por el Subcomité de Admisión y con la aprobación
+                        del Comité Académico. Los alumnos graduados del plan de estudios de Maestría, que hayan aprobado el
+                        Examen General de Conocimientos y que ingresen al Doctorado cumpliendo los requisitos establecidos,
+                        se les convalidará la primera etapa del Examen de Candidatura especificado en el plan de estudios de Doctorado.</p>
+
+                    <h4 class="purple mb-4">Requisitos</h4>
+
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab2" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Ingreso</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Permanencia</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Egreso</button>
+                            <button class="nav-link" id="nav-candidatura-tab" data-bs-toggle="tab" data-bs-target="#nav-candidatura" type="button" role="tab" aria-controls="nav-candidatura" aria-selected="false">Obtención del Grado</button>
+                            <button class="nav-link" id="nav-grado-tab" data-bs-toggle="tab" data-bs-target="#nav-grado" type="button" role="tab" aria-controls="nav-grado" aria-selected="false">Obtención del Grado</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tab2Content">
+                        <div class="tab-pane fade show active py-3 content" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                            <p class="mt-3">Cumplir con una de las siguientes opciones:</p>
+                            <ol>
+                                <li>Haber obtenido la Licenciatura en Matemáticas o en una disciplina afín con un promedio no
+                                    menor de 9.</li>
+                                <li>Haber obtenido una Maestría en Ciencias (Matemáticas) o una maestría afín, o ser pasante
+                                    de la maestría de este Programa.</li>
+                                <li>En el caso de no haber egresado de la maestría de este Programa, presentar el examen de
+                                    conocimientos previos, habilidades y aptitudes elaborado por el Subcomité de Admisión
+                                    con el visto bueno del Comité Académico.</li>
+                            </ol>
+                            <p>Presentarse a una entrevista con el Subcomité de Admisión. Este Subcomité revisará si el alumno
+                                reúne los conocimientos y las cualidades suficientes para ingresar al Doctorado. Las decisiones
+                                del Subcomité de Admisión deberán ser ratificadas por el Comité Académico.</p>
+
+                            <p>En caso de una respuesta negativa, el Comité Académico podrá pedir al aspirante requisitos
+                                adicionales para su ingreso (tales como llevar ciertas asignaturas de la Licenciatura o de
+                                la Maestría y aprobarlos) o presentar el examen de diagnóstico.</p>
+
+                            <p>Contar con la aceptación escrita del investigador o profesor a quien el aspirante propone como
+                                su tutor o tutores principales, y que éste sea aprobado por el Comité Académico. En caso de
+                                no hacer una propuesta para su tutor o tutores principales, el Comité Académico se lo asignará.</p>
+
+                            <p>Recibir carta de aceptación otorgada por el Comité Académico.</p>
+                        </div>
+                        <div class="tab-pane fade content" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                            <ol class="mt-3">
+                                <li>Dedicarse tiempo completo a sus actividades académicas.
+                                <li>Realizar las actividades académicas que indica el plan de estudios y aquellas otras que
+                                    sean establecidas por su tutor o tutores principales y avaladas por el Comité Tutor.</li>
+                                <li>No haber obtenido en dos ocasiones una evaluación semestral desfavorable. Excepcionalmente
+                                    y de acuerdo con lo que estipula el RGEP, el alumno podrá solicitar al Comité Académico
+                                    la revisión de su situación académica. La resolución del Comité Académico será definitiva.</li>
+                                <li>Obtener la Candidatura a Doctor antes del quinto semestre.</li>
+                                <li>Cuando un alumno interrumpa sus estudios de Doctorado, el Comité Académico determinará en
+                                    qué términos podrá reincorporarse al Programa.</li>
+                                <li>Aprobar el examen de conocimientos y compresión de lectura de textos en inglés que aplica
+                                    el Centro de Enseñanza de Lenguas Extranjeras, antes del tercer semestre o contar con una
+                                    constancia aceptada por el Comité Académico.</li>
+                                <li>Concluidos los plazos para permanecer inscrito en el plan de estudios de doctorado y sólo
+                                    con el fin de presentar el examen de grado, el Comité Académico podrá autorizar una prórroga,
+                                    previa opinión favorable del tutor o tutores principales y del Comité Tutor respectivo.</li>
+                            </ol>
+
+                        </div>
+                        <div class="tab-pane fade content" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <p class="my-3">El alumno deberá haber aprobado satisfactoriamente su examen a la Candidatura de
+                                Doctor, concluido la totalidad del plan de trabajo de sus estudios de doctorado, acreditado
+                                los prerrequisitos extracurriculares y terminado el proyecto de investigación en el que se
+                                sustenta su tesis doctoral.</p>
+
+                        </div>
+                        <div class="tab-pane fade content" id="nav-candidatura" role="tabpanel" aria-labelledby="nav-candidatura-tab">
+                            <p class="mt-3">De acuerdo con el artículo 30 del RGEP, se considera que un alumno es candidato
+                                al grado de doctor cuando demuestre que cuenta con una sólida formación académica y capacidad
+                                para la investigación. El procedimiento para obtener la candidatura está definido en las normas
+                                operativas.</p>
+
+                            <p>Adicionalmente, el alumno deberá:</p>
+
+                            <ol>
+                                <li>Someterse al proceso de evaluación respectivo y mostrar una sólida formación académica y
+                                    capacidad para la investigación.</li>
+                                <li>Aprobar la primera etapa del Examen de Candidatura a más tardar durante el tercer semestre.</li>
+                                <li>Aprobar la segunda etapa del Examen de Candidatura antes del quinto semestre. Ésta se
+                                    diseñará sobre la base de determinar actividades académicas para el alumno, que deberán
+                                    ser propuestas por su Comité Tutor con el visto bueno del Comité Académico y que habrán
+                                    de garantizar un profundo conocimiento de su campo de estudio.</li>
+                                <li>En caso de que la evaluación resulte desfavorable se podrá autorizar una segunda y última
+                                    evaluación en el plazo de un año. En caso de una segunda evaluación negativa, el alumno será
+                                    dado de baja del plan de estudios.</li>
+                                <li>El alumno de Doctorado que haya aprobado el Examen de Candidatura será Candidato a Doctor.</li>
+                            </ol>
+                        </div>
+                        <div class="tab-pane fade content" id="nav-grado" role="tabpanel" aria-labelledby="nav-grado-tab">
+                            <ul class="mt-3">
+                                <li>Ser <strong>Candidato a Doctor</strong>.</li>
+                                <li>Desarrollar su tesis doctoral y contar con una constancia de que al menos un artículo de
+                                    su autoría, que contenga resultados originales de la tesis, está siendo considerado para
+                                    su publicación en una revista especializada de prestigio internacional.</li>
+                                <li>Presentar en un foro público en el que participen académicos del área o de un campo del
+                                    conocimiento afín, los resultados fundamentales de su tesis. Dicho foro deberá estar
+                                    avalado por el Comité Académico del Posgrado.</li>
+                                <li>Aprobar el examen de defensa de tesis doctoral.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

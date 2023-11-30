@@ -1,0 +1,152 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Posgrado Conjunto Ciencias Matemáticas{% endblock %}
+
+{% block alert %}
+{% endblock %}
+
+{% block banner %}
+    <div class="hero-admision">
+        <div class="container">
+            <div class="hero-text-2 blue">Admisión</div>
+            <div class="hero-text-2 blue d-sm-none">Maestría y Doctorado</div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+    <section id="admission">
+        <div class="container">
+            <div class="admission-title">CONVOCATORIAS MAESTRÍA Y DOCTORADO</div>
+
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <nav>
+                        <div class="nav nav-tabs mt-5" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-ingreso" type="button" role="tab" aria-controls="nav-ingreso" aria-selected="true">Ingreso</button>
+{#                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-reingreso" type="button" role="tab" aria-controls="nav-reingreso" aria-selected="false">Reingreso</button>#}
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-requisitos" type="button" role="tab" aria-controls="nav-requisitos" aria-selected="false">Requisitos</button>
+                            <button class="nav-link" id="nav-grado-tab" data-bs-toggle="tab" data-bs-target="#nav-guias" type="button" role="tab" aria-controls="nav-guias" aria-selected="false">Guías de examen</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active content" id="nav-ingreso" role="tabpanel" aria-labelledby="nav-ingreso-tab">
+                            <div class="admission-card h-100">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a href="files/convocatorias/semestre-2024-2/convocatoria2024-2_mayo2023.pdf"><i class="bi bi-megaphone blue me-3"></i>Convocatoria de <strong>Ingreso 2022-1</strong></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="files/convocatorias/semestre-2024-2/instructivo2024-2_mayo2023.pdf"><i class="bi bi-file-earmark blue me-3"></i>Instructivo <strong>Maestría y Doctorado</strong> 2022-1</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="files/PlanEstudiosMaestria.pdf"><i class="bi bi-file-earmark blue me-3"></i>Plan de Estudios <strong>Maestría</strong></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="files/PlanEstudiosDoctorado.pdf"><i class="bi bi-file-earmark blue me-3"></i>Plan de Estudios <strong>Doctorado</strong></a>
+                                    </li>
+                                    <li class="list-group-item"><i class="bi bi-calendar blue me-3"></i>Calendario de <strong>Ingreso</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                     {#   <div class="tab-pane fade content" id="nav-reingreso" role="tabpanel" aria-labelledby="nav-reingreso-tab">
+                            <div class="admission-card h-100">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><i class="bi bi-megaphone blue me-3"></i>Convocatoria de <strong>Reingreso Maestría</strong> 2024-1</li>
+                                    <li class="list-group-item"><i class="bi bi-megaphone blue me-3"></i>Convocatoria de <strong>Reingreso Doctorado</strong> 2024-1</li>
+                                    <li class="list-group-item"><i class="bi bi-calendar blue me-3"></i><strong>Calendario</strong> de Reingreso</li>
+                                </ul>
+                            </div>
+                        </div>#}
+                        <div class="tab-pane fade content" id="nav-requisitos" role="tabpanel" aria-labelledby="nav-requisitos-tab">
+                            <p class="my-4 lead">Programa de Maestría y Doctorado en Ciencias Matemáticas Becarios nuevos CONACyT</p>
+                            <p>Los aspirantes al Programa en Ciencias Matemáticas que deseen solicitar beca CONACyT deben enviar
+                                completa la documentación solicitada de acuerdo a las fechas establecidas en la Convocatoria a
+                                los correos electrónicos siguientes: posmat<i class="bi bi-at"></i>matmor.unam.mx, o malvarez<i class="bi bi-at"></i>matmor.unam.mx.</p>
+                            <div class="alert alert-warning" role="alert">
+                                No se realizará el registro para el trámite de solicitud de la beca si no se envía la documentación listada en la siguiente sección.
+                                Este trámite está sujeto al ingreso al Programa de Maestría o Doctorado.
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                No hay prórroga para el envío de estos documentos.
+                            </div>
+
+                            <div class="accordion" id="accordionAdmission">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            <strong>Requisitos para solicitar beca CONACyT</strong>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionAdmission">
+                                        <div class="accordion-body">
+                                            <div class="my-3 fw-bold">Las responsabilidades del tutor principal son:</div>
+                                            <ol>
+                                                <li>Promedio mínimo de 8.0 en los últimos estudios realizados (Licenciatura o Maestría).</li>
+                                                <li>Realizar Registro del CVU. <a href="/files/convocatorias/becas/instrucciones_registro_cvu.pdf" target="_blank">(<i class="fa fa-file-pdf-o"></i> instrucciones para registro de CVU en CONACyT).</a></li>
+                                                <li>Documentación escaneada por ambas caras (cuando corresponda) en formato JPG con 150 dpi de resolución sin rebasar 1MB (un archivo por documento).</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <strong>Documentos que debes enviar escaneados</strong>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionTutores">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><a href="/files/convocatorias/becas/solicitud_beca_conacyt.pdf" target="_blank"> <i class="fa fa-file-pdf-o"></i> Solicitud debidamente requisitada con letra legible y firmada. </a></li>
+                                                <li><a href="/files/convocatorias/becas/formato1sintesiscurrricular.pdf" target="_blank"> <i class="fa fa-file-pdf-o"></i> Síntesis curricular del Tutor. </a></li>
+                                                <li>CVU que registraron en la página de CONACyT.</li>
+                                                <li>Plan de trabajo del alumno, calendarizado por semestre y con visto bueno del Tutor (para maestría y doctorado).</li>
+                                                <li>Proyecto de investigación debidamente estructurado, con bibliografía y con visto bueno del Tutor (Solo para doctorado).</li>
+                                                <li>Currículo Vitae del solicitante (firmado).</li>
+                                                <li>Acta de nacimiento o carta de naturalización, que acredite la nacionalidad mexicana.</li>
+                                                <li>Acta de matrimonio y/o nacimiento del cónyuge e hijos, cuando corresponda.</li>
+                                                <li>CURP.</li>
+                                                <li>Credencial de elector.</li>
+                                                <li>Comprobante de domicilio (reciente, recibo, agua, luz, teléfono).</li>
+                                                <li>Certificado oficial de licenciatura, que indique promedio de créditos cubiertos. O bien constancia oficial de promedio. (para Maestría y Doctorado).</li>
+                                                <li>Certificado oficial de maestría, que indique promedio de créditos cubiertos. O bien constancia oficial de promedio. (para Doctorado).</li>
+                                                <li>Título o acta de examen de Licenciatura para los solicitantes de beca de maestría, y para los de Doctorado, titulo de licenciatura y titulo o acta de examen de maestría.</li>
+                                                <li>Para quienes hayan tenido beca CONACyT deben presentar <strong>copia de “Carta de Reconocimiento”</strong> o el documento comprobatorio de haber iniciado el trámite para su obtención; en su caso Carta de no Adeudo expedida por CONACyT.</li>
+                                                <li><a href="/files/convocatorias/becas/formato2cartacompromiso.doc" target="_blank"> <i class="fa fa-file-pdf-o"></i> Carta Compromiso de cumplimiento con CONACyT. </a></li>
+                                                <li><a href="/files/convocatorias/becas/formato3cartaterminobeca.pdf" target="_blank"> <i class="fa fa-file-pdf-o"></i> Carta con informe de término de Beca. </a> Fotografía infantil a color o blanco y negro, escaneada con un ancho de 402 por un alto 420 pixeles.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade content" id="nav-guias" role="tabpanel" aria-labelledby="nav-guias-tab">
+                            <ul class="mt-4">
+                                <li><a href="/files/admision/TemarioExamenAdmision.pdf" target="_blank"> <i class="fa fa-file-pdf-o"></i> Temario </a></li>
+                                <li><a href="/files/admision/ExamenNoviembre2020.pdf" target="_blank"> <i class="fa fa-file-pdf-o"></i> Examen noviembre 2020</a></li>
+                                <li><a href="/files/admision/ExamenAbril2021.pdf" target="_blank"> <i class="fa fa-file-pdf-o"></i> Examen abril 2021</a></li>
+                                <li><a href="/files/admision/ExamenOctubre2021.pdf" target="_blank"> <i class="fa fa-file-pdf-o"></i> Examen octubre 2021</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="coordinacion">
+
+        <div class="container">
+            <p class="fw-bold">¿Tienes dudas para realizar tu proceso de admisión?</p>
+            <div class="admission-title">COORDINACIÓN DEL POSGRADO CONJUNTO</div>
+
+            <p class="mt-4"><span class="blue fw-bold">M.A.D. Morelia Álvarez</span></p>
+            <p><span class="fw-bold">Morelia:</span> (443) 322 2741</p>
+            <p><span class="fw-bold">CDMX:</span> 5623 2741</p>
+            <p class="fw-bold">posmat<i class="bi bi-at"></i>matmor.unam.mx</p>
+        </div>
+    </section>
+{% endblock %}

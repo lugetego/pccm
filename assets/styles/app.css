@@ -1,69 +1,951 @@
 @import '~bootstrap';
-@import '~@fortawesome/fontawesome-free/css/all.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-    background-color: #fff;
-    padding-top: 70px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
 }
 
-textarea{
-    height: 200px;
+.hero-image {
+    background-image: url(../img/banner-pccm-mobile.png);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 40px;
 }
 
-.login {
-    display: flex;
+.hero-text {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 34px;
+}
+
+.hero-universidad {
+    max-height: 40px;
+}
+
+.hero-lugar {
+    color: #ffffff;
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size: .8rem;
+}
+
+.ccm-participantes {
+    padding: 0 0 52px 0;
+    background-color: #E0A800;
+}
+
+.titulo-participantes {
+    background-color: #E0A800;
+    padding: 16px 0 12px 0;
+}
+
+.ccm-participantes h4 {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.participante {
+    max-height: 60px;
+}
+
+.ipart:hover {
+    transform: scale(1.2);
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: #04306A;
+    font-size: 32px;
+    font-weight: bolder;
+    line-height: 34px;
+}
+
+#snp {
+    background-color: #F6F8FB;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#oferta-academica {
+    background-color: #002550;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#oferta-academica p {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+    color: #DFFDFD;
+}
+
+#oferta-academica hr {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.oferta-subtitle {
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+}
+
+.oferta-title {
+    font-size: 58px;
+    color: #F9B82E;
+    font-weight: 900;
+    line-height: 72px;
+}
+
+#campos-conocimiento .list-group-item {
+    font-size: 1rem;
+    color: #4a4a4a;
+}
+
+.yellow {
+    /* color: #F9B82E; */
+    color: #FFC107;
+}
+
+.purple {
+    color: #806DEC!important;
+}
+
+.blue {
+    color: #4C82DA!important;
+}
+
+.blue-accent {
+    color: #04306A;
+}
+
+.dark-accent {
+    color: #355ABF;
+}
+
+.dark-blue {
+    color: #022550;
+}
+
+.gray {
+    color: #707070!important;
+}
+
+.snp-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3B66A5;
+
+}
+
+.convocatoria-card {
+    border-radius: 12px;
+    background-color: #F7F9FC;
+    padding: 24px;
+}
+
+.h-100 {
+    height: 100%!important;
+}
+
+.convocatoria-title {
+    font-size: 24px;
+    font-weight: normal;
+    color: #4C82DA;
+}
+
+#convocatorias .list-group-item {
+    color: #707070;
+    background-color: #F7F9FC;
+    padding: 0.15rem 1rem;
+    border: none;
+    font-size: 14px;
+}
+
+.list-group-item {
+    padding: 1rem 0;
+}
+
+#convocatorias .list-group {
+    border-left: 4px solid #4C82DA!important;
+}
+
+#coloquio {
+    background-color: #F7F9FC;
+    padding: 24px 0 24px 0;
+}
+
+.coloquio-evento {
+    padding: 32px 0 32px 0;
+    border-bottom: 1px solid #ccc!important;
+}
+
+.evento-dia {
+    font-size: 42px;
+    font-weight: 900;
+    color: #355ABF;
     align-items: center;
-    background-color: #f5f5f5;
-}
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+    line-height: 48px;
 }
 
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
+.coloquio-eventos-container {
+    align-items: start!important;
+    margin-right: 1rem;
+}
+
+.evento-mes {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #355ABF;
+    align-items: center;
+}
+
+.evento-info {
+    margin-left: 24px;
+}
+
+.evento-title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #4C82DA;
+}
+
+.evento-ponente {
+    font-size: 18px;
+    color: #707070;
+    font-weight: bold;
+}
+
+.evento-adscripcion {
+    color: #707070;
+}
+
+.evento-hora-lugar {
+    margin-top: 12px;
+}
+
+.evento-lugar {
+    color: #707070;
+    margin-right: 8px;
+}
+
+.evento-hora {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #4C82DA;
+}
+
+#footer {
+    background-color: #002550;
+    padding-top: 68px;
+    padding-bottom: 48px;
+}
+
+.copy-right {
+    font-size: 10px;
+}
+
+#contacto {
+    background-color: #3964A8;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#contacto h1 {
+    color: white!important;
+}
+
+#contacto h4 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #d1e3ff;
+    margin-bottom: 16px;
+}
+
+.contacto-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #002550;
+    letter-spacing: 0;
+}
+
+.contacto-item {
+    padding: 0 0 4px 0;
+    font-size: 14px;
+    font-weight: 300;
+    /*border-bottom: 1px solid #4C82DA!important;*/
+}
+
+.hero-nosotros {
+    background-image: url(../img/banner-posgrado-mobil.png);
+    height: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 50px;
+}
+
+#nosotros-info {
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+#nosotros-datos {
+    background-color: #002550;
+    color: white;
+    padding-top: 68px;
+    padding-bottom: 48px;
+}
+
+.datos-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFC107;
+    min-width: 100px;
+    text-align: end;
+}
+
+.datos-text {
+    font-size: 18px;
+    color: white;
+    margin-left: 12px;
+    line-height: 20px;
+    min-width: 120px;
+}
+
+#lineas-conocimiento {
+    background-color: #F7F9FC;
+    font-size: 18px;
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+.linea-conocimiento {
+    padding: 20px 0;
+    border-bottom: #C3C3C3 solid 1px;
+}
+
+#comisiones {
+    background-color: #ffffff;
+    font-size: 18px;
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+.comision {
+    border-bottom: #707070 1px solid ;
+    font-size: 16px;
+    padding: 16px 0;
+}
+
+.comision-nombre {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.comision-adscripcion {
+    color: #707070;
+    font-weight: bold;
+}
+
+.hero-maestria {
+    background-image: url(../img/banner-maestria-mobil.png);
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 30px;
+}
+
+.hero-text-2 {
+    color: #F9B82E;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+}
+
+
+
+.hero-doctorado {
+    background-image: url("../img/hero-doctorado-mobile.png");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 48px;
+}
+
+.comision-correo {
+    color: #707070;
+}
+
+.hero-admision {
+    background-image: url(../img/banner-posgrado-mobil.png);
+    height: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 50px;
+}
+
+#admission {
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.admission-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #002550;
+    letter-spacing: 0;
+}
+
+#admission .list-group {
+    border-left: 4px solid #4C82DA!important;
+    padding: 24px 0;
+}
+
+.admission-card {
+    background-color: #F7F9FC;
+}
+
+#admission .list-group-item {
+    color: #707070;
+    background-color: #F7F9FC;
+    padding: 0.4rem 1rem;
+    border: none;
+}
+
+#admission .list-group-item:hover {
+    background-color: #ebebeb;
+}
+
+#admission .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #4F84D7;
+    border-color: #4F84D7;
+}
+
+.hero-tutores {
+    background-image: url(../img/banner-posgrado-mobil.png);
+    height: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 50px;
+}
+
+@media (min-width: 576px) {
+
+    .university-container {
+        margin-right: 12px;
+    }
+
+    .university-container:hover {
+        color: #4F84D7;
+    }
+
+    .brand-university {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: bold;
+        color: #04306A;
+    }
+
+    .brand-text {
+        font-size: 20px;
+        font-weight: bold;
+        color: #002550;
+        line-height: 22px;
+    }
+
+    .text-container {
+    }
+
+    .h4, h4 {
+        font-size: 1.5rem;
+        color: #333f93;
+        font-weight: bold;
+        border-color: #e1e1e1;
+        margin-bottom: 1rem;
+        margin-top: 1.8rem;
+    }
+
+    .h3, h3 {
+        color: #4a4a4a;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .content {
+        font-size: 1rem;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+        color: #04306A;
+        font-weight: bold;
+    }
+
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: #275cb3;
+        background: #d7e5ff;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        color: #003e87;
+        border-bottom: #003e87 solid 2px;
+    }
+
+    .hero-image {
+        background-image: url("../img/banner_pccm.png");
+        height: 450px;
+        padding-top: 100px;
+    }
+
+    .hero-nosotros {
+        background-image: url("../img/BANNER_NOSOTROS.png");
+        height: 300px;
+        padding-top: 100px;
+    }
+
+    .hero-maestria {
+        background-image: url("../img/BANNER2.png");
+        height: 450px;
+        padding-top: 100px;
+    }
+
+    .hero-doctorado {
+        background-image: url("../img/BANNER3.png");
+        height: 450px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding-top: 100px;
+    }
+
+    /* Place text in the middle of the image */
+    .hero-text {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 62px;
+    }
+
+    .hero-text-2 {
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 66px;
+    }
+
+    .ccm-participantes {
+        padding: 0 0 52px 0;
+        background-color: #E0A800;
+    }
+
+    .ccm-participantes-2 {
+        padding: 0 0 52px 0;
+        background-color: #04306a;
+    }
+
+    .bg-blue {
+        background-color: #04306a!important;
+    }
+
+    .ccm-participantes h4 {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .titulo-participantes {
+        background-color: #E0A800;
+        padding: 8px 0 8px 0;
+    }
+
+    .titulo-participantes-2 {
+        background-color: #04306a;
+        color: white;
+        padding: 8px 0 8px 0;
+    }
+
+    .participante {
+        max-height: 60px;
+    }
+
+    .ipart:hover {
+        transform: scale(1.2);
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    #introduccion p {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #353535;
+    }
+
+    .mt-100 {
+        margin-top: 100px;
+    }
+
+    #introduccion-maestria p {
+        font-size: 18px;
+        line-height: 26px;
+        color: #353535;
+    }
+
+    #introduccion-maestria h4 {
+        color: #5a5a5a;
+    }
+
+    #snp {
+        background-color: #F6F8FB;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .snp-text {
+        font-size: 28px;
+        font-weight: bold;
+        color: #3B66A5;
+        line-height: 2rem;
+    }
+
+    #oferta-academica {
+        background-color: #002550;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .oferta-subtitle {
+        font-size: 32px;
+    }
+
+    .oferta-title {
+        font-size: 72px;
+    }
+
+    #convocatorias .list-group-item {
+        font-size: 16px;
+    }
+
+    #campos-conocimiento .list-group-item {
+        font-size: 1.2rem;
+    }
+
+    .evento-dia {
+        font-size: 48px;
+    }
+
+    .evento-title {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .evento-adscripcion {
+        margin-left: .4rem;
+    }
+
+    .evento-hora-lugar {
+        margin-top: 0;
+    }
+
+    .evento-hora {
+        margin-left: 8px;
+    }
+
+    #comisiones {
+        padding-top: 68px;
+        padding-bottom: 48px;
+    }
+
+    #lineas-conocimiento {
+        padding-top: 68px;
+        padding-bottom: 48px;
+    }
+
+    .comision {
+        max-width: 75%;
+    }
+
+    #nosotros-datos {
+        background-color: #002550;
+        color: white;
+        padding-top: 68px;
+        padding-bottom: 48px;
+    }
+
+    .datos-number {
+        font-size: 48px;
+        font-weight: bold;
+        color: #FFC107;
+    }
+
+    .datos-text {
+        font-size: 18px;
+        color: white;
+        margin-left: 12px;
+        line-height: 20px;
+        min-width: 140px;
+    }
+
+    .yellow {
+        /* color: #F9B82E; */
+        color: #FFC107;
+    }
+
+    .hero-admision {
+        background-image: url("../img/BANNER_TUTORES.png");
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding-top: 100px;
+    }
+
+    .hero-tutores {
+        background-image: url("../img/BANNER_TUTORES.png");
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding-top: 100px;
     }
 }
-.form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: 10 auto;
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .hero-text {
+        font-size: 48px;
+    }
+
+    .comision {
+        max-width: 100%;
+    }
+
+    .copy-right {
+        font-size: 12px;
+    }
 }
 
-.form-signin .checkbox {
-    font-weight: 400;
+#coordinacion {
+    background-color: #F7F9FC;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-.form-signin .form-control {
-    position: relative;
-    box-sizing: border-box;
-    height: auto;
-    padding: 10px;
+
+#coordinacion p {
+    color: #707070;
+    margin-bottom: .4rem;
+}
+
+#basicos {
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.basico:hover {
+    color: #4C82DA;
+    border-bottom: #cbc9c9 solid 1px;
+}
+
+#cursos {
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#cursos td {
+    font-size: 13px;
+}
+
+#alumnos {
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.copy-right {
+    font-size: 12px;
+}
+
+/* Maestría */
+
+#maestria-info {
+    padding: 0 0 40px 0;
+    /*background-color: #f3f7ff;*/
+}
+
+#doctorado-info {
+    padding: 0 0 40px 0;
+    /*background-color: #f3f7ff;*/
+}
+
+.contenedor-denominacion {
+    background-color: aliceblue;
+    padding: 20px 0 20px 0;
+    margin-top: 1rem;
+}
+
+li {
+    padding: 4px 0 4px 0;
+}
+
+/* Tutores */
+
+#objetivos {
+    background-color: #ffffff;
+    font-size: 18px;
+    padding-top: 68px;
+    padding-bottom: 48px;
+}
+
+.objetivos-text {
+    color: #353535;
+}
+
+#objetivos h5 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #04306A;
+}
+
+#nucleo-academico {
+    background-color: #F7F9FC;
+    padding: 40px 0 40px 0;
+}
+
+#nucleo-academico .list-group {
+    background-color: #F7F9FC;
+}
+
+#nucleo-academico .list-group-item {
+    background-color: #F7F9FC;
+    font-size: 14px;
+    color: #707070;
+    padding: 18px 18px;
+    min-height: 120px;
+
+}
+
+#nucleo-academico .list-group-item:hover {
+    background-color: #f0f6ff;
+    font-size: 14px;
+
+}
+
+#generales {
+    background-color: #F7F9FC;
+    padding: 40px 0 40px 0;
+}
+
+#generales .list-group {
+    border-left: 4px solid #4C82DA!important;
+    padding: 14px 0;
+}
+
+.generales-card {
+    background-color: #F7F9FC;
+}
+
+#generales .list-group-item {
+    color: #707070;
+    background-color: #F7F9FC;
+    padding: 0.4rem 1rem;
+    border: none;
+}
+
+#generales .list-group-item:hover {
+    background-color: #ebebeb;
+}
+
+#generales .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #4F84D7;
+    border-color: #4F84D7;
+}
+
+.hero-tutor-subtitle {
+    font-size: 32px;
+    color: #707070;
+    font-weight: 500;
+}
+
+#tutores-info {
+    padding: 60px 0;
+}
+
+#tutores-externos {
+    padding: 60px 0;
+}
+
+
+.tutor-info {
+    margin-left: 32px;
+}
+
+.tutor-nombre {
+    font-size: 28px;
+    color: #4C82DA;
+    font-weight: 500;
+}
+
+.tutor-universidad {
+    color: #04306A;
+    font-weight: bold;
+}
+
+/*.tutor-area {*/
+/*    color: #6C757D;*/
+/*}*/
+
+.tutor-contacto {
+    margin-top: 14px;
+    color: #444444;
     font-size: 16px;
 }
-.form-signin .form-control:focus {
-    z-index: 2;
-}
-.form-signin input[type="user"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-.form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+
+.tutor-contacto-title {
+    color: #353535;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
 }
 
-.invalid-error {
-    width: 100%;
-    margin-top: 0.25rem;
-    font-size: 0.875em;
-    color: #dc3545;
+.tutor-resumen {
+    margin-top: 32px;
 }
 
+.tutor-text {
+    max-width: 750px;
+}

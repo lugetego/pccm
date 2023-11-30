@@ -1,0 +1,1689 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Posgrado Conjunto Ciencias Matemáticas{% endblock %}
+
+{% block alert %}
+{% endblock %}
+
+{% block banner %}
+    <div class="hero-tutores">
+        <div class="container">
+            <div class="hero-text-2 blue">Cursos</div>
+            <div class="hero-text-2 blue d-sm-none">Básicos Maestría</div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+
+    <section id="basicos">
+
+        <div class="container">
+
+            <h1 class="mb-5">Cursos Básicos</h1>
+
+            <div class="w-50">
+
+                <h4 class="blue">Álgebra</h4>
+                <div class="accordion accordion-flush" id="accordionAlgebra">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAlgebraModerna" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Álgebra Moderna
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAlgebraModerna" class="accordion-collapse collapse" data-bs-parent="#accordionAlgebra">
+                            <div class="accordion-body">
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Grupos</strong><br>
+                                1.1 Homomorfismos y teoremas de isomorfía<br>
+                                1.2 Grupo simétrico. Clases de conjugación. Conjuntos de generadores<br>
+                                1.3 Acciones de grupos en conjuntos y representaciones por permutaciones<br>
+                                1.4 Automorfismos y productos semidirectos<br>
+                                1.5 Teoremas de Sylow. Aplicaciones<br>
+                                1.6 Series de composición, grupos solubles y nilpotentes<br>
+                                1.7 Grupos libres y presentaciones. Definición y ejemplos<br>
+                                1.8 Grupos abelianos divisibles (optativo)<br><br>
+
+                                <strong>2. Anillos</strong><br>
+                                2.1 Anillos de polinomios<br>
+                                2.2 Dominios de ideales principales<br>
+                                2.3 Estructura de módulos finitamente generados sobre dominios de ideales principales<br>
+                                2.4 Teorema de factorización única en anillos de polinomios<br><br>
+
+                                <strong>3. Campos</strong><br>
+                                3.1 Extensiones<br>
+                                3.2 Campos finitos<br>
+                                3.3 Cerradura algebraica<br>
+                                3.4 Teoría de Galois<br>
+                                3.5 Aplicaciones de la teoría de Galois<br>
+                                <hr>
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Alperin, J. L. y Bell, R. W. Groups and Representations, GTM 162, Springer, 1995</li>
+                                    <li>Artin, E. Galois Theory, Notre Dame, 1955</li>
+                                    <li>Artin, M. Algebra, Prentice Hall, 1991</li>
+                                    <li>Birkhoff, G. y MacLane, S. Algebra, 2a. edición, MacMillan, 1979</li>
+                                    <li>Dummit y Foote, Abstract Algebra, Prentice Hall, 1991</li>
+                                    <li>Fraleigh, J. B., Algebra Abstracta, Addison Wesley, 1988</li>
+                                    <li>Jacobson, N. Basic Algebra, 2 vols., W. H. Freeman, 1985 y 1989</li>
+                                    <li>Kaplansky, I. Fields and Rings, University of Chicago Press, 1973</li>
+                                    <li>Lang, S. Algebra, Addison Wesley, 1993</li>
+                                    <li>Morandi, Patrick. Field and Galois Theory, New York, GTM 167, Springer Verlag, 1996</li>
+                                    <li>Rotman, J. An Introduction to the Theory of Groups, GTM 148, Springer, 4a. edición, 1995</li>
+                                    <li>Stewart, I. Galois Theory, 2nd edition, Chapman and Ha1l, 1989</li>
+                                    <li>Zaldivar, F. Teoría de Galois, Anthropos-UAM, 1996.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAlgebraConmutativa" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Álgebra Conmutativa
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAlgebraConmutativa" class="accordion-collapse collapse" data-bs-parent="#accordionAlgebra">
+                            <div class="accordion-body">
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Variedades afines</strong><br>
+                                1.1 Conjuntos algebraicos<br>
+                                1.2 Topología de Zariski<br>
+                                1.3 Componentes irreducibles<br>
+                                1.4 Dimensión de Krull<br><br>
+
+                                <strong>2. Morfismos</strong><br>
+                                2.1 Funciones regulares<br>
+                                2.2 Campo de funciones<br>
+                                2.3 Morfismos<br>
+                                2.4 Antiequivalencia variedades afines - dominios finitamente generados sobre k<br><br>
+
+                                <strong>3. Localización</strong><br>
+                                3.1 Fracciones<br>
+                                3.2 Producto Tensorial<br>
+                                3.3 Anillos y módulos de longitud finita<br><br>
+
+                                <strong>4. Descomposición primaria</strong><br>
+                                4.1 Primos asociados<br>
+                                4.2 Descomposición primaria<br>
+                                4.3 Interpretación geométrica<br>
+
+                                <strong>5. Dependencia integral</strong><br>
+                                5.1 Teorema de Cayley-Hamilton y lema de Nakayama<br>
+                                5.2 Dominios normales<br>
+                                5.3 Primos en extensiones enteras<br>
+                                5.4 Teorema de ceros de Hilbert (Nullstellensatz)<br><br>
+
+                                <strong>6. Lema de Artin-Rees</strong><br>
+                                6.1 Anillos y módulos graduados asociados<br>
+                                6.2 El álgebra de la explosión (blowup)<br>
+                                6.3 Teorema de intersección de Krull<br><br>
+
+                                <strong>7. Módulos planos</strong><br>
+                                7.1 El funtor Tor y caracterizaciones de módulos pIanos<br>
+
+                                <strong>8. Completaciones</strong><br>
+                                8.1 Propiedades básicas<br>
+                                8.2 Lema de Hensel<br>
+                                8.3 Teoría de Cohen (sin demostraciones)<br><br>
+
+                                <strong>9. Teoría de dimensión (sin demostraciones)</strong><br>
+                                9.1 Axiomas, anillos afines y normalización de Noether<br>
+                                9.2 Sistemas de parámetros y teorema de ideales principales de Krull<br>
+                                9.3 Polinomios de Hilbert<br>
+                                <hr>
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Atiyah, M. F. y Macdonald, I. G. Introduction to Commutative Algebra, Addison Wesley, Reading, MA; 1969.</li>
+                                    <li>Eisenbud, D. Commutative Algebra with a view towards Algebraic Geometry, Graduate Texts in Mathematics 150, Springer-Verlag, New York, 1995.</li>
+                                    <li>Hartshorne, R. Algebraic Geometry, Graduate Texts in Mathematics 52, Springer- Verlag, New York, 1977.</li>
+                                    <li>Matsumura, H. Commutative Algebra, W. A. Benjamin, New York, 1970.</li>
+                                    <li>Matsumura, H. Commutative Ring Theory, Cambridge Studies in Advanced Mathematics 8, Cambridge University Press, Cambridge, United Kingdom, 1986.</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="blue">Análisis</h4>
+                <div class="accordion accordion-flush" id="accordionAnalisis">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAnalisisFuncional-I" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Análisis Funcional I
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAnalisisFuncional-I" class="accordion-collapse collapse" data-bs-parent="#accordionAnalisis">
+                            <div class="accordion-body">
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Espacios Métricos</strong><br>
+                                1.1 Definición<br>
+                                1.2 Ejemplos<br>
+                                1.3 Topología<br>
+                                1.4 Convergencia<br>
+                                1.5 Espacios Completos<br><br>
+
+                                <strong>2. Morfismos</strong><br>
+                                2.1 Definición<br>
+                                2.2 Ejemplos<br>
+                                2.3 Subespacios<br>
+                                2.4 Bases<br>
+                                2.5 Completitud<br>
+                                2.6 Compacidad<br>
+                                2.7 Lema de Riesz<br>
+                                2.8 Operadores lineales y funcionales<br>
+                                2.9 Operadores Continuos y norma<br>
+                                2.10 Ejemplos<br>
+                                2.11 Espacio dual<br><br>
+
+                                <strong>3. Espacios normados y de Banach</strong><br>
+                                3.1 Definición. Ortogonalidad. Ejemplos<br>
+                                3.2 Completitud. Subespacios. Complementos ortogonales. Proyección<br>
+                                3.3 Conjuntos ortogonales y totales<br>
+                                3.4 Bases. Desigualdad de Bessel. Espacios separables<br>
+                                3.5 Ejemplos de bases<br>
+                                3.6 Teorema de Riesz<br>
+                                3.7 Aplicaciones: Lax Milgram, aproximación, splines<br>
+                                3.8 Operadores adjuntos<br>
+                                3.9 Operadores autoadjuntos, unitarios y normales<br><br>
+
+                                <strong>4. Teoremas fundamentales</strong><br>
+                                4.1 Teorema de Hahn Banach, duales y espacios reflexivos<br>
+                                4.2 Teorema de acotamiento uniforme, ejemplos, convergencia débil y aplicaciones.<br>
+                                Teorema de Banach-Alaogla<br>
+                                4.3 Teorema de la aplicación abierta y de la gráfica cerrada. Operadores cerrados<br>
+                                4.4 Teorema de punto fijo de Banach y aplicaciones<br><br>
+
+                                <strong>5. Teoría espectral de operadores acotados</strong><br>
+                                5.1 Definiciones espectrales. Teorema espectral, analiticidad<br>
+                                5.2 Operadores compactos, sucesiones de operadores compactos, adjunto y espectro<br>
+                                5.3 Operadores de Fredholm y ascenso<br>
+                                5.4 Alternativa de Fredholm y aplicaciones<br>
+                                5.5 Operadores autoadjuntos<br>
+                                5.6 Descomposición espectral<br>
+                                5.7 Operadores Positivos<br>
+                                5.8 Análisis funcional de operadores y teorema espectral<br>
+                                5.9 Aplicaciones<br><br>
+
+                                <strong>6. Teoría espectral de operadores autoadjuntos</strong><br>
+                                6.1 Operadores no acotados, cerrados y autoadjuntos<br>
+                                6.2 Extensiones<br>
+                                6.3 Propiedades espectrales<br>
+                                6.4 Representación espectral de operadores unitarios y de operadores autoadjuntos<br>
+                                6.5 Aplicaciones<br>
+                                <hr>
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Kreyszig, E., Introductory functional analysis with applications, John Wiley and Sons, 1978.</li>
+                                    <li>Schechter, M., Principles of functional analysis, Academic Press, 1971.</li>
+                                    <li>Akhiezer, N. I. And I. M. Glazman., Theory of linear operators in Hilbert spaces, Ungar, 1966.</li>
+                                    <li>Nirenberg, L., Functional analysis, CIMS Lecture Notes, 1961.</li>
+                                    <li>Brezis, H, Analyse fonctionnelle, Mason, 1983.</li>
+                                    <li>Kenevan, S., Topics in functional analysis and applications, Wiley, 1989.</li>
+                                    <li>Rudin, W., Functional analysis, McGraw Hill, 1973</li>
+                                    <li>Riesz, F. and B. Sg-nagy., Functional analysis, Ungar, 1955.</li>
+                                    <li>T. Husain., Orthogonal Schauder bases, Pure and Applied Mathematics, M. Decker, 1991.</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAnalisisReal-I" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Análisis Real I
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAnalisisReal-I" class="accordion-collapse collapse" data-bs-parent="#accordionAnalisis">
+                            <div class="accordion-body">
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Introducción</strong><br>
+                                1.1 Topología, métricas y continuidad<br>
+                                1.2 Topologías producto y compacidad<br>
+                                1.3 Completez y compacidad en espacios métricos<br>
+                                1.4 Algunos espacios métricos<br>
+                                1.5 Completación de espacios métricos<br><br>
+
+                                <strong>2. Medidas abstractas</strong><br>
+                                2.1 Anillos, álgebras y -álgebras<br>
+                                2.2 Espacios de medida<br>
+                                2.3 Medidas exteriores<br>
+                                2.4 Completación de medidas<br>
+                                2.5 Medida de Lebesgue y conjuntos no medibles<br><br>
+
+                                <strong>3. Integración</strong><br>
+                                3.1 Integral de funciones simples y de funciones no negativas<br>
+                                3.2 Integrabilidad de funciones con valores en los reales extendidos<br>
+                                3.3 Teorema de convergencia monótona<br>
+                                3.4 Lema de Fatou<br>
+                                3.5 Teorema de convergencia dominada<br><br>
+
+                                <strong>4.  Espacios LP</strong><br>
+                                4.1 Definición de espacios LP<br>
+                                4.2 Desigualdades de Minkowski y Hölder<br>
+                                4.3 Normas y completez en LP<br>
+                                4.4 Convergencias puntual, casi en todas partes y en LP, comparación entre ellas<br>
+                                4.5 Inclusión de los espacios LP y relación entre dos medidas<br>
+                                4.6 Medidas con signo, teoremas de Radon Nykodym y representaciones<br><br>
+                                <hr>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Bartle R., The elements of integration and Lebesgue measure, Wiley Classics Library Edition, 1995.</li>
+                                    <li>Dudley, R. M., Real analysis and probability, Belmont, Wadsworth and Brooks-Cole, 1989.</li>
+                                    <li>Royden, H., Analysis, Collier-Macmillan Press Editors, 1968.</li>
+                                    <li>Ash, R. B., Real analysis and probability, New York, Academic Press, 1972.</li>
+                                    <li>Cohn, D. L., Measure theory, Boston, Birkhauser, 1980.</li>
+                                    <li>Doob, J. L., Measure theory, New York, Springer Verlag, 1994.</li>
+                                    <li>Halmos, P. R., Measure theory, New York, Springer Verlag, 1974.</li>
+                                    <li>Rudin, W., Real and complex analysis, McGraw-Hill, 1977.</li>
+                                    <li>Wheeden, R. L., Sigmund, A., Measure and integral, Marcel Dekker Inc., 1977.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAnalisisComplejo-I" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Análisis Complejo I
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAnalisisComplejo-I" class="accordion-collapse collapse" data-bs-parent="#accordionAnalisis">
+                            <div class="accordion-body">
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Funciones de variable compleja</strong><br>
+                                1.1 Funciones analíticas en regiones<br>
+                                1.2 Transformaciones lineales<br>
+                                1.3 Superficies de Riemann elementales<br><br>
+
+                                <strong>2. Integración compleja</strong><br>
+                                2.1 Singularidades removibles, ceros, polos y principio del máximo<br>
+                                2.2 La forma general del teorema de Cauchy<br>
+                                2.3 Cálculo de residuos<br><br>
+
+                                <strong>3. Transformación conforme</strong><br>
+                                3.1 El teorema de la transformación de Riemann<br>
+                                3.2 La fórmula de Scharwz-Christoffel y otras transformadas conformes<br>
+                                3.3 Funciones armónicas<br>
+                                3.4 El problema de Dirichlet<br>
+                                3.5 Transformaciones canónicas de regiones múltiplemente conexas<br><br>
+
+                                <strong>4. Series y productos</strong><br>
+                                4.1 Teorema de Weierstrass<br>
+                                4.2 Series de Taylor y de Laurent<br>
+                                4.3 Productos infinitos<br>
+                                4.4 La función gamma<br><br>
+
+                                <strong>5. Funciones elípticas</strong><br><br>
+                                <strong>6. Aplicaciones</strong><br><br>
+                                <hr>
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Alfors, L. V. Complex analysis, McGraw Hill, 1996.</li>
+                                    <li>Conway, J. B. Functions of one complex variable. Springer Verlag, Graduate Text in Mathematics, 1975,</li>
+                                    <li>Nehari, Z. Conformal mapping. Dover 1975.</li>
+                                    <li>Siegel, C. L. Topics in complex function theory Vol 1: Elliptic funcitons and uniformization theory. Wiley Interscience, 1969.</li>
+                                    <li>Titchmarsh, E. C. The theory of functions. Oxford University Press 1939.</li>
+                                    <li>Whittaker, E. T. y Watson, G. N. A course of modern analysis. Cambridge University Press, 1973.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="blue">Análisis Numérico</h4>
+                <div class="accordion accordion-flush" id="accordionAnalisisNumerico">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAnalisisNumerico-I" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Análisis Numérico I
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAnalisisNumerico-I" class="accordion-collapse collapse" data-bs-parent="#accordionAnalisisNumerico">
+                            <div class="accordion-body">
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1.  Sistemas Numéricos de punto flotante</strong><br>
+                                1.1 Condición de un problema numérico<br>
+                                1.2 Estabilidad de un método<br>
+                                1.3 Problemas bien y mal planteados<br><br>
+
+                                <strong>2. Solución de ecuaciones escalares</strong><br>
+                                2.1 Métodos de bisección<br>
+                                2.2 Newton<br>
+                                2.3 Secante<br>
+                                2.4 Aproximaciones sucesivas<br>
+                                2.5 Puntos fijos.<br>
+                                2.6 Rapidez de convergencia<br><br>
+
+                                <strong>3. Álgebra lineal numérica</strong><br>
+                                3.1 Solución de sistemas de ecuaciones lineales<br>
+                                3.2 Factorización LU<br>
+                                3.3 Estrategias de pivoteo<br>
+                                3.4 Estabilidad y condición<br>
+                                3.5 Factorización de Cholesky<br><br>
+
+                                <strong>4. Mínimo de cuadrados lineales</strong><br>
+                                4.1 Ecuaciones normales de Euler<br>
+                                4.2 Descomposición QR.<br>
+                                4.3 Problema de rango deficiente<br>
+                                4.4 Descomposición en valores singulares<br>
+                                4.5 Análisis de error<br><br>
+
+                                <strong>5. Valores y vectores propios</strong><br>
+                                5.1 Método de potencia<br>
+                                5.2 Iteración inversa<br>
+                                5.3 Método de Rayleigh<br>
+                                5.4 Algoritmo QR.<br><br>
+
+                                <strong>6. Aproximación de funciones</strong><br>
+                                6.1 Interpolación polinomial<br>
+                                6.2 Diferencias divididas<br>
+                                6.3 Interpolación de Hermite<br>
+                                6.4 Interpolación spline<br>
+                                6.5 Interpolación trigonométrica<br>
+                                6.6 Transformada de Fourier rápida<br><br>
+
+                                <strong>7. Diferenciación e integración numérica</strong><br>
+                                7.1 Diferenciación numérica usando interpolación<br>
+                                7.2 Reglas básicas de cuadratura<br>
+                                7.3 Newton-Cotes<br>
+                                7.4 Gaussiana<br>
+                                7.5 Cuadratura adaptiva<br>
+                                7.6 Teoría de Sard<br>
+                                7.7 Método de Montecarlo<br><br>
+                                <hr>
+
+                                <strong>Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Kincaid, D., Cheney, W., Numerical analysis, Books/Co1e, 1991</li>
+                                    <li>Stoer, J. Bulirsch, R., Introduction to numerical analysis, 2nd Edition, Springer- Verlag, 1994</li>
+                                    <li>Golub, G.H., Ortega, J.M., Scientific Computing and Differential Equations. An Introduction to Numerical Methods, Academic Press, 1992</li>
+                                    <li>Golub, G.H., Van Loan ,Ch., Matrix Computations, 3rd Edition, USA, John Hopkins University Press, 1996</li>
+                                    <li>Hammerlin, G. and Hoffmann, K.K., Numerical Mathematics, Springer Verlag, Undergraduate Texts in Mathematics Series, 1991.</li>
+                                    <li>Kahaner, D., et al. Numerical Methods and Software, Prentice Hall, 1989</li>
+                                    <li>Niederreiter, H., Random number generation and quasi-Monte Carlo Methods, CBMS NS Regional Conference Ser. In Applied Mathematics, SlAM, 1992</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSNEDP" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Solución Numérica de Ecuaciones Diferenciales Parciales
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSNEDP" class="accordion-collapse collapse" data-bs-parent="#accordionAnalisisNumerico">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Ecuaciones Parabólicas</strong><br>
+                                1.1 Ecuaciones parabólicas en una dimensión. convergencia y estabilidad<br>
+                                1.2 Condiciones de frontera<br>
+                                1.3 Ecuaciones parabólicas en dos dimensiones: Métodos explícitos e implícitos de dirección alternante (A.D.I.)<br>
+                                1.4 Métodos locales de una dimensión<br>
+                                1.5 Ecuaciones parabólicas en tres dimensiones. Métodos explícitos e implícitos.<br>
+                                1.6 Esquemas en diferencias en tres niveles: explícitos e implícitos<br>
+                                1.7 Ecuaciones no lineales<br><br>
+
+                                <strong>2. Ecuaciones elípticas</strong><br>
+                                2.1 Ecuaciones elípticas en dos dimensiones<br>
+                                2.2 Ecuación de Laplace en un cuadrado<br>
+                                2.3 El problema de Neumann<br>
+                                2.4 Condiciones de frontera mixtas<br>
+                                2.5 Regiones no rectangulares<br>
+                                2.6 Ecuaciones elípticas autoadjuntas<br>
+                                2.7 Otros métodos para construir esquemas en diferencias<br>
+                                2.8 Propiedades generales de los esquemas en diferencias<br>
+                                2.9 La ecuación biharmonica<br>
+                                2.10 Métodos iterativos clásicos<br>
+                                2.11 Métodos de factorización directa<br>
+                                2.12 Métodos de gradientes conjugados<br>
+                                2.13 Métodos A.D.I.<br>
+                                2.14 Problemas de eigenvalores<br><br>
+
+                                <strong>3. Ecuaciones Hiperbólicas</strong><br>
+                                3.1 Ecuaciones hiperbólicas de primer orden, esquemas en diferencias explicitas e implícitas<br>
+                                3.2 Sistemas hiperbólicos de primer orden en una dimensión<br>
+                                3.3 Leyes de conservación<br>
+                                3.4 Sistemas hiperbólicos de primer orden en dos dimensiones<br>
+                                3.5 Disipación y dispersión<br>
+                                3.6 Estabilidad de problemas con valor inicial<br>
+                                3.7 Inestabilidad no lineal<br>
+                                3.8 Ecuaciones de segundo orden en una y dos dimensiones<br><br>
+
+                                <strong>4. Aplicaciones</strong><br>
+                                4.1 Esquinas reentrantes y singularidades en la frontera<br>
+                                4.2 Flujo viscoso incompresible<br>
+                                4.3 Flujo compresible<br>
+                                4.4 Problemas con frontera libre<br>
+                                4.5 Crecimiento del error en problemas de conducción-convección<br><br>
+                                <br>
+                                <strong class="blue">Bibliografía</strong><br><br>
+                                <ul>
+                                    <li>Mitchell, A.R. and Griffiths, D.F ., The Finite Method in Partial Differential Equations, Wiley, 1980.</li>
+                                    <li>Smith, G. D., J Numerical Solution of Partial Differential Equations: Finite Difference Methods, Clarendon Press,3rd. Edition, 1985</li>
+                                    <li>Strikwerda, J. C., Finite D Schemes and Partial D Equations, Wadsworth &amp; Brooks/Cole Advanced Books &amp; Software, 1989</li>
+                                    <li>Ames, V A., Numerical Methods for Partial D. Equations, Academic Press, 3td. Edition, 1977</li>
+                                    <li>Lapidus, L. and Pinder, G. F ., Numerical Solution of Partial Differential Equations iii Science and Engineering, Wiley, 1982</li>
+                                    <li>Meis, T. and Marcowitz, U., Numerical Solution of Partial D Equations, Springer Applied Math. Scies. Ser 32, 1981</li>
+                                    <li>Richtmyer, R.D. and Morton, K.W., Difference Methods for Initial- Value Problems, Wiley, 2ndEdition, 1967</li>
+                                    <li>Godlewski E., Raviat P ., Numerical approximation of hyperbolic system s of conservation laws, Applied Math. Sciences, 118 Springer Verlag, 1996</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="blue">Ecuaciones Diferenciales</h4>
+                <div class="accordion accordion-flush" id="accordionEcuacionesDiferenciales">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAnalisisAsintotico" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Análisis Asintótico
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAnalisisAsintotico" class="accordion-collapse collapse" data-bs-parent="#accordionEcuacionesDiferenciales">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Ecuaciones Parabólicas</strong><br>
+                                1.1 Ecuaciones parabólicas en una dimensión. convergencia y estabilidad<br>
+                                1.2 Condiciones de frontera<br>
+                                1.3 Ecuaciones parabólicas en dos dimensiones: Métodos explícitos e implícitos de dirección alternante (A.D.I.)<br>
+                                1.4 Métodos locales de una dimensión<br>
+                                1.5 Ecuaciones parabólicas en tres dimensiones. Métodos explícitos e implícitos.<br>
+                                1.6 Esquemas en diferencias en tres niveles: explícitos e implícitos<br>
+                                1.7 Ecuaciones no lineales<br><br>
+
+                                <strong>2. Ecuaciones elípticas</strong><br>
+                                2.1 Ecuaciones elípticas en dos dimensiones<br>
+                                2.2 Ecuación de Laplace en un cuadrado<br>
+                                2.3 El problema de Neumann<br>
+                                2.4 Condiciones de frontera mixtas<br>
+                                2.5 Regiones no rectangulares<br>
+                                2.6 Ecuaciones elípticas autoadjuntas<br>
+                                2.7 Otros métodos para construir esquemas en diferencias<br>
+                                2.8 Propiedades generales de los esquemas en diferencias<br>
+                                2.9 La ecuación biharmonica<br>
+                                2.10 Métodos iterativos clásicos<br>
+                                2.11 Métodos de factorización directa<br>
+                                2.12 Métodos de gradientes conjugados<br>
+                                2.13 Métodos A.D.I.<br>
+                                2.14 Problemas de eigenvalores<br><br>
+
+                                <strong>3. Ecuaciones Hiperbólicas</strong><br>
+                                3.1 Ecuaciones hiperbólicas de primer orden, esquemas en diferencias explicitas e implícitas<br>
+                                3.2 Sistemas hiperbólicos de primer orden en una dimensión<br>
+                                3.3 Leyes de conservación<br>
+                                3.4 Sistemas hiperbólicos de primer orden en dos dimensiones<br>
+                                3.5 Disipación y dispersión<br>
+                                3.6 Estabilidad de problemas con valor inicial<br>
+                                3.7 Inestabilidad no lineal<br>
+                                3.8 Ecuaciones de segundo orden en una y dos dimensiones<br><br>
+
+                                <strong>4. Aplicaciones</strong><br>
+                                4.1 Esquinas reentrantes y singularidades en la frontera<br>
+                                4.2 Flujo viscoso incompresible<br>
+                                4.3 Flujo compresible<br>
+                                4.4 Problemas con frontera libre<br>
+                                4.5 Crecimiento del error en problemas de conducción-convección<br><br>
+                                <br>
+                                <strong class="blue">Bibliografía</strong><br><br>
+                                <ul>
+                                    <li>Mitchell, A.R. and Griffiths, D.F ., The Finite Method in Partial Differential Equations, Wiley, 1980.</li>
+                                    <li>Smith, G. D., J Numerical Solution of Partial Differential Equations: Finite Difference Methods, Clarendon Press,3rd. Edition, 1985</li>
+                                    <li>Strikwerda, J. C., Finite D Schemes and Partial D Equations, Wadsworth &amp; Brooks/Cole Advanced Books &amp; Software, 1989</li>
+                                    <li>Ames, V A., Numerical Methods for Partial D. Equations, Academic Press, 3td. Edition, 1977</li>
+                                    <li>Lapidus, L. and Pinder, G. F ., Numerical Solution of Partial Differential Equations iii Science and Engineering, Wiley, 1982</li>
+                                    <li>Meis, T. and Marcowitz, U., Numerical Solution of Partial D Equations, Springer Applied Math. Scies. Ser 32, 1981</li>
+                                    <li>Richtmyer, R.D. and Morton, K.W., Difference Methods for Initial- Value Problems, Wiley, 2ndEdition, 1967</li>
+                                    <li>Godlewski E., Raviat P ., Numerical approximation of hyperbolic system s of conservation laws, Applied Math. Sciences, 118 Springer Verlag, 1996</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEcuDifOrdinarias" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Ecuaciones Diferenciales Ordinarias
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEcuDifOrdinarias" class="accordion-collapse collapse" data-bs-parent="#accordionBasicos">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Existencia y unicidad de soluciones</strong><br>
+                                1.1 Contracciones<br>
+                                1.2 Existencia de soluciones<br>
+                                1.3 Desigualdad de Gronwall<br>
+                                1.4 Unicidad<br>
+                                1.5 Dependencia continua respecto a condiciones iniciales y parámetros<br><br>
+
+                                <strong>2. Sistemas lineales</strong><br>
+                                2.1 Sistemas con coeficientes constantes<br>
+                                2.2 Clasificación de puntos críticos en el plano<br>
+                                2.3 Sistemas con coeficientes periódicos en el plano<br>
+                                2.4 Sistemas con coeficientes asintóticamente constantes<br>
+                                2.5 Soluciones fundamentales<br>
+                                2.6 Soluciones periódicas y su estabilidad<br>
+                                2.7 Teoría de Floquet<br>
+                                2.8 Existencia de soluciones globales<br>
+                                2.9 Problemas de Sturm-Liouville<br>
+                                2.10 Teoremas de oscilación y comparación para ecuaciones lineales de segundo orden<br><br>
+
+                                <strong>3. Perturbaciones de sistemas lineales</strong><br>
+                                3.1 Sistemas no lineales<br>
+                                3.2 Estabilidad lineal de puntos críticos<br>
+                                3.3 Persistencia de nodos y focos no degenerados<br><br>
+
+                                <strong>4. Sistemas autónomos en el plano</strong><br>
+                                4.1 Sistemas conservativos: el péndulo, ondas viajeras para KdV, ondas estacionarias para algunas ecuaciones de reacción y difusión<br>
+                                4.2 Sistemas disipativos: campos vectoriales, gradiente, funciones de Lyapunov, ondas viajeras para algunas ecuaciones de reacción y difusión<br>
+                                4.3 La ecuación de Lotka y Volterra. Los osciladores de Van de Pol y Duffing<br>
+                                4.4 Puntos límite de trayectorias. Teorema de Poincaré-Bendixson. Clasificación de conjuntos límite<br>
+                                4.5 Soluciones globales. Variedades estables e inestables de puntos críticos<br>
+                                4.6 Sistemas no autónomos: las ecuaciones de Vander Pol y Duffing con Forzamieíito<br><br>
+
+                                <strong class="blue">Temas opcionales:</strong><br><br>
+
+                                <strong>5. Métodos de perturbación</strong><br>
+                                5.1 Perturbaciones regulares y singulares en la ecuación de Van del Pol<br>
+                                5.2 Promediación<br><br>
+
+                                <strong>6. Variedades invariantes en dimensiones superiores</strong>
+                                6.1 Soluciones globales<br>
+                                6.2 Estudio de variedades invariantes locales: variedades estables e inestables de puntos críticos<br>
+                                6.3 Variedad central<br>
+                                6.4 Órbitas homoclínicas y heteroclínicas<br>
+                                6.5 Variedad estable e inestable de una órbita periódica<br>
+                                6.6 Teorema de Hartman<br><br>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Birkhoff, G. and G. G. Rota, Ordinary differential equations. 3 edition, John Wiley and Sons, 2nd Edition, 1991</li>
+                                    <li>Brauer, F. and J. Nohel, Qualitative theory of differential equations, W. A. Benjamin, 1969</li>
+                                    <li>Coddington, E. and N. Levinson, Theory of ordinary differential equations, McGraw Hill, 1955</li>
+                                    <li>Guckenheimer, J. and P. Holmes, Nonlinear oscillations dynamical systems and b of vector fields,, ‘Springer Verlag Applied Mathematical Sciences, 1983</li>
+                                    <li>Hale, J., Ordinary D. equations, Wiley-Interscience, 1969</li>
+                                    <li>Hale, J. and Hüseyin Koçalc. Dynamics and bifurcations, Springer Verlag, Texts iii Applied Mathematics, 1991</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEcuDifParciales" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Ecuaciones Diferenciales Parciales
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEcuDifParciales" class="accordion-collapse collapse" data-bs-parent="#accordionEcuacionesDiferenciales">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Ecuaciones Parabólicas</strong><br>
+                                1.1 Ecuaciones parabólicas en una dimensión. convergencia y estabilidad<br>
+                                1.2 Condiciones de frontera<br>
+                                1.3 Ecuaciones parabólicas en dos dimensiones: Métodos explícitos e implícitos de dirección alternante (A.D.I.)<br>
+                                1.4 Métodos locales de una dimensión<br>
+                                1.5 Ecuaciones parabólicas en tres dimensiones. Métodos explícitos e implícitos.<br>
+                                1.6 Esquemas en diferencias en tres niveles: explícitos e implícitos<br>
+                                1.7 Ecuaciones no lineales<br><br>
+
+                                <strong>2. Ecuaciones elípticas</strong><br>
+                                2.1 Ecuaciones elípticas en dos dimensiones<br>
+                                2.2 Ecuación de Laplace en un cuadrado<br>
+                                2.3 El problema de Neumann<br>
+                                2.4 Condiciones de frontera mixtas<br>
+                                2.5 Regiones no rectangulares<br>
+                                2.6 Ecuaciones elípticas autoadjuntas<br>
+                                2.7 Otros métodos para construir esquemas en diferencias<br>
+                                2.8 Propiedades generales de los esquemas en diferencias<br>
+                                2.9 La ecuación biharmonica<br>
+                                2.10 Métodos iterativos clásicos<br>
+                                2.11 Métodos de factorización directa<br>
+                                2.12 Métodos de gradientes conjugados<br>
+                                2.13 Métodos A.D.I.<br>
+                                2.14 Problemas de eigenvalores<br><br>
+
+                                <strong>3. Ecuaciones Hiperbólicas</strong><br>
+                                3.1 Ecuaciones hiperbólicas de primer orden, esquemas en diferencias explicitas e implícitas<br>
+                                3.2 Sistemas hiperbólicos de primer orden en una dimensión<br>
+                                3.3 Leyes de conservación<br>
+                                3.4 Sistemas hiperbólicos de primer orden en dos dimensiones<br>
+                                3.5 Disipación y dispersión<br>
+                                3.6 Estabilidad de problemas con valor inicial<br>
+                                3.7 Inestabilidad no lineal<br>
+                                3.8 Ecuaciones de segundo orden en una y dos dimensiones<br><br>
+
+                                <strong>4. Aplicaciones</strong><br>
+                                4.1 Esquinas reentrantes y singularidades en la frontera<br>
+                                4.2 Flujo viscoso incompresible<br>
+                                4.3 Flujo compresible<br>
+                                4.4 Problemas con frontera libre<br>
+                                4.5 Crecimiento del error en problemas de conducción-convección<br><br>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Mitchell, A.R. and Griffiths, D.F ., The Finite Method in Partial Differential Equations, Wiley, 1980.</li>
+                                    <li>Smith, G. D., J Numerical Solution of Partial Differential Equations: Finite Difference Methods, Clarendon Press,3rd. Edition, 1985</li>
+                                    <li>Strikwerda, J. C., Finite D Schemes and Partial D Equations, Wadsworth &amp; Brooks/Cole Advanced Books &amp; Software, 1989</li>
+                                    <li>Ames, V A., Numerical Methods for Partial D. Equations, Academic Press, 3td. Edition, 1977</li>
+                                    <li>Lapidus, L. and Pinder, G. F ., Numerical Solution of Partial Differential Equations iii Science and Engineering, Wiley, 1982</li>
+                                    <li>Meis, T. and Marcowitz, U., Numerical Solution of Partial D Equations, Springer Applied Math. Scies. Ser 32, 1981</li>
+                                    <li>Richtmyer, R.D. and Morton, K.W., Difference Methods for Initial- Value Problems, Wiley, 2ndEdition, 1967</li>
+                                    <li>Godlewski E., Raviat P ., Numerical approximation of hyperbolic system s of conservation laws, Applied Math. Sciences, 118 Springer Verlag, 1996</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="blue">Estadística</h4>
+                <div class="accordion accordion-flush" id="accordionEstadistica">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseBayesiana" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Inferencia Bayesiana
+                            </button>
+                        </h2>
+                        <div id="flush-collapseBayesiana" class="accordion-collapse collapse" data-bs-parent="#accordionEstadistica">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Introducción</strong><br>
+                                1.1 Limitaciones de la Estadística frecuentista<br><br>
+
+                                <strong>2. Interpretación de la probabilidad</strong><br>
+                                2.1 Clásica<br>
+                                2.2 Frecuentista<br>
+                                2.3 Subjetiva<br><br>
+
+                                <strong>3. Elementos de la teoría de decisión</strong><br>
+                                3.1 Estructura de un problema de decisión en ambiente de incertidumbre<br>
+                                3.2 Solución de un problema de decisión<br>
+                                3.2.1 Criterio mínimax<br>
+                                3.2.2 Criterio de la consecuencia más probable<br>
+                                3.2.3 Criterio de utilidad esperada máxima<br>
+                                3.3 Procesos de inferencia como problemas de decisión<br>
+                                3.4 Incorporación de información adicional en el proceso de decisión<br>
+                                3.5 Reglas de decisión<br>
+                                3.6 Decisiones secuenciales<br><br>
+
+                                <strong>4. Tratamiento axiomático de la decisión</strong><br>
+                                4.1 Axiomas de coherencia<br>
+                                4.2 Definición de probabilidad<br>
+                                4.3 Definición de utilidad<br>
+                                4.4 Principio de utilidad esperada máxima<br><br>
+
+                                <strong>5. Funciones de utilidad</strong><br>
+                                5.1 Teoría de la utilidad<br>
+                                5.2 Utilidad del dinero<br>
+                                5.3 Funciones de perdida<br><br>
+
+                                <strong>6. Información inicial</strong><br>
+                                6.1 Probabilidad subjetiva<br>
+                                6.2 Determinación de la probabilidad inicial<br>
+                                6.3 Distribuciones iniciales no informativas<br>
+                                6.4 Distribuciones iniciales conjugadas<br><br>
+
+                                <strong>7. Inferencia estadística paramétrica bayesiana</strong><br>
+                                7.1 Principio de verosimilitud<br>
+                                7.2 Suficiencia<br>
+                                7.3 Aproximación asintótica normal para la distribución final<br>
+                                7.4 Regla de Jeffreys<br>
+                                7.5 Construcción de familias conjugadas<br>
+                                7.6 Reparametrizaciones<br>
+                                7.7 Parámetros de interés y parámetros de ruido<br><br>
+
+                                <strong>8. Estimación puntual</strong><br>
+                                8.1 Solución bayesiana<br>
+                                8.2 Definición de probabilidad<br><br>
+
+                                <strong>9. Contraste de hipótesis.</strong><br>
+                                9.1 Solución bayesiana<br>
+                                9.2 Computación con resultados frecuentistas<br><br>
+
+                                <strong>10. Estimación por renglones</strong><br>
+                                10.1 Renglones de probabilidad<br>
+                                10.2 Renglones de máxima densidad<br>
+                                10.3 Comparación con resultados frecuentistas<br><br>
+
+                                <strong>11. Predicción</strong><br>
+                                11.1 Distribución predictiva<br>
+                                11.2 Predicción puntual<br>
+                                11.3 Predicción por regiones<br><br>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Berger, J.O. Statistical decision theory and bayesian analysis, 2nd. Edition, New York, Springer Verlag, 1985</li>
+                                    <li>Bernardo, J. M., Bioestadística: una perspectiva bayesiana, Barcelona, Vicens Vives, 1981</li>
+                                    <li>Bernardo, J.M. y Smith, A.F.M. Bayesian Theory, Chichester, Wiley, 1994</li>
+                                    <li>Box, G.E.P. y G.C. Tiao., Bayesian inference in statistical analysis, Addison-Wesley, 1973</li>
+                                    <li>DeGroot, M.H. Optimal Statistical Decisions, Nueva York, McGraw Hill, 1970</li>
+                                    <li>O’Hagan, A. Kendall’s Advanced Theory of Statistics, Vol.2:” Bayesian Inference”,Cambridge: Edward Arnold, 1994</li>
+                                    <li>Press, S. J., Bayesian statistics. Principles, models and applications, Nueva York, Wiley, 1989</li>
+                                    <li>Winkler, R.L., Introduction to bayesian inference and decision, Nueva York, Holt, Rinehart and Winston, 1972</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEstadistica" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Inferencia Estadística
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEstadistica" class="accordion-collapse collapse" data-bs-parent="#accordionEstadistica">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Familias paramétricas</strong><br>
+                                1.1 Suficiencia y reducción de información muestra<br>
+                                1.2 El problema de estimación<br>
+                                1.3 El problema de pruebas de hipótesis<br>
+                                1.4 El problema de bondad de ajuste<br><br>
+
+                                <strong>2. Estimación paramétricas</strong><br>
+                                2.1 Propiedades de estimadores<br>
+                                2.2 Métodos usuales de estimación<br>
+                                2.3 Teoría de Rao-Blackwell<br>
+                                2.4 Teoría de Crarnér-Rao<br>
+                                2.5 Estimación bayesiana y problemas de decisión<br><br>
+
+                                <strong>3. Intervalos de confianza</strong><br>
+                                3.1 Verosimilitud relativa<br>
+                                3.2 Desarrollos de la verosimilitud<br>
+                                3.3 Pivótales asintóticos.<br>
+                                3.4 Reparametrización.<br>
+                                3.5 Distribución fiducial<br><br>
+
+                                <strong>4. Pruebas de hipótesis</strong><br>
+                                4.1 Problemas de hipótesis simples<br>
+                                4.2 Lema de Neyrnan-Pearson<br>
+                                4.3 Simple contra compuesta. Potencias<br>
+                                4.4 Optimalidad y razón de verosimilitud<br>
+                                4.5 Ejemplos en muestreo de la normal<br><br>
+
+                                <strong>5. Estimación paramétricas</strong><br>
+                                5.1 Descripción general paramétrica<br>
+                                5.2 Estimación<br>
+                                5.3 Pruebas de hipótesis<br><br>
+
+                                <strong>6. Estadística no paramétrica</strong><br>
+                                6.1 Estimación. Teoría de Hoeffding.<br>
+                                6.2 Pruebas de bondad de ajuste.<br><br>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Mood, M. A., Garybili, F.A. y Boes, D.C.. Introduction to the theory of Statistics, McGraw Hill, 1974</li>
+                                    <li>Cox, D.R, y Hinkley, D. Theoretical Statistics, Chapman and Hall, 1974.</li>
+                                    <li>Kalbfleisch, J.D., Probability and Statistical Inference. Vol.2, Springer-Verlag, 1985</li>
+                                    <li>Migon, H y Gammerman, D. Statistical Inference. An Integrated Approach, Edward Arnold, 1999</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseModelosLineales" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Modelos Lineales
+                            </button>
+                        </h2>
+                        <div id="flush-collapseModelosLineales" class="accordion-collapse collapse" data-bs-parent="#accordionEstadistica">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Familias paramétricas</strong><br>
+                                1.1 Suficiencia y reducción de información muestra<br>
+                                1.2 El problema de estimación<br>
+                                1.3 El problema de pruebas de hipótesis<br>
+                                1.4 El problema de bondad de ajuste<br><br>
+
+                                <strong>2. Estimación paramétricas</strong><br>
+                                2.1 Propiedades de estimadores<br>
+                                2.2 Métodos usuales de estimación<br>
+                                2.3 Teoría de Rao-Blackwell<br>
+                                2.4 Teoría de Crarnér-Rao<br>
+                                2.5 Estimación bayesiana y problemas de decisión<br><br>
+
+                                <strong>3. Intervalos de confianza</strong><br>
+                                3.1 Verosimilitud relativa<br>
+                                3.2 Desarrollos de la verosimilitud<br>
+                                3.3 Pivótales asintóticos.<br>
+                                3.4 Reparametrización.<br>
+                                3.5 Distribución fiducial<br><br>
+
+                                <strong>4. Pruebas de hipótesis</strong><br>
+                                4.1 Problemas de hipótesis simples<br>
+                                4.2 Lema de Neyrnan-Pearson<br>
+                                4.3 Simple contra compuesta. Potencias<br>
+                                4.4 Optimalidad y razón de verosimilitud<br>
+                                4.5 Ejemplos en muestreo de la normal<br><br>
+
+                                <strong>5. Estimación paramétricas</strong><br>
+                                5.1 Descripción general paramétrica<br>
+                                5.2 Estimación<br>
+                                5.3 Pruebas de hipótesis<br><br>
+
+                                <strong>6. Estadística no paramétrica</strong><br>
+                                6.1 Estimación. Teoría de Hoeffding.<br>
+                                6.2 Pruebas de bondad de ajuste.<br><br>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Mood, M. A., Garybili, F.A. y Boes, D.C.. Introduction to the theory of Statistics, McGraw Hill, 1974</li>
+                                    <li>Cox, D.R, y Hinkley, D. Theoretical Statistics, Chapman and Hall, 1974.</li>
+                                    <li>Kalbfleisch, J.D., Probability and Statistical Inference. Vol.2, Springer-Verlag, 1985</li>
+                                    <li>Migon, H y Gammerman, D. Statistical Inference. An Integrated Approach, Edward Arnold, 1999</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h4 class="blue">Matemáticas Discretas</h4>
+                <div class="accordion accordion-flush" id="accordionMatematicasDiscretas">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseGraficas" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Teoría de las Gráficas
+                            </button>
+                        </h2>
+                        <div id="flush-collapseGraficas" class="accordion-collapse collapse" data-bs-parent="#accordionEstadistica">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Gráficas y digráficas</strong><br>
+                                1.1 Gráficas y gráficas orientadas<br>
+                                1.2 Árboles y bosques<br>
+                                1.3 Trayectorias y conexidad<br>
+                                1.4 Subgráficas<br>
+                                1.5 Homeomorfismos, homeomorfismos reflexivos, isomorfismos de gráficas, automorfismos<br>
+                                1.6 Productos de gráficas y digráficas, producto cartesiano, normal o fuerte, composición de gráficas<br>
+                                1.7 Gráficas de líneas, de clanes, árboles de bloques y puntos de corte<br><br>
+
+                                <strong>2. Recorrido de gráficas</strong><br>
+                                2.1 El teorema de Euler<br>
+                                2.2 Graficas hamiltonianas, el teorema de Ore<br>
+                                2.3 El problema del cartero chino<br>
+                                2.4 El problema del agente viajero<br><br>
+
+                                <strong>3. Gráficas planas</strong><br>
+                                3.1 Gráficas planas y aplanables<br>
+                                3.2 Gráficas duales<br>
+                                3.3 La fórmula de Euler<br>
+                                3.4 El teorema de Kuratowski<br>
+                                3.5 Genero de una gráfica. El teorema de Heawood<br><br>
+
+                                <strong>4. Coloraciones de vértices y aristas</strong><br>
+                                4.1 Número cromático<br>
+                                4.2 Los teoremas de los cinco colores<br>
+                                4.3 El teorema de Brook<br>
+                                4.4 Polinomios cromáticos<br>
+                                4.5 Coloraciones de aristas<br>
+                                4.6 El teorema de Vizing<br><br>
+
+                                <strong>5. Conjuntos independientes y clanes</strong><br>
+                                5.1 Conjuntos independientes<br>
+                                5.2 El teorema de Ramsey<br>
+                                5.3 El teorema de Turán<br><br>
+
+                                <strong>6. Gráficas perfectas</strong><br>
+                                6.1 El teorema de Lovász<br><br>
+
+                                <strong>7. Apareamientos</strong><br>
+                                7.1 Apareamientos<br>
+                                7.2 Apareamientos y cubiertas en gráficas bipartitas<br>
+                                7.3 Apareamientos perfectos. El teorema de Tutte<br>
+                                7.4 El problema de asignación de personal<br><br>
+
+                                <strong>8. Digráficas</strong><br>
+                                8.1 Gráficas dirigidas<br>
+                                8.2 Trayectorias dirigidas y ciclos dirigidos<br>
+                                8.3 Torneos<br>
+                                8.4 Núcleos<br><br>
+
+                                <strong>9. Conexidad</strong><br>
+                                9.1 El teorema de Menger<br>
+                                9.2 Flujos<br>
+                                9.3 El teorema de Ford-Fulkerson<br><br>
+
+                                <strong>10. Redes</strong><br>
+                                10.1 Flujos<br>
+                                10.2 Cortes<br>
+                                10.3 El teorema del flujo máximo y el corte mínimo<br>
+                                10.4 El teorema de Menger<br><br>
+
+                                <strong>11. Ciclos y cociclos</strong><br>
+                                11.1 Espacio de ciclos y cociclos<br>
+                                11.2 Número ciclomático<br>
+                                11.3 Grupo fundamental<br>
+                                11.4 Cuello<br><br>
+
+                                <strong>Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Harary F. Graph Theory, Addison-Wesley, 1969</li>
+                                    <li>Berge, C. Graphs, North-Holland, Amsterdam, 1986</li>
+                                    <li>Chartrand, G. and L. Lesniak. Graphs and digraphs, Wadsworth and Brooks /Cole of Mathematical Series, 1986</li>
+                                    <li>Bondy, J. A. and U. S. R. Murty. Graph theory with applications, New York, North-Holland, 1976</li>
+                                    <li>Ore O. Theory of Graphs, American Mathematical Society, 1962</li>
+                                    <li>Ringel, G. Map color theorem, Berlin, Springer Verlag, 1974</li>
+                                    <li>Lovasz, L. A characterization of perfect graphs, Journal of Combinatorial Theory (B), 95 - 98, 1972</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMatroides" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Teoría de Matroides
+                            </button>
+                        </h2>
+                        <div id="flush-collapseMatroides" class="accordion-collapse collapse" data-bs-parent="#accordionEstadistica">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Introducción</strong><br>
+                                1.1 Conjuntos independientes y circuitos<br>
+                                1.2 Bases y rango<br>
+                                1.3 Representaciones geométricas de matroides de rango pequeño<br>
+                                1.4 El algoritmo glotón<br><br>
+
+                                <strong>2. Dualidad</strong><br>
+                                2.1 Duales de matroides representables y de matroides gráficos<br><br>
+
+                                <strong>3. Menores</strong><br>
+                                3.1 Contracciones<br>
+                                3.2 Menores de matroides gráficos y de matroides F-representables<br><br>
+
+
+                                <strong>4. Conexidad</strong><br>
+                                4.1 Conexidad en gráficas y matroides<br>
+                                4.2 Teorema de Tutte<br><br>
+
+                                <strong>5. Matroides gráficos y cográficos</strong><br>
+                                5.1 Representabilidad<br>
+                                5.2 Dualidad<br>
+                                5.3 Teorema de Whitney<br><br>
+
+                                <strong>6. Matroides representables</strong><br>
+                                6.1 Representaciones distintas<br>
+                                6.2 Construcciones<br>
+                                6.3 Representaciones sobre campos finitos<br>
+                                6.4 Matroides regulares<br><br>
+
+                                <strong>7. Matroides binarias</strong><br>
+                                7.1 Caracterizaciones<br>
+                                7.2 Espacios de circuitos y cocircuitos<br><br>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Oxley, J. G. Matroid theory. Oxford University Press, 1992</li>
+                                    <li>Welsh, D. 1. A. Matroid theory. Academic Press, ‘1976</li>
+                                    <li>Wilson, R. J. An introduction to matroid theory, American Mathematical Monthly 80, 1973, pgs. 500-525</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="blue">Probabilidad</h4>
+                <div class="accordion accordion-flush" id="accordionProbabilidad">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseProbabilidad-I" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Probabilidad I
+                            </button>
+                        </h2>
+                        <div id="flush-collapseProbabilidad-I" class="accordion-collapse collapse" data-bs-parent="#accordionProbabilidad">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Espacios de Probabilidad, variables aleatorias y distribuciones</strong><br>
+                                1.1 Espacios y funciones medibles<br>
+                                1.1.1 Definiciones básicas y ejemplos<br>
+                                1.1.2 Lemas de clases monótonas<br>
+                                1.2 Espacios de medida y de probabilidad<br>
+                                1.2.1 Definiciones básicas y ejemplos<br>
+                                1.2.2 Distribuciones o leyes de probabilidad<br>
+                                1.2.3 Fui de distribución<br>
+                                1.2.4 Construcción del espacio de probabilidad asociado a una función de distribución. (Opcional).
+                                1.3 Espacios y medidas producto, e independencia.<br><br>
+
+                                <strong>2. Esperanza y momentos de variables aleatorias, probabilidad y esperanza condicional</strong><br>
+                                2.1 Integral de Lebesgue, esperanzas de funciones de variables aleatorias, momentos y Teorema de cambio de variable.<br>
+                                2.2 Probabilidad y Esperanza Condicional<br>
+                                2.2.1 Esperanza Condicional y sus propiedades elementales<br>
+                                2.2.2 Probabilidad Condicional<br>
+                                2.2.3 Distribuciones Condicionales<br><br>
+
+                                <strong>3. Leyes de los grandes números y el Teorema del limite central</strong><br>
+                                3.1 Tipos de convergencia<br>
+                                3.1.1 Casi segura, en probabilidad, en Lp<br>
+                                3.1.2 Débil, o en distribución<br>
+                                3.2 Lema de Borel-Cantelli<br>
+                                3.3 Leyes de los grandes números<br>
+                                3.3.1 Ley débil de los grandes números<br>
+                                3.3.2 Ley fuerte de los grandes números, con cuarto momento finito<br>
+                                3.4 El Teorema del límite central<br>
+                                3.4.1 Función Característica y Teorema de Continuidad de Lévy (sin demostración)<br>
+                                3.4.2 Teorema del límite central para variables aleatorias independientes idénticamente distribuidas en L2<br>
+                                3.5 Ley del logaritmo iterado, sin demostración<br><br>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+
+                                    <li>&nbsp;Ash, R. B, (1972) Real Analysis and Probability. Academic Press, New York.</li>
+                                    <li>&nbsp;Billingsley, P. (1979) Probability and Measure. J. Wiley and sons; New York.</li>
+                                    <li>&nbsp;Borkar, V. 5, (1995) Probability Theory, an advanced course. Universitext, Springer, New York.</li>
+                                    <li>&nbsp;Breiman, L. (1971) Probability. J. Wiley and sons, New York.</li>
+                                    <li>&nbsp;Chow, Y. S. y Teicher, H. (1988) Probability Theory. J. Wiley and sons, Chichester.</li>
+                                    <li>&nbsp;Clarke, L. E. (1975) Random variables. Longrnan, London.</li>
+                                    <li>&nbsp;Dudley, R. M. (1989) Real Analysis and probability. Wadsworth&amp;Brooks/Cole, Pacific Grove.</li>
+                                    <li>&nbsp;Durret, R. (1991) Probability: Theory and examples. Statistics/Probability Series, Wadsworth&amp;Brooks/Cole, Pacific Grove.</li>
+                                    <li>&nbsp;Feller, W. (1968-197 1) An Introduction to Probability Theory and Applications. Vols. 1 y II, J. Wiley and sons, New York.</li>\r\n<li>&nbsp;Friested, y Gray. (1971) Probability. J. Wiley and sons, New York.</li>
+                                    <li>&nbsp;Lahá, R. G. y Rohatgi, Y. K. (1979) Probability Theory. J. Wiley and sons, New York.</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseProbabilidad-II" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Probabilidad II
+                            </button>
+                        </h2>
+                        <div id="flush-collapseProbabilidad-II" class="accordion-collapse collapse" data-bs-parent="#accordionProbabilidad">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Funciones características</strong><br>
+                                1.1 Definiciones y ejemplos<br>
+                                1.2 Unicidad de la función característica<br>
+                                1.3 Teorema de inversión de Fourier<br>
+                                1.4 Teorema Central de Límite Multivariado<br>
+                                1.5 Arreglos triangulares y teorema de Lindeberg<br><br>
+
+                                <strong>2. Suma de variables aleatorias independientes</strong><br>
+                                2.1 Teorema de equivalencia de Levy<br>
+                                2.2 Teorema de las tres series<br><br>
+
+                                <strong>3. Teorema de continuidad de Levy y leyes estables e infinitamente divisibles</strong><br>
+                                3.1 Teorema de continuidad de Levy<br>
+                                3.2 Leyes infinitamente divisibles<br>
+                                3.3 Fórmulas de Levy-Khinchin<br>
+                                3.4 Leyes estables<br><br>
+
+                                <strong>4. El espacio C</strong><br>
+                                4.1 Caracterizaciones de convergencia débil<br>
+                                4.2 Convergencia débil y tensión de medidas en el espacio C<br>
+                                4.3 Teorema de Donsker<br><br>
+
+                                <strong>5. El espacio D</strong><br>
+                                5.1 Topología de Skorohod<br>
+                                5.2 Completez del espacio D<br>
+                                5.3 Convergencia débil y tensión en el espacio D<br>
+                                5.4 Funciones de distribución empíricas<br>
+                                5.5 Extensiones del teorema de Donsker<br><br>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Ash, R. B., Real analysis and probability, New York, Academic Press, 1972</li>
+                                    <li>Billinsley, P., Probability and measure, New York, John Wiley and Sons, 1979</li>
+                                    <li>Dudley, R. M., Real analysis and probability, Belmont, Wadsworth and Brooks/Cole, 1989</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEstocasticos" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Procesos Estocásticos
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEstocasticos" class="accordion-collapse collapse" data-bs-parent="#accordionProbabilidad">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Procesos Puntuales</strong><br>
+                                1.1 Definiciones, construcción y propiedades básicas<br>
+                                1.2 Proceso de Poisson<br>
+                                1.3 Proceso de Poisson Compuesto<br>
+                                1.4 Procesos de Renovación<br><br>
+
+                                <strong>2. Cadenas de Markov (en espacio de estados numerable)</strong><br>
+                                2.1 Definiciones y propiedades básicas<br>
+                                2.2 Probabilidades de transición, Ecuaciones de Chapman-Kolmogorov<br>
+                                2.3 Ejemplos. Caminatas aleatorias, Proceso de nacimiento y muerte, Procesos de ramificación<br>
+                                2.4 Cadenas de Markov en espacio de estados finito<br>
+                                2.4.1 Clasificación de estados<br>
+                                2.4.2 Distribuciones límite (Teoría Ergódica)<br>
+                                2.4.3 Tiempos de absorción<br>
+                                2.5 Procesos de Markov en tiempo continuo<br><br>
+
+                                <strong>3. Martingalas (en espacio de estados numerable)</strong><br>
+                                3.1 Definiciones básicas, propiedades y ejemplos<br>
+                                3.2 Tiempos de paro<br>
+                                3.3 El Teorema del paro opcional<br>
+                                3.4 Teoremas de convergencia (sin integrabilidad uniforme)<br><br>
+
+                                <strong>4. Procesos Gaussianos</strong><br>
+                                4.1 Definiciones, propiedades básicas y ejemplos<br>
+                                4.2 Movimiento Browniano<br><br>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Asmussen, S. (1987) Applied Probability and queues. J. Wiley and sons, New York. -Cinlar, E. (1975) Introduction to Stochastic Processes. Prentice Hall</li>
+                                    <li>Feller, W. (1968-197 1) An Introduction to .Probability Theory and Applications. Vols. 1 y II, J. Wiley and sons, New York</li>
+                                    <li>Ross, S. (1996) Stochastic Processes. J. Wiley and sons, New York</li>
+                                    <li>Karlin, S. y Taylor, H. (1975) A first course in Stochastic Processes. Vols. 1 y II, Academic Press</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="blue">Sistemas Continuos</h4>
+                <div class="accordion accordion-flush" id="accordionSistemasContinuos">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMecanicaAnalítica" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Introducción a la Mecánica Analítica
+                            </button>
+                        </h2>
+                        <div id="flush-collapseMecanicaAnalítica" class="accordion-collapse collapse" data-bs-parent="#accordionSistemasContinuos">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Ecuaciones de Movimiento</strong><br>
+                                1.1 Mecánica de sistemas de partículas. Coordenadas generalizadas<br>
+                                1.2 Principio de mínima acción de Hamilton y D'Alambert<br>
+                                1.3 Ecuaciones de Euler-Lagrange<br>
+                                1.4 Sistemas no conservativos y no holonómicos<br>
+                                1.5 Formulación Lagrangiana<br><br>
+
+                                <strong>2. Teoremas de Conservación</strong><br>
+                                2.1 Conservación de energía y teorema del virial<br>
+                                2.2 Conservación del ímpetu<br>
+                                2.3 Conservación del centro de masa<br>
+                                2.4 Conservación del momento angular<br><br>
+
+                                <strong>3. El problema de dos cuerpos</strong><br>
+                                3.1 Movimiento lineal. Masa reducida<br>
+                                3.2 El problema del potencial central<br>
+                                3.3 El problema de Kepler. Choque y dispersión de partículas<br><br>
+
+                                <strong>4. El problema del movimiento de un cuerpo sólido</strong><br>
+                                4.1 Velocidad angular y el tensor de inercia<br>
+                                4.2 Ecuaciones de movimiento del cuerpo rígido<br>
+                                4.3 Ángulos de Euler y las ecuaciones de Euler<br>
+                                4.4 El problema del trompo simétrico<br>
+                                4.5 Movimiento de un sistema de referencia no inercial<br><br>
+
+                                <strong>5. Pequeñas oscilaciones</strong><br>
+                                5.1 Oscilaciones lineales: libres, forzadas y con amortiguamiento<br>
+                                5.2 Oscilaciones lineales de un sistema de partículas<br>
+                                5.3 Ideas sobre la teoría de perturbaciones<br>
+                                5.4 El problema de la resonancia paramétrica, cálculo asintótico de las regiones de estabilidad<br>
+                                5.5 Oscilaciones no lineales<br>
+                                5.6 El método de Poincaré-Linsted<br>
+                                5.7 Resonancia de osciladores no lineales<br>
+                                5.8 El método de promedios y el método de escalas múltiples<br><br>
+
+                                <strong>6. Ecuaciones de Hamilton</strong><br>
+                                6.1 La transformación de Lagrange y las ecuaciones de Hamilton<br>
+                                6.2 Coordenadas cíclicas y teoremas de conservación<br>
+                                6.3 Principio de mínima acción de Hamilton<br><br>
+
+                                <strong>7. Transformaciones canónicas</strong><br>
+                                7.1 Transformaciones canónicas e invariantes de Poincaré<br>
+                                7.2 Teorema de Routh<br>
+                                7.3 Paréntesis de Poisson y de Lagrange<br>
+                                7.4 Transformaciones infinitesimales<br>
+                                7.5 Perturbaciones canónicas y el método de Von Zeipel<br>
+                                7.6 constantes de movimiento y simetrías<br>
+                                7.7 Invariantes adiabáticos y escalas múltiples<br>
+                                7.8 Teorema de Liouville<br><br>
+
+                                <strong>Teoría de Hamilton-Jacobi e integrabilidad</strong><br>
+                                8.1 función principal de Hamilton<br>
+                                8.2 Función característica de Hamilton<br>
+                                8.3 Variables de ángulo y acción<br>
+                                8.4 el teorema de Liouville-Arnold<br>
+                                8.5 El problema de Kepler y el cuerpo rígido<br>
+                                8.6 Integrabilidad y la latiz de Toda para cuatro cuerpos<br>
+                                8.7 Persistencia de estructuras integrables bajo perturbaciones canónicas<br><br>
+
+                                Nota: Las secciones siguientes son temas opcionales: del 5.4 al 5.8, del 7.4 al 7.8 y del 8.4 al 8.7.3.5 Aplicaciones de la teoría de Galois<br><br>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Goldstein, H., Classical Mechanic, Addison Wesley Pub., 1965</li>
+                                    <li>Arnold, V. I., Mathematical methods of classical mechanics, Springer Verlag, 1978</li>
+                                    <li>Landau, L. D. y Lifschitz E. M, Mecánica, curso de Física Teórica, Ed. Reverte, 1978</li>
+                                    <li>Eglit, M. and Hodge, D., Continuum Mechanics via problems and exercises. World Science, Vol. 19, World Scientific, 1996</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMediosContinuos" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Introducción a los Medios Continuos
+                            </button>
+                        </h2>
+                        <div id="flush-collapseMediosContinuos" class="accordion-collapse collapse" data-bs-parent="#accordionSistemasContinuos">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Ecuaciones de Euler y Navier-Stokes para el movimiento de fluidos inviscidos y viscosos compresibles</strong><br>
+                                1.1 Algunos flujos potenciales. Movimiento de vórtices inviscidos Estabilidad para flujos inviscidos y la ecuación de Rayleigh
+                                Movimientos de hojas vórtices<br>
+                                1.2 Flujos de Poiseuille Couette. Capa límite. Arrastre provocado por flujos viscosos. Fórmula de Stokes. Generación y transporte de vorticidad<br>
+                                1.3 Estabilidad de flujos viscosos. Ecuación de Orr-Sommerfeld<br><br>
+
+                                <strong>2. Ecuaciones para el movimiento de cuerpos elásticos</strong><br>
+                                2.1 Balance de momento y relaciones constitutivas. Aproximaciones para el movimiento de membranas, placas y vigas. Soluciones de los problemas lineales clásicos<br>
+                                2.2 Propagación de ondas elásticas en semiespacios. Dispersión y aplicaciones a ondas sísmicas<br><br>
+
+                                <strong>3. Elementos de elasticidad no lineal</strong><br>
+                                3.1 Pandeo de vigas y placas<br>
+                                3.2 Bifurcación estacionaria<br><br>
+
+                                <strong>4. Flujo compresible</strong><br>
+                                4.1 Hiperbolicidad y características<br>
+                                4.2 Ondas de choque y saltos hidráulicos<br>
+                                4.3 Aplicaciones a oleaje y flujo de canales<br><br>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Achenbach, J.D. Wave propagation in elastic solids, North Holland, Oxford, 1975</li>
+                                    <li>Antman, 5. S. Non linear problems of elasticity, Springer Verlag, New York, 1995</li>
+                                    <li>Batchelor, G. K., An introduction to fluid dynamics, Cambridge University Press, Cambridge, 1990</li>
+                                    <li>Fung, Y. C. Foundations of solid mechanics, Prentice Hall, New Jersey, 1965</li>
+                                    <li>Jones, D. 5., The theory of electromagnetism, Pergamon P., London, 1964</li>
+                                    <li>Jones, D. S., Acoustic and electromagnetic waves, Cirendon, Oxford, 1986</li>
+                                    <li>Landau, L.D., and Lifschitz, E.M., Fluid mechanics, Pergamon P., London, 1959</li>
+                                    <li>Landau, L.D., and Lifschitz, E.M., Theory of elasticity, Pergamon P., London 1920</li>
+                                    <li>Recktorys, K. Variational methods in mathematics, science and engineering,. Reidel Pub., Holland, 1977</li>
+                                    <li>Sokolmikoff, I.S., Mathematical theory of el McGraw Hill, New York, 1956</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSistemasContinuos" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Modelación Matemática de Sistemas Contínuos
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSistemasContinuos" class="accordion-collapse collapse" data-bs-parent="#accordionSistemasContinuos">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Método sistemático para la formulación de los modelos de sistemas continuos</strong><br>
+                                1.1 Propiedades extensivas e intensivas<br>
+                                1.2 Ecuaciones de balance<br>
+                                1.3 Sistemas de una y de varias fases<br><br>
+
+                                <strong>2. Transporte</strong><br>
+                                2.1 Ecuación general de transporte<br>
+                                2.2 Transporte conservativo y no conservativo<br>
+                                2.3 Transporte difusivo<br>
+                                2.4 Transporte en medios porosos<br><br>
+
+                                <strong>3. Flujo de fluidos en medios porosos</strong><br>
+                                3.1 Caracterización de un medio poroso<br>
+                                3.2 Casos especiales: flujo incompresible, matriz incompresible<br><br>
+
+                                <strong>4. La mecánica de los medios continuos</strong><br>
+                                4.1 Ecuaciones de balance de masa, momento, momento angular y energía<br><br>
+
+                                <strong>5. Transporte de energía</strong><br>
+                                5.1 Transferencia de calor. Ecuaciones gobernantes<br>
+                                5.2 Técnicas de modelación aplicadas a sistemas energéticos<br><br>
+
+                                <strong>6. Flujo de fluidos libres</strong><br>
+                                6.1 El tensor de esfuerzos<br>
+                                6.2 Fluidos compresibles no viscosos<br>
+                                6.3 Fluidos viscosos incomprensibles<br>
+                                6.4 Fluidos ideales<br><br>
+
+                                <strong>7. Mecánica de sólidos</strong><br>
+                                7.1 El tensor de esfuerzos<br>
+                                7.2 El gradiente de deformaciones<br>
+                                7.3 Sólido elástico<br>
+                                7.4 Teoría lineal: dinámica y estática<br><br>
+
+                                <strong>8. Sistemas de varias fases</strong><br>
+                                8.1 Fase y componente<br>
+                                8.2 Transporte con interacción química<br>
+                                8.3 Procesos de adsorción<br>
+                                8.4 Mecánica de yacimientos petroleros<br><br>
+
+                                <strong>9. Simulación numérica</strong><br>
+                                9.1 Modelos estacionarios<br>
+                                9.2 Modelos difusivos<br>
+                                9.3 Modelos no difusivos<br><br>
+
+                                <strong>Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Herrera, 1., Allen, M., Modelación Computacional de Sistemas en Ciencias e Ingeniería, Comunicaciones Técnicas, Serie Docencia y Divulgación, No. 9 (D17), Instituto de Geofísica, 1986</li>
+                                    <li>Allen, M.B., Herrera, I., Pinder, G.F., Numerical Modelling in Science and Engineering, John Wiley, 1988</li>
+                                    <li>Malvern, L.E., Introduction to the Mechanics of a Continuous Medium, Prentice Hall, 1960</li>
+                                    <li>Huyakorn, P.S., Pinder, G.F., Computational Methods in Surface Flow</li>
+                                    <li>Aziz, K., Settari, A., Petroleum Reservoir Simulation, Applied Science Publishers, London, 1979</li>
+                                    <li>Herrera, I., Montalvo, A., Modelos Matemáticos de Campos Geométricos, Comunicaciones Técnicas, IIMAS-UNAM, AN-295, 1982</li>
+                                    <li>Wang, C.C., Mathematical Princ4 of Mechanics and Electromagnetism, Plenum Press, 1979</li>
+                                    <li>Gurtin, M. E., An Introduction to Continuum Mechanics, Academic Press, 1981</li>
+                                    <li>Karasudli, P., Foundations of solid mechanics, Kluwer Ac, 1991</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="blue">Topología</h4>
+                <div class="accordion accordion-flush" id="accordionTopologia">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTopologiaAlgebraica" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Topología Algebráica
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTopologiaAlgebraica" class="accordion-collapse collapse" data-bs-parent="#accordionTopologia">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Grupo fundamental</strong><br>
+                                1.1 Propiedades básicas<br>
+                                1.2 Teorema de Seifert-Van Kampen<br><br>
+
+                                <strong>2. Espacios cubrientes</strong><br>
+                                2.1 Ejemplos (R S1 y X X/G)<br>
+                                2.2 Teoremas del levantamiento y de existencia de espacios cubrientes<br>
+                                2.3 Cálculo del grupo fundamental de S1 y de RPn<br>
+                                2.4 Aplicaciones<br>
+                                2.4.1 Teoremas del punto fijo de Brouwer en dimensión 2 y de
+                                Borsuk-Ulam para S2<br><br>
+
+                                <strong>3. Espacios de lazos y grupos de homotopía π_n (X, x0) si n es mayor o igual a 2. Definiciones y conmutatividad para estos grupos</strong>
+                                <br><br>
+
+                                <strong>4. Homología singular</strong><br>
+                                4.1 lnvariancia homotópica<br>
+                                4.2 Relación entre π_1 (X, x0) y H_1(X)<br><br>
+
+                                <strong>5. Sucesión exacta de homología</strong><br>
+                                5.1 Teorema de escisión<br>
+                                5.2 Sucesión de Mayer- Vietoris<br><br>
+
+                                <strong>6. La homología de Sn</strong><br>
+                                6.1 Aplicaciones<br>
+                                6.1.1 Teoremas de campos vectoriales sobre Sn<br>
+                                6.1.2 Teorema de separación de Jordan-Brouwer<br>
+                                6.1.3 Teorema de invarianza del dominio<br>
+                                6.1.4 Teorema fundamental del álgebra<br>
+                                6.1.5 Teorema de punto fijo de Brouwer<br><br>
+
+                                <strong>7. Complejos esféricos y celulares (CW-complejos)</strong><br>
+                                7.1 Cálculo de la homología de RPn, CPn y superficies cerradas<br>
+                                7.2 Números de Betti<br>
+                                7.3 Característica de Euler-Poincaré<br><br>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Aguilar, M. A, S. Gitler y C. Prieto. Topología algebraica: un enfoque homotópico, México, McGraw-Hill-UNAM, 1998</li>
+                                    <li>Greenberg, M and J. Harper. Algebraic Topology, a first course, Addison Wesley, 1981</li>
+                                    <li>Massey, W. A basic course in algebraic topology, Springer Verlag,1991</li>
+                                    <li>Spanier, E. Algebraic Topology, Springer Verlag, 1981</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTopologiaDiferencial" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Topología Diferencial
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTopologiaDiferencial" class="accordion-collapse collapse" data-bs-parent="#accordionTopologia">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Variedades topológicas y diferenciables</strong><br>
+                                1.1 Definiciones básicas. Concepto de estructura diferencial. Estructuras no difeomorfas en S7 (opcional)<br>
+                                1.2 Subvariedades. Productos de variedades<br>
+                                1.3 Variedades con frontera<br>
+                                1.4 Funciones diferenciables<br><br>
+
+                                <strong>2. El haz tangente</strong><br>
+                                2.1 Espacio tangente de una variedad en un punto (diferentes versiones). La derivada de una función en un punto<br>
+                                2.2 Definición de haz vectorial y prehaz vectorial<br>
+                                2.3 El haz tangente. La derivada de una función. Functores suaves. Nuevos haces vectoriales y fibrados:
+                                dual, tensor, cufía<br><br>
+
+                                <strong>3. Transversalidad</strong><br>
+                                3.1 Valores regulares<br>
+                                3.2 Transversalidad<br>
+                                3.3 Teoremas de Sard y Thom<br><br>
+
+                                <strong>4. Formas normales</strong><br>
+                                4.1 Teoremas de inmersión, submersión, función inversa, rango y rango constante<br>
+                                4.2 Variedades encajadas<br><br>
+
+                                <strong>5. Teoremas de Whitney</strong><br>
+                                5.1 Particiones de la unidad. Funciones propias<br>
+                                5.2 Teoremas de inmersión, inmersión inyector y encaje de Whitney (Topología WO)<br><br>
+
+                                <strong>6. Homotopía y estabilidad</strong><br>
+                                6.1 Estabilidad de inmersiones, sumersiones, encajes, difeomorfismos y transversalidad<br>
+                                6.2 Funciones de Morse<br><br>
+
+                                <strong>7. Teoremas de vecindad tubular y collar</strong><br><br>
+                                <strong>8. Grado</strong><br><br>
+                                8.1 El grado módulo 2. Teoremas de Jordan-Brouwer y Borsuk-Ulam<br>
+                                8.2 Orientación en variedades. El gnido en general. Teorema de Lefschetz<br>
+                                8.3 Característica de Euler y teorema de Poincaré-Hopf<br>
+                                8.4 Caracterización de la homotopía por el grado. Teorema de Ho<br><br>
+
+                                <strong class="blue">Bibliografía</strong><br><br>
+
+                                <ul>
+                                    <li>Guillemin, V. and A. Pollack. Differential Topology, Prentice-Hall, 1974</li>
+                                    <li>Spivak, M. A comprehensive introduction to differential geometry, Publish or Perish, mc, 1979</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTopologiaGeneral" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Topología General
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTopologiaGeneral" class="accordion-collapse collapse" data-bs-parent="#accordionTopologia">
+                            <div class="accordion-body">
+
+                                <strong>Créditos: 9</strong><br>
+                                <h5 class="my-3 blue">Temas y subtemas</h5>
+
+                                <strong>1. Conceptos básicos</strong><br>
+                                1.1 Topologías, bases, sub-bases y vecindades<br>
+                                1.2 Topología generada por una métrica<br>
+                                1.3 Axiomas de numerabilidad<br>
+                                1.4 Operadores topológicos<br>
+                                1.5 Densidad<br>
+                                1.6 Subespacios topológicos<br><br>
+
+                                <strong>2. Continuidad y convergencia</strong><br>
+                                2.1 Propiedades equivalentes a la continuidad de las funciones<br>
+                                2.2 Diversos tipos de funciones (abiertas, cerradas, homeomorfismos, encajes y retracciones)<br>
+                                2.3 Topologías inducidas por familias de funciones<br>
+                                2.4 Convergencia de redes y filtros<br>
+                                2.5 Caracterización de la continuidad de funciones mediante convergencia<br><br>
+
+                                <strong>3. Productos y cocientes</strong><br>
+                                3.1 Producto topológico y su propiedad universal<br>
+                                3.2 Funciones producto<br>
+                                3.3 Topología cociente y diversas formas de obtener un espacio cociente<br>
+                                3.4 Teorema de transgresión<br>
+                                3.5 Topología suma (coherente) y suma directa de espacios topológico<br><br>
+
+                                <strong>4. Axiomas de separación</strong><br>
+                                4.1 Espacios T -1 de Hausdorff, regulares y completamente regulares<br>
+                                4.2 Espacios normales<br>
+                                4.3 Teorema de Urysohn<br>
+                                4.4 Teorema de extensión de Tietze<br><br>
+
+                                <strong>5. Compacidad</strong><br>
+                                5.1 Caracterizaciones de la compacidad con redes y filtros<br>
+                                5.2 Teorema de Tychonoff<br>
+                                5.3 Compacidad y axiomas de separación<br>
+                                5.4 Compacidad local<br>
+                                5.5 Compactación por un punto y compactación de Stone-Cech<br><br>
+
+                                <strong>6. Paracompacidad y metrizabilidad</strong><br>
+                                6.1 Espacios paracompactos y axiomas de separación<br>
+                                6.2 Particiones de la unidad<br>
+                                6.3 Espacios metrizables<br>
+                                6.4 Teorema de Stone<br>
+                                6.5 Teorema de metrización de Urysohn<br>
+                                6.6 Teorema de metrización de Nagata-Smirnov-Bing<br><br>
+
+                                <strong>7. Conexidad y homotopía</strong><br>
+                                7.1 Conexidad y conexidad por trayectorias<br>
+                                7.2 Conexidad local y local por trayectorias<br>
+                                7.3 Relación de homotopía<br>
+                                7.4 Espacios homotópicamente equivalentes y propiedades homotópicas<br>
+                                7.5 Espacios contráctiles y retracto (fuerte) por deformación<br>
+                                7.6 Teorema de extensión de homotopía de Borsuk<br><br>
+
+                                <strong class="blue">Tema opcional a elegir:</strong><br><br>
+
+                                <strong>8. Más sobre conexidad</strong><br>
+                                8.1 Teoremas de separación en espacios de Hausdorff<br>
+                                8.2 Casos en que las quasi componentes son conexas<br>
+                                8.3 Conexidad y el teorema de Sierpinski<br>
+                                8.4 El discontinuo de Cantor; propiedades y caracterización<br>
+                                8.5 Espacios métricos con la propiedad S<br>
+                                8.6 Caracterizaciones del arco y de la curva cerrada simple<br><br>
+
+                                <strong>9. Uniformidades</strong><br>
+                                9.1 Definición de uniformidad por conecto y por cubiertas, relación entre ellas<br>
+                                9.2 Ejemplos fundamentales de espacios uniformes<br>
+                                9.3 Uniformización de espacios topológicos<br>
+                                9.4 Filtros de Cauchy y completez<br>
+                                9.5 Extensión de funciones uniformemente continuas<br>
+                                9.6 Completación de espacios uniformes<br>
+                                9.7 Compactación y espacios totalmente acotados<br><br>
+
+                                <strong>10. Grupos y espacios vectoriales topológicos</strong><br>
+                                10.1 Breve introducción a los grupos topológicos<br>
+                                10.2 Espacios vectoriales topológicos<br>
+                                10.3 Convexidad local<br>
+                                10.4 Espacios vectoriales normados<br><br>
+
+                                <strong>11. Construcciones especiales de espacios</strong><br>
+                                11.1 Cono y suspensión de espacios<br>
+                                11.2 Espacios de adjunción<br>
+                                11.3 Cilindro y cono de una transformación<br>
+                                11.4 CW-Complejos<br><br>
+
+                                <strong>12. Espacios de funciones</strong><br>
+                                12.1 Topología de la convergencia puntual y topología compacto-abierta en C(X, Y)<br>
+                                12.2 Topologías admisibles<br>
+                                12.3 Ley exponencial<br>
+                                12.4 Topología de la convergencia uniforme<br>
+                                12.5 Equicontinuidad, aproximaciones uniformes y puntuales en C(X,Y)<br>
+                                12.6 Teorema de Stone-Weierstrass y Arzela-Ascoli<br><br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

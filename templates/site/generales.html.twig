@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Posgrado Conjunto Ciencias Matemáticas{% endblock %}
+
+{% block alert %}
+{% endblock %}
+
+{% block banner %}
+    <div class="hero-tutores">
+        <div class="container">
+            <div class="hero-text-2 blue d-sm-none">Exámenes</div>
+            <div class="hero-text-2 blue">Generales</div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+
+
+    <section id="generales">
+
+        <div class="container">
+
+            <h1 class="mt-5">Exámenes Generales</h1>
+
+            <div class="row">
+                <div class="col-12 col-md-8">
+
+                    <p class="mt-3">Para los alumnos que forman parte del Posgrado Conjunto en Ciencias Matemáticas los Exámenes Generales
+                        son los siguientes. Un alumno de maestría que desee obtener su título mediante Tesina y Examen General
+                        de Conocimientos deberá aprobar tres Exámenes Generales de áreas diferentes. Otra opción para obtener
+                        el grado es la realización de una Tesis de Grado. Para los alumnos de doctorado, en la primera etapa
+                        para obtener la candidatura al grado de Doctor se deberá tener aprobados tres Exámenes Generales de
+                        áreas distintas. Si el alumno obtuvo su grado de maestría mediante Examen General de Conocimientos,
+                        los Exámenes Generales aprobados pueden ser revalidados. Los temarios para estos exámenes pueden
+                        obtenerse de los respectivos programas de los cursos básicos correspondientes.
+                    </p>
+
+                    <nav>
+                        <div class="nav nav-tabs mt-5" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-generales" type="button" role="tab" aria-controls="nav-generales" aria-selected="true">Exámenes Generales</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-anteriores" type="button" role="tab" aria-controls="nav-anteriores" aria-selected="false">Exámenes Anteriores</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active content" id="nav-generales" role="tabpanel" aria-labelledby="nav-generales-tab">
+                            <div class="admission-card h-100">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="text-secondary fw-bold ms-4 pt-4">Álgebra</div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Álgebra moderna</li>
+                                            <li class="list-group-item">Álgebra conmutativa</li>
+                                        </ul>
+                                        <div class="text-secondary fw-bold ms-4 pt-4">Análisis</div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Análisis real y complejo</li>
+                                        </ul>
+                                        <div class="text-secondary fw-bold ms-4 pt-4">Ecuaciones diferenciales</div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Ecuaciones diferenciales</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="text-secondary fw-bold ms-4 pt-4">Geometría</div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Geometría algebraica</li>
+                                            <li class="list-group-item">Geometría diferencial</li>
+                                        </ul>
+                                        <div class="text-secondary fw-bold ms-4 pt-4">Topología</div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Topología algebraica</li>
+                                            <li class="list-group-item">Topología diferencial</li>
+                                            <li class="list-group-item">Topología general</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade content" id="nav-anteriores" role="tabpanel" aria-labelledby="nav-anteriores-tab">
+                            <div class="admission-card h-100">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><i class="bi bi-download blue me-3"></i><a href="files/generales/Algebra.zip">Álgebra</a></li>
+                                    <li class="list-group-item"><i class="bi bi-download blue me-3"></i><a href="files/generales/AlgebraConmutativa.zip">Álgebra Conmutativa</a> </li>
+                                    <li class="list-group-item"><i class="bi bi-download blue me-3"></i><a href="files/generales/AnalisisNumerico.zip">Análisis Numérico</a></li>
+                                    <li class="list-group-item"><i class="bi bi-download blue me-3"></i><a href="files/generales/AnalisisRealyComplejo.zip">Análisis Real y Complejo</a></li>
+                                    <li class="list-group-item"><i class="bi bi-download blue me-3"></i><a href="files/generales/EcuacionesDiferenciales.zip">Ecuaciones Diferenciales</a></li>
+                                    <li class="list-group-item"><i class="bi bi-download blue me-3"></i><a href="files/generales/Probabilidad.zip">Probabilidad</a></li>
+                                    <li class="list-group-item"><i class="bi bi-download blue me-3"></i><a href="files/generales/TeoriadeGraficas.zip">Teoría de Gráficas</a></li>
+                                    <li class="list-group-item"><i class="bi bi-download blue me-3"></i><a href="files/generales/TeoriadeMatroides.zip">Teoría de Matroides</a></li>
+                                    <li class="list-group-item"><i class="bi bi-download blue me-3"></i><a href="files/generales/TopologiaAlgebraica.zip">Topología Algebraica</a></li>
+                                    <li class="list-group-item"><i class="bi bi-download blue me-3"></i><a href="files/generales/TopologiaDiferencial.zip">Topología Diferencial</a></li>
+                                    <li class="list-group-item"><i class="bi bi-download blue me-3"></i><a href="files/generales/TopologiaGeneral.zip">Topología General</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+{% endblock %}

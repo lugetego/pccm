@@ -1,0 +1,323 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Posgrado Conjunto Ciencias Matemáticas{% endblock %}
+
+{% block banner %}
+    <div class="hero-image">
+
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center justify-content-sm-start">
+                <div class="hero-text">Posgrado Conjunto en</div>
+                <div class="hero-text yellow fw-bold">Ciencias Matemáticas</div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row mt-4 align-items-baseline">
+                <div class=""><img src="{{ asset('build/img/banner-unam.png')}}" alt="UNAM" class="hero-universidad"></div>
+                <div class="ms-sm-4 mt-2"><img src="{{ asset('build/img/banner-umich.png')}}" alt="UMICH" class="hero-universidad"></div>
+            </div>
+            <div class="hero-lugar mt-4 mt-sm-2"><i class="bi bi-geo-alt"></i> Morelia, Michoacán.</div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block participantes %}
+    <div class="ccm-participantes">
+        <div class="titulo-participantes text-center mb-3"><h4>Instituciones Participantes</h4></div>
+        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
+            <div class="mx-sm-5 ipart">
+                <a href="http://www.matmor.unam.mx">
+                    <img class="participante" src="{{ asset('build/img/ccm-logo.png') }}" alt="CCM logo">
+                </a>
+            </div>
+            <div class="mx-sm-5 mt-3 mt-sm-0 ipart"><a href="http://www.fismat.umich.mx/src/index.php"><img class="participante" src="{{ asset('build/img/FISMAT.png') }}" alt="FISMAT logo"></a></div>
+            <div class="mx-sm-5 mt-4 mt-sm-0 ipart"><a href="https://www.ifm.umich.mx/"><img class="participante"  src="{{ asset('build/img/IFM_LOGO_BLANCO_H.png') }}" alt="IFM logo"></a></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+
+    <section id="introduccion">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="mt-100 mt-4 mb-4">El estudio de las Matemáticas</h1>
+                    <p>Estudiar matemáticas puede conducir a muy productivas y fascinantes carreras profesionales.
+                        En las distintas ramas del conocimiento, aquellos que reciben un entrenamiento en matemáticas pueden
+                        encontrar una amplia variedad de retos muy interesantes. De esta manera, las teorías y métodos
+                        matemáticos encuentran un nicho en el corazón de la investigación básica, ingeniería, finanzas o en
+                        servicios gubernamentales.
+                    </p>
+
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden d-none d-lg-block">
+                    <img src="{{ asset('build/img/introduccion.png') }}" alt="imagen abstracta introducción" style="position: relative; top: -2px; ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="snp">
+        <div class="container">
+
+            <div class="d-flex">
+                <div class=" me-4">
+                    <svg id="Grupo_1388" data-name="Grupo 1388" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91.777" height="92" viewBox="0 0 91.777 92">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <rect id="Rectángulo_850" data-name="Rectángulo 850" width="91.777" height="92" fill="#e0a826"/>
+                            </clipPath>
+                        </defs>
+                        <g id="Grupo_1387" data-name="Grupo 1387" clip-path="url(#clip-path)">
+                            <path id="Trazado_2176" data-name="Trazado 2176" d="M91.771,21.2a88.114,88.114,0,0,1-2.262,20.45A76.146,76.146,0,0,1,85.887,52.82a67.74,67.74,0,0,1-3.324,6.792,71.726,71.726,0,0,1-6.184,9.314,69.789,69.789,0,0,1-7.157,7.851A78.374,78.374,0,0,1,53.608,88.433a68.7,68.7,0,0,1-6.879,3.39,1.933,1.933,0,0,1-1.653-.015A73.753,73.753,0,0,1,27,80.72c-1.824-1.487-3.569-3.068-5.238-4.723A72.676,72.676,0,0,1,8.961,59.04,71.832,71.832,0,0,1,1.622,38.727,86.5,86.5,0,0,1,.183,27.639Q-.059,24.112.016,20.59c.042-2.093.2-4.183.3-6.276.018-.376.228-.468.554-.525q5.365-.938,10.705-2.01A128.211,128.211,0,0,0,37.72,3.521C40.283,2.406,42.852,1.3,45.382.113a1.218,1.218,0,0,1,1.083.034c4.563,2.076,9.148,4.1,13.831,5.894a119.524,119.524,0,0,0,15.391,4.722c5.014,1.181,10.086,2.064,15.144,3.018.41.077.586.241.612.656.165,2.567.368,5.132.328,6.76M29.459,41.526c-.258.019-.4.23-.555.4-1.158,1.273-2.358,2.507-3.611,3.685-.367.345-.344.552.007.892,2.877,2.788,5.734,5.6,8.6,8.393,1.843,1.8,3.61,3.672,5.507,5.414.261.24.465.3.723,0q2.665-3.1,5.339-6.194,2.37-2.749,4.739-5.5,2.911-3.362,5.831-6.716,2.376-2.743,4.742-5.494,2.909-3.364,5.825-6.721c.217-.249.211-.419-.041-.635-1.423-1.219-2.845-2.441-4.251-3.681-.309-.272-.47-.239-.731.071-1.818,2.166-3.642,4.328-5.494,6.465-1.572,1.815-3.2,3.584-4.776,5.394-1.074,1.232-2.091,2.514-3.162,3.75-2.779,3.2-5.579,6.391-8.358,9.6-.313.361-.5.358-.841.02q-4.514-4.454-9.06-8.876a.777.777,0,0,0-.436-.272" transform="translate(0 0)" fill="#e0a826"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="snp-text">Programas de Maestría y Doctorado con calidad certificada SNP (Sistema Nacional de Posgrados) nivel internacional</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="oferta-academica">
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-12 col-lg-6 text-center">
+                    <div class="oferta-subtitle">Programa de Estudio</div>
+                    <h1 class="oferta-title">Maestría</h1>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <p class="mt-4 mt-sm-0">El plan de estudios de la Maestría está diseñado para formar profesionales con una preparación sólida
+                        en los campos del conocimiento básicos de la matemática y con un nivel de profundización en alguna de
+                        sus disciplinas.</p>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a class="btn btn-outline-info mt-4" href="maestria.html" role="button">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row my-4">
+                <div class="col-12 col-lg-6 text-center">
+                    <div class="oferta-subtitle">Programa de Estudio</div>
+                    <h1 class="oferta-title">Doctorado</h1>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <p class="mt-4 mt-sm-0">El objetivo fundamental del plan de Doctorado es que el alumno realice investigación original,
+                        relevante en matemáticas y adquiera conocimientos profundos en el campo de la matemática.
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a class="btn btn-outline-info mt-4" href="doctorado.html" role="button">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="campos-conocimiento">
+        <div class="container">
+            <h1 class="mb-4 mt-5">Campos de Conocimiento</h1>
+
+            <div class="row">
+                <div class="col-12 col-lg-6 ">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="bi bi-check-lg blue"></i> Álgebra</li>
+                        <li class="list-group-item"><i class="bi bi-check-lg blue"></i> Análisis Matemático Aplicado</li>
+                        <li class="list-group-item"><i class="bi bi-check-lg blue"></i> Biomatemática</li>
+                        <li class="list-group-item"><i class="bi bi-check-lg blue"></i> Física Matemática</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="bi bi-check-lg blue"></i> Geometría Algebraica y Diferencial</li>
+                        <li class="list-group-item"><i class="bi bi-check-lg blue"></i> Matemáticas Discretas</li>
+                        <li class="list-group-item"><i class="bi bi-check-lg blue"></i> Topología y Teoría de Conjuntos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="convocatorias">
+        <div class="container">
+            <h1 class="mb-4 mt-5">Convocatorias Vigentes</h1>
+
+            <div class="row mb-4">
+                <div class="col-12 col-lg-6">
+                    <div class="convocatoria-card h-100">
+                        <div class="convocatoria-title mb-3">Ingreso al Posgrado</div>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="files/convocatorias/semestre-2024-2/convocatoria2024-2_mayo2023.pdf"><i class="bi bi-megaphone blue me-3"></i>Convocatoria de <strong>Ingreso 2022-1</strong></a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="files/convocatorias/semestre-2024-2/instructivo2024-2_mayo2023.pdf"><i class="bi bi-file-earmark blue me-3"></i>Instructivo <strong>Maestría y Doctorado</strong> 2022-1</a></li>
+                            <!--<li class="list-group-item"><i class="bi bi-file-earmark blue me-3"></i>Plan de Estudios <strong>Maestría</strong></li>-->
+                            <li class="list-group-item"><i class="bi bi-calendar blue me-3"></i>Calendario de <strong>Ingreso</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<div class="col-12 col-lg-6">
+                    <div class="convocatoria-card h-100 my-4 my-sm-0">
+                        <div class="convocatoria-title mb-3">Reingreso al Posgrado</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="bi bi-megaphone me-3 blue"></i>Convocatoria de <strong>Reingreso Maestría</strong></li>
+                            <li class="list-group-item"><i class="bi bi-megaphone me-3 blue"></i>Convocatoria de <strong>Reingreso Doctorado</strong></li>
+                            <li class="list-group-item"><i class="bi bi-calendar me-3 blue"></i>Calendario de <strong>Reingreso</strong></li>
+                        </ul>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <section id="coloquio" class="mt-5 mt-sm-0">
+        <div class="container">
+            <h1 class="mb-3 mt-4">Coloquio del Posgrado</h1>
+
+            <div class="coloquio-eventos-container">
+                <div class="coloquio-evento d-flex">
+                    <div class="date-container flex-column">
+                        <div class="evento-dia text-center"></div>
+                        <div class="evento-mes text-center"></div>
+                    </div>
+                    <div class="evento-info align-self-center">
+                        <div class="evento-title">No hay Coloquio del Posgrado esta semana</div>
+                        <div class="d-flex flex-column flex-sm-row align-items-baseline">
+                            <div class="evento-ponente mt-2 mt-sm-0"></div><div class="evento-adscripcion"></div>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row align-items-baseline">
+                            <div class="evento-lugar mt-2 mt-sm-0"></div>
+                            <span class="d-none d-sm-inline text-secondary"></span>
+                            <div class="evento-hora mt-1 mt-sm-0"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {#<div class="coloquio-eventos-container">
+                <div class="coloquio-evento d-flex">
+                    <div class="date-container flex-column">
+                        <div class="evento-dia text-center">29</div>
+                        <div class="evento-mes text-center">SEP</div>
+                    </div>
+                    <div class="evento-info align-self-center">
+                        <div class="evento-title">Superficies Lagrangianas en el plano complejo</div>
+                        <div class="d-flex flex-column flex-sm-row align-items-baseline">
+                            <div class="evento-ponente mt-2 mt-sm-0">Gabriel Ruiz</div><div class="evento-adscripcion">IMATE Juriquilla</div>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row align-items-baseline">
+                            <div class="evento-lugar mt-2 mt-sm-0"><i class="bi bi-geo-alt"></i> Auditorio CCM</div>
+                            <span class="d-none d-sm-inline text-secondary">|</span>
+                            <div class="evento-hora mt-1 mt-sm-0"><i class="bi bi-clock"></i> 12:00 horas</div>
+                        </div>
+                    </div>
+                </div>#}
+                <!--     <div class="coloquio-evento d-flex">
+                             <div class="date-container flex-column">
+                                 <div class="evento-dia text-center">31</div>
+                                 <div class="evento-mes text-center">MAR</div>
+                             </div>
+                             <div class="evento-info align-self-center">
+                                 <div class="evento-title">Hay otros mundos ahí afuera: De números p-ádicos, sistemas dinámicos y aplicaciones</div>
+                                 <div class="d-flex flex-column flex-sm-row align-items-baseline">
+                                     <div class="evento-ponente mt-2 mt-sm-0">Rogelio Pérez Buendía</div><div class="evento-adscripcion">CIMAT-Mérida</div>
+                                 </div>
+                                 <div class="d-flex flex-column flex-sm-row align-items-baseline">
+                                     <div class="evento-lugar mt-2 mt-sm-0"><i class="bi bi-geo-alt"></i> Auditorio CCM</div>
+                                     <span class="d-none d-sm-inline text-secondary">|</span>
+                                     <div class="evento-hora mt-1 mt-sm-0"><i class="bi bi-clock"></i> 12:00 horas</div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="coloquio-evento d-flex">
+                             <div class="date-container flex-column">
+                                 <div class="evento-dia text-center">17</div>
+                                 <div class="evento-mes text-center">MAR</div>
+                             </div>
+                             <div class="evento-info align-self-center">
+                                 <div class="evento-title">Una invitación a la computación cuántica</div>
+                                 <div class="d-flex flex-column flex-sm-row align-items-baseline">
+                                     <div class="evento-ponente mt-2 mt-sm-0">Elmar Wagner</div><div class="evento-adscripcion">UMNSH</div>
+                                 </div>
+                                 <div class="d-flex flex-column flex-sm-row align-items-baseline">
+                                     <div class="evento-lugar mt-2 mt-sm-0"><i class="bi bi-geo-alt"></i> Auditorio del Edificio Alpha, FisMat, UMSNH</div>
+                                     <span class="d-none d-sm-inline text-secondary">|</span>
+                                     <div class="evento-hora mt-1 mt-sm-0"><i class="bi bi-clock"></i> 12:00 horas</div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="coloquio-evento d-flex">
+                             <div class="date-container flex-column">
+                                 <div class="evento-dia text-center">03</div>
+                                 <div class="evento-mes text-center">MAR</div>
+                             </div>
+                             <div class="evento-info align-self-center">
+                                 <div class="evento-title">Soluciones resonantes de sistemas elípticos con condiciones de frontera tipo Neumann</div>
+                                 <div class="d-flex flex-column flex-sm-row align-items-baseline">
+                                     <div class="evento-ponente mt-2 mt-sm-0">Briceyda Berenice Delgado</div><div class="evento-adscripcion">Universidad Autónoma de Aguascalientes</div>
+                                 </div>
+                                 <div class="d-flex flex-column flex-sm-row align-items-baseline">
+                                     <div class="evento-lugar mt-2 mt-sm-0"><i class="bi bi-geo-alt"></i> Auditorio CCM</div>
+                                     <span class="d-none d-sm-inline text-secondary">|</span>
+                                     <div class="evento-hora mt-1 mt-sm-0"><i class="bi bi-clock"></i> 12:00 horas</div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="coloquio-evento d-flex">
+                             <div class="date-container flex-column">
+                                 <div class="evento-dia text-center">17</div>
+                                 <div class="evento-mes text-center">FEB</div>
+                             </div>
+                             <div class="evento-info align-self-center">
+                                 <div class="evento-title">Aprendiendo a derivar en anillos abstractos</div>
+                                 <div class="d-flex flex-column flex-sm-row align-items-baseline">
+                                     <div class="evento-ponente mt-2 mt-sm-0">Daniel Duarte</div><div class="evento-adscripcion">CCM - UNAM</div>
+                                 </div>
+                                 <div class="d-flex flex-column flex-sm-row align-items-baseline">
+                                     <div class="evento-lugar mt-2 mt-sm-0"><i class="bi bi-geo-alt"></i> Auditorio edificio Alpha UMSNH</div>
+                                     <span class="d-none d-sm-inline text-secondary">|</span>
+                                     <div class="evento-hora mt-1 mt-sm-0"><i class="bi bi-clock"></i> 12:00 horas</div>
+                                 </div>
+                             </div>
+                         </div>-->
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h1 class="mb-2">Contacto</h1>
+
+            <div class="row">
+                <div class="col-12 col-md-4 mt-4 mt-sm-0">
+                    <h4>COORDINACIÓN DEL POSGRADO</h4>
+                    <div class="d-flex flex-column">
+                        <div class="contacto-item"><i class="bi bi-person-fill"></i> Lic. Morelia Álvarez</div>
+                        <div class="contacto-item"><i class="bi bi-telephone"></i> Morelia (443) 322 2741</div>
+                        <div class="contacto-item"><i class="bi bi-telephone"></i> CDMX 5623 2741</div>
+                        <div class="contacto-item"><i class="bi bi-envelope"></i> posmat<i class="bi bi-at"></i>matmor.unam.mx</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-5 mt-sm-0">
+                    <h4>INSTITUTO DE FÍSICA Y MATEMÁTICAS UMSNH</h4>
+                    <div class="contacto-item"><i class="bi bi-geo-alt"></i> Instituto de Física y Matemáticas Edificio C-3,</div>
+                    <div class="contacto-item">Ciudad Universitaria.</div>
+                    <div class="contacto-item">C.P. 58140, Morelia, Michoacán, México</div>
+                    <div class="contacto-item"><i class="bi bi-telephone"></i> Control Escolar: (443) 322 3500, ext 3070</div>
+                    <div class="contacto-item"><i class="bi bi-envelope"></i> direccion.ifm<i class="bi bi-at"></i>umich.mx</div>
+                </div>
+                <div class="col-12 col-md-4 mt-5 mt-sm-0">
+                    <h4>CENTRO DE CIENCIAS MATEMÁTICAS UNAM</h4>
+                    <div class="contacto-item"><i class="bi bi-geo-alt"></i> UNAM, Campus Morelia</div>
+                    <div class="contacto-item ps-3">Morelia, Michoacán, México.<br>
+                        Antigüa Carretera a Pátzcuaro #8701<br>
+                        Col. Ex Hacienda de San José de la Huerta<br>
+                        C.P. 58089, Morelia, Michoacán, México</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,419 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Posgrado Conjunto Ciencias Matemáticas{% endblock %}
+
+{% block alert %}
+{% endblock %}
+
+{% block banner %}
+    <div class="hero-tutores">
+        <div class="container">
+            <div class="hero-text-2 blue">Tutores</div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+
+    <section id="tutores-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <p class="">Todos los alumnos de los programas ofertados en el PCCM deberán contar con un tutor.
+                        Para el caso de estudiantes de maestría el tutor orientará al estudiante sobre qué actividades
+                        académicas convienen al estudiante y le sugerirá cada semestre las actividades que debe realizar.</p>
+                    <p class="my-4">
+                        Para el caso de estudiantes de doctorado se deberá contar con un Tutor Principal que será el académico
+                        del PCCM que dirigirá la tesis doctoral del estudiante. También se deberá contar con la integración
+                        de un Comité Tutoral que deberá estar conformado por el Tutor Principal y dos académicos más; uno de
+                        ellos se sugiere que sea de un área diferente a aquella de la especialidad del estudiante; además,
+                        uno de ellos deberá de pertenecer a una entidad diferente a la de los otros dos académicos que
+                        conformen el Comité Tutoral del estudiante. El Comité Tutoral deberá ser aprobado primero por el CAC
+                        en Morelia y por el Comité Académico del Posgrado en la CDMX.</p>
+                    <p class="mb-5" >Un Tutor de Maestría puede dirigir tesis
+                        de maestría, los Tutores de Maestría y Doctorado están facultados para dirigir tesis de maestría y
+                        participar en Comités Tutorales de alumnos de doctorado. Los Tutores Principales están facultados para
+                        dirigir tesis doctorales.</p>
+
+                    <div class="accordion" id="accordionTutores">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <strong>Responsabilidades del tutor principal asignado al alumno de Doctorado</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionTutores">
+                                <div class="accordion-body">
+                                    <div class="my-3 fw-bold">Las responsabilidades del tutor principal son:</div>
+                                    <ul>
+                                        <li>Hacer una propuesta de Comité Tutoral al comité académico.</li>
+                                        <li>Elaborar, conjuntamente con el alumno, el plan de trabajo de éste cada semestre.</li>
+                                        <li>Informar al Comité Tutoral y al Comité Académico en el caso de que el alumno haya dejado de cumplir con los requisitos de permanencia.</li>
+                                        <li>Recomendar al alumno los materiales de estudio.</li>
+                                        <li>Evaluar en caso procedente el estudio autodidáctico.</li>
+                                        <li>Proponer al alumno problemas de investigación.</li>
+                                        <li>Evaluar los resultados de investigación del alumno.</li>
+                                        <li>Dirigir la tesis Doctoral.</li>
+                                        <li>Solicitar reuniones al Comité Tutoral cada vez que sea necesario.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <strong>Responsabilidades del tutor asignado al alumno de Maestría</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionTutores">
+                                <div class="accordion-body">
+                                    <p class="mt-3">El alumno de Maestría podrá proponer a su tutor, con base en la lista de tutores del programa. <br>En caso contrario el comité académico asignará un tutor al estudiante de acuerdo con sus necesidades.</p>
+                                    <div class="my-3">Las responsabilidades del tutor principal son:</div>
+                                    <ul>
+                                        <li>Elaborar, conjuntamente con el alumno, el plan de trabajo de éste cada semestre.</li>
+                                        <li>Evaluar semestralmente al alumno.</li>
+                                        <li>Proponer y dirigir, en su caso, un proyecto de tesis de Maestría para el alumno.</li>
+                                        <li>Evaluar los resultados de este proyecto.</li>
+                                        <li>Supervisar el trabajo del alumno orientado a la preparación del examen general de conocimientos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <strong>Responsabilidades de los Comités Tutorales</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionTutores">
+                                <div class="accordion-body">
+                                    <div class="my-3">Las responsabilidades del tutor principal son:</div>
+                                    <ul>
+                                        <li>Aprobar semestralmente el plan de trabajo del alumno.</li>
+                                        <li>Evaluar anualmente el trabajo del alumno.</li>
+                                        <li>Determinar las actividades académicas para la elaboración del segundo examen de candidatura.</li>
+                                        <li>Aprobar que la tesis ha sido concluida.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nucleo-academico">
+        <div class="container">
+            <h1 class="mb-4">Núcleo académico básico</h1>
+
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Azpeitia Espinoza Eugenio Martín</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">eazpeitia<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Modelos dinámicos de procesos biológicos.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Balanzario Gutiérrez Eugenio</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">euba<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Teoría Analítica de Números.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Bautista Ramos Raymundo</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">raymundo<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Teoría de representaciones y problemas de clasificación de matrices.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Bárcenas Torres Noé</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">barcenas<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Topología Algebraica, Análisis no lineal, Geometría no-conmutativa y análisis global.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Castorena Martínez Luis Abel</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">abel<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Geometría Algebraica.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Choque Rivero Abdon E.</div><div class="tutor-adscripcion fw-light ms-2">IFM, UMSNH</div>
+                            </div>
+                            <div class="tutor-email">abdon<i class="bi bi-at"></i>ifm.umich.mx</div>
+                            <div class="tutor-area fst-italic">Ecuaciones diferenciales, Teoría de control, Problema matricial
+                                de momentos, Polinomios ortogonales matriciales, Problemas inversos de la física matemática.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Corichi Rodríguez-Gil Alejandro</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">corichi<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Física Matemática.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Garaev Moubariz</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">garaev<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Teoría Analítica y Combinatoria de Números.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. García Ferreira Salvador</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">sgarcia<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Topología y Teoría de conjuntos.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Guzmán Gonzalez Osvaldo</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">oguzman<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Teoría de conjuntos, combinatoria infinita, invariantes del
+                                continuo, topología conjuntista y forcing.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Hernández Hernández Fernando</div><div class="tutor-adscripcion fw-light ms-2">FISMAT, UMSNH</div>
+                            </div>
+                            <div class="tutor-email">fhernandez<i class="bi bi-at"></i>fismat.umich.mx</div>
+                            <div class="tutor-area fst-italic">Topología General y Teoría de Conjuntos.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Hernández Hernández Jesús</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">jhdez<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Topología de baja dimensión, y teoría geométrica de grupos.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Hrušák Michael</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">michael<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Topología y Topología de Conjuntos.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Juan Pineda Daniel</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">daniel<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Topología Algebraica y Geometría.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dra. Kaikina Elena</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">ekaikina<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Ecuaciones Diferenciales Parciales no lineales.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Mustapha Lahyane</div><div class="tutor-adscripcion fw-light ms-2">IFM, UMSNH</div>
+                            </div>
+                            <div class="tutor-email">lahyane<i class="bi bi-at"></i>ifm.umich.mx</div>
+                            <div class="tutor-area fst-italic">Geometría Algebráica, Álgebra conmutativa, Combinatoria y Aplicaciones a la Teoría de Códigos.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. López López Jorge Luis</div><div class="tutor-adscripcion fw-light ms-2">FISMAT, UMSNH</div>
+                            </div>
+                            <div class="tutor-email">jllopez<i class="bi bi-at"></i>umich.mx</div>
+                            <div class="tutor-area fst-italic">Geometría.</div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-12 col-lg-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Merzon Anatoli</div><div class="tutor-adscripcion fw-light ms-2">IFM, UMSNH</div>
+                            </div>
+                            <div class="tutor-email">anatoli<i class="bi bi-at"></i>ifm.umich.mx</div>
+                            <div class="tutor-area fst-italic">Ecuaciones Diferenciales Parciales. Física Matemática.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Muciño Raymundo Jesús R.</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">muciray<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Sistemas Dinámicos, Geometría Algebraica y Diferencial.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Naumkin Pavel</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">pavelni<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Ecuaciones Diferenciales.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Oeckl Robert</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">robert<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Fundamentos de la Teoría Cuántica de Campos, Gravedad Cuántica, Física Matemática.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Osuna Castro C. Osvaldo</div><div class="tutor-adscripcion fw-light ms-2">IFM, UMSNH</div>
+                            </div>
+                            <div class="tutor-email">osvaldo<i class="bi bi-at"></i>ifm.umich.mx</div>
+                            <div class="tutor-area fst-italic">Sistemas Dinámicos, Ecuaciones Diferenciales, Biomatemáticas y Geometría.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Pellicer Covarrubias Daniel</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">pellicer<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Combinatoria, Geometría Discreta.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Raggi Cárdenas Gerardo</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">graggi<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Álgebra, Representaciones de grupos finitos.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Ramos García Ulises Ariet</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">ariet<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Teoría de Conjuntos.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Rojas Hernández Reynaldo</div><div class="tutor-adscripcion fw-light ms-2">FISMAT, UMSNH</div>
+                            </div>
+                            <div class="tutor-email">reynaldo.rojas<i class="bi bi-at"></i>umich.mx</div>
+                            <div class="tutor-area fst-italic">Área de especialidad.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Roldan Pensado Edgardo</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">eroldan<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Geometría Discreta.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Salmerón Castro Leonardo</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">salmeron<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Álgebra, Teoría de Representaciones.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dra. Sélem Mojica Nelly</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">nselem<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Biomatemáticas</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Valdez Lorenzo Ferrán</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">ferran<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Geometría Diferencial y Sistemas Dinámicos.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Valero Elizondo Luis</div><div class="tutor-adscripcion fw-light ms-2">FISMAT, UMSNH</div>
+                            </div>
+                            <div class="tutor-email">valero<i class="bi bi-at"></i>fismat.umich.mx</div>
+                            <div class="tutor-area fst-italic">Álgebra.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Vallejo Ruiz Ernesto</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">vallejo<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Teoría de Representación de Grupos y Combinatoria Algebraica.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Wagner Elmar</div><div class="tutor-adscripcion fw-light ms-2">IFM, UMSNH</div>
+                            </div>
+                            <div class="tutor-email">elmar<i class="bi bi-at"></i>ifm.umich.mx</div>
+                            <div class="tutor-area fst-italic">Geometría Diferencial, Análisis Funcional, Física Matemática.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Zhevandrov Pedro</div><div class="tutor-adscripcion fw-light ms-2">FISMAT, UMSNH</div>
+                            </div>
+                            <div class="tutor-email">pzhevand<i class="bi bi-at"></i>gmail.com</div>
+                            <div class="tutor-area fst-italic">Ecuaciones diferenciales de la física matemática.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Zapata Ramírez José Antonio</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">zapata<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Física Matemática.</div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tutores-externos">
+        <div class="container">
+            <h1 class="mb-4">Tutores Externos</h1>
+
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. García Zamora Alexis Miguel</div><div class="tutor-adscripcion fw-light ms-2">Universidad Autónoma de Zacatecas</div>
+                            </div>
+                            <div class="tutor-email">alexiszamora06<i class="bi bi-at"></i>gmail.com</div>
+                            <div class="tutor-area fst-italic">Álgebra y Geometría.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Hernández Lerma Omésimo</div><div class="tutor-adscripcion fw-light ms-2">CINVESTAV</div>
+                            </div>
+                            <div class="tutor-email">ohernand<i class="bi bi-at"></i>math.cinvestav.mx</div>
+                            <div class="tutor-area fst-italic"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Marmolejo Rivas Francisco</div><div class="tutor-adscripcion fw-light ms-2">Instituto de Matemáticas, UNAM</div>
+                            </div>
+                            <div class="tutor-email">quico<i class="bi bi-at"></i>matem.unam.mx</div>
+                            <div class="tutor-area fst-italic">Álgebra, Teoría de números.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="tutor fw-bold">Dr. Balanzario Gutiérrez Eugenio</div><div class="tutor-adscripcion fw-light ms-2">CCM UNAM</div>
+                            </div>
+                            <div class="tutor-email">euba<i class="bi bi-at"></i>matmor.unam.mx</div>
+                            <div class="tutor-area fst-italic">Teoría Analítica de Números.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+{% endblock %}

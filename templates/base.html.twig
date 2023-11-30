@@ -2,20 +2,120 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <title>{% block title %}Posgrado Conjunto en Ciencias Matemáticas{% endblock %}</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-    {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+
     {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
+{#        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">#}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     {% endblock %}
 
     {% block javascripts %}
         {{ encore_entry_script_tags('app') }}
     {% endblock %}
 </head>
+
 <body>
-<div class="container">
+
+    {% block nav %}<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <div class="brand-container d-none d-sm-flex align-item-center">
+            <div class="university-container">
+                <img src="{{ asset('build/img/escudo-unam.png')}}" alt="escudo UNAM">
+                <div class="brand-university d-flex justify-content-center">UNAM</div>
+            </div>
+            <div class="university-container">
+                <img src="{{ asset('build/img/escudo-umich.png')}}" alt="escudo UMSNH">
+                <div class="brand-university d-flex justify-content-center">UMICH</div>
+            </div>
+            <div class="university-container d-flex align-items-center">
+                <a class="navbar-brand" href="{{ path('app_home') }}">
+                    <div class="brand-text ms-2">
+                        Posgrado Conjunto en<br>Ciencias Matemáticas
+                    </div>
+                </a>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link d-sm-none" href="{{ path('app_home') }}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_nosotros') }}">Posgrado</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Programas</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="{{ path('app_maestria') }}">Maestría</a></li>
+                        <li><a class="dropdown-item" href="{{ path('app_doctorado') }}">Doctorado</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_admision') }}">Admisión</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuAlumnos" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Alumnos</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuAlumnos">
+                        <li><a class="dropdown-item" href="{{ path('app_basicos') }}">Cursos Básicos</a></li>
+                        <li><a class="dropdown-item" href="{{  path('app_cursos') }}">Cursos Semestre</a></li>
+                        <li><a class="dropdown-item" href="{{ path('app_generales') }}">Exámenes Generales</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_tutores') }}">Tutores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_contacto') }}">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>{% endblock %}
+
+    {% block alert %}
+        <div class="alert alert-light mt-3">
+            <div class="container">
+                <div class="fs-5 fw-bold">
+                    <i class="bi bi-megaphone me-3"></i> Convocatoria vigente, ingreso enero 2023
+                    <a class="btn btn-success ms-5" href="files/convocatorias/semestre-2024-2/convocatoria2024-2_mayo2023.pdf" role="button">Descargar PDF</a>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block banner %}{% endblock %}
+
+    {% block participantes %}
+        <div class="ccm-participantes bg-blue">
+            <div class="titulo-participantes text-center mb-3 bg-blue "><h4>Instituciones Participantes</h4></div>
+            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
+                <div class="mx-sm-5 ipart "><a href="http://www.matmor.unam.mx"><img class="participante" src="{{ asset('build/img/ccm-logo.png') }}" alt="CCM logo"></a></div>
+                <div class="mx-sm-5 mt-3 mt-sm-0 ipart"><a href="http://www.fismat.umich.mx/src/index.php"><img class="participante" src="{{ asset('build/img/FISMAT.png') }}" alt="FISMAT logo"></a></div>
+                <div class="mx-sm-5 mt-4 mt-sm-0 ipart"><a href="https://www.ifm.umich.mx/"><img class="participante"  src="{{ asset('build/img/IFM_LOGO_BLANCO_H.png') }}" alt="IFM logo"></a></div>
+            </div>
+        </div>
+    {% endblock %}
+
     {% block body %}{% endblock %}
-</div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="d-flex flex-column flex-sm-row justify-content-center">
+            <div class="align-self-center me-sm-4"><img src="{{ asset('build/img/posgrado-unam.png')}}" alt="Logo Posgrado UNAM"></div>
+            <div class="align-self-center ms-sm-4 mt-4 mt-sm-0"><img src="{{ asset('build/img/CONACYT_LOGO.png')}}" alt="Logo Conacyt"></div>
+        </div>
+        <p class="copy-right text-center fw-bolder text-light mt-5">© 2022 Centro de Ciencias Matemáticas<br>
+            Universidad Nacional Autónoma de México, Campus Morelia<br>
+            <span class="fw-light">todos los derechos reservados.</span></p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
