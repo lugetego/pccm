@@ -34,10 +34,10 @@
                             <div class="admission-card h-100">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
-                                        <a href="files/convocatorias/semestre-2024-2/convocatoria2024-2_mayo2023.pdf"><i class="bi bi-megaphone blue me-3"></i>Convocatoria de <strong>Ingreso 2022-1</strong></a>
+                                        <a href="{{ vich_uploader_asset(ultimoSemestre, 'convocatoriaFile') }}"><i class="bi bi-megaphone blue me-3"></i>Convocatoria de <strong>Ingreso {{ ultimoSemestre.slug }}</strong></a>
                                     </li>
                                     <li class="list-group-item">
-                                        <a href="files/convocatorias/semestre-2024-2/instructivo2024-2_mayo2023.pdf"><i class="bi bi-file-earmark blue me-3"></i>Instructivo <strong>Maestría y Doctorado</strong> 2022-1</a>
+                                        <a href="{{ vich_uploader_asset(ultimoSemestre, 'instructivoFile') }}"><i class="bi bi-file-earmark blue me-3"></i>Instructivo <strong>Maestría y Doctorado</strong> {{ ultimoSemestre.slug }}</a>
                                     </li>
                                     <li class="list-group-item">
                                         <a href="files/PlanEstudiosMaestria.pdf"><i class="bi bi-file-earmark blue me-3"></i>Plan de Estudios <strong>Maestría</strong></a>

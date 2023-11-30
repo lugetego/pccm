@@ -5,16 +5,21 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\Semestre;
+use App\Repository\SemestreRepository;
 
 class SiteController extends AbstractController
 {
     /**
      * @Route("/", name="app_home")
      */
-    public function index(): Response
+    public function index(SemestreRepository $semestreRepository): Response
     {
+        $ultimoSemestre = $semestreRepository->findLastSemestre();
+
         return $this->render('site/index.html.twig', [
             'controller_name' => 'SiteController',
+            'ultimoSemestre' => $ultimoSemestre,
         ]);
     }
 
@@ -51,10 +56,13 @@ class SiteController extends AbstractController
     /**
      * @Route("/admision", name="app_admision")
      */
-    public function admision(): Response
+    public function admision(SemestreRepository $semestreRepository): Response
     {
+        $ultimoSemestre = $semestreRepository->findLastSemestre();
+
         return $this->render('site/admision.html.twig', [
             'controller_name' => 'SiteController',
+            'ultimoSemestre' => $ultimoSemestre,
         ]);
     }
 
