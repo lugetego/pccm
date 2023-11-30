@@ -47,7 +47,7 @@ security:
         - { path: ^/tutor/, roles: ROLE_ADMIN }
         - { path: ^/semestre/, roles: ROLE_ADMIN }
         - { path: ^/curso/, roles: ROLE_ADMIN }
-        - { path: ^/register/, roles: ROLE_ADMIN }
+        - { path: ^/register, roles: ROLE_ADMIN }
 
 
 when@test:
