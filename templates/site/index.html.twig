@@ -8,7 +8,7 @@
          <div class="container">
              <div class="fs-5 fw-bold">
                  <i class="bi bi-megaphone me-3"></i> Convocatoria vigente, ingreso {{ ultimoSemestre.slug }}
-                 <a class="btn btn-success ms-5" href="{{ vich_uploader_asset(ultimoSemestre, 'convocatoriaFile') }}" role="button">Descargar PDF</a>
+                 <a class="btn btn-success ms-5" href="{{ vich_uploader_asset(ultimoSemestre, 'convocatoriaFile') }}" target="_blank" role="button">Descargar PDF</a>
              </div>
          </div>
      </div>
@@ -161,10 +161,10 @@
 
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
-                                <a href="{{ vich_uploader_asset(ultimoSemestre, 'convocatoriaFile') }}"><i class="bi bi-megaphone blue me-3"></i>Convocatoria de <strong>Ingreso {{ ultimoSemestre.slug }}</strong></a>
+                                <a href="{{ vich_uploader_asset(ultimoSemestre, 'convocatoriaFile') }}" target="_blank"><i class="bi bi-megaphone blue me-3"></i>Convocatoria de <strong>Ingreso {{ ultimoSemestre.slug }}</strong></a>
                             </li>
                             <li class="list-group-item">
-                                <a href="{{ vich_uploader_asset(ultimoSemestre, 'instructivoFile') }}"><i class="bi bi-file-earmark blue me-3"></i>Instructivo <strong>Maestría y Doctorado</strong> {{ ultimoSemestre.slug }}</a></li>
+                                <a href="{{ vich_uploader_asset(ultimoSemestre, 'instructivoFile') }} target="_blank""><i class="bi bi-file-earmark blue me-3"></i>Instructivo <strong>Maestría y Doctorado</strong> {{ ultimoSemestre.slug }}</a></li>
                             <!--<li class="list-group-item"><i class="bi bi-file-earmark blue me-3"></i>Plan de Estudios <strong>Maestría</strong></li>-->
                             <li class="list-group-item"><i class="bi bi-calendar blue me-3"></i>Calendario de <strong>Ingreso</strong></li>
                         </ul>
