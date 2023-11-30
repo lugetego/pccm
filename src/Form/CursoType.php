@@ -52,7 +52,7 @@ class CursoType extends AbstractType
                         'Temas selectos de análisis numérico y computación científica II - 3 hrs/sem' => 'Temas selectos de análisis numérico y computación científica II - 3 hrs/sem',
                         'Temas selectos de análisis numérico y computación científica I - 4.5 hrs/sem' => 'Temas selectos de análisis numérico y computación científica I - 4.5 hrs/sem',
                         'Temas selectos de ecuaciones diferenciales ordinarias y parciales II - 3 hrs/sem' => 'Temas selectos de ecuaciones diferenciales ordinarias y parciales II - 3 hrs/sem',
-                        'Curso selectos de ecuaciones diferenciales ordinarias y parciales I - 4.5 hrs/sem' => 'Temas selectos de ecuaciones diferenciales ordinarias y parciales I - 4.5 hrs/sem',
+                        'Temas selectos de ecuaciones diferenciales ordinarias y parciales I - 4.5 hrs/sem' => 'Temas selectos de ecuaciones diferenciales ordinarias y parciales I - 4.5 hrs/sem',
                         'Temas selectos de estadística II - 3 hrs/sem' => 'Temas selectos de estadística II - 3 hrs/sem',
                         'Temas selectos de estadística I - 4.5 hrs/sem' => 'Temas selectos de estadística I - 4.5 hrs/sem',
                         'Temas selectos de geometría II - 3 hrs/sem' => 'Temas selectos de geometría II - 3 hrs/sem',

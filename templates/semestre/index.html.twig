@@ -23,8 +23,8 @@
                 <td>{{ semestre.semestre }}</td>
                 <td>{{ semestre.vigencia ? semestre.vigencia| format_date('long',locale='es') : '' }}</td>
                 <td class="text-center">
-                    <a href="{{ path('app_semestre_show', {'slug': semestre.slug}) }}"><i class="fa fa-search"></i></a>
-                    <a href="{{ path('app_semestre_edit', {'slug': semestre.slug}) }}"><i class="fa-regular fa-edit"></i></a>
+                    <a href="{{ path('app_semestre_show', {'slug': semestre.slug}) }}">Ver</a>
+                    <a href="{{ path('app_semestre_edit', {'slug': semestre.slug}) }}">Modificar</a>
                 </td>
             </tr>
         {% else %}
@@ -36,7 +36,7 @@
     </table>
 
 
-    <a class="mt-5 btn btn-dark" href="{{ path('app_semestre_new') }}"><i class="fa-regular fa-add"></i> Nueva convocatoria</a>
+    <a class="mt-5 btn btn-dark" href="{{ path('app_semestre_new') }}">Nueva convocatoria</a>
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
