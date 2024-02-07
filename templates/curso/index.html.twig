@@ -7,35 +7,37 @@
 {% endblock %}
 
 {% block body %}
-    <h2>Cursos solicitados</h2>
-    <h5>Semestre {{ semestre }}</h5>
-    <hr>
-    <table id="example" class="mt-5 table table-striped" style="width:100%">
-        <thead>
+    <div class="container my-5">
+        <h2>Cursos solicitados</h2>
+        <h5>Semestre {{ semestre }}</h5>
+        <hr>
+        <table id="example" class="mt-5 table table-striped" style="width:100%">
+            <thead>
             <tr>
                 <th>Solicitante</th>
                 <th>Curso</th>
                 <th>&nbsp;</th>
             </tr>
-        </thead>
-        <tbody>
-        {% for curso in cursos %}
-            <tr>
-                <td>{{ curso.apellidos }} {{ curso.nombre }}</td>
-                <td>{{ curso.curso }}</td>
-                <td>
-                    <i class="fa fa-search"></i> <a href="{{ path('app_curso_show', {'slug': curso.slug}) }}"> Ver</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="11">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            {% for curso in cursos %}
+                <tr>
+                    <td>{{ curso.apellidos }} {{ curso.nombre }}</td>
+                    <td>{{ curso.curso }}</td>
+                    <td>
+                        <i class="fa fa-search"></i> <a href="{{ path('app_curso_show', {'slug': curso.slug}) }}"> Ver</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="11">no records found</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
 
-    <a class="mt-5 btn btn-dark" href="{{ path('app_curso_new') }}"><i class="fa-regular fa-add"></i> Solicitar curso</a>
+        <a class="mt-5 btn btn-dark" href="{{ path('app_curso_new') }}"><i class="fa-regular fa-add"></i> Solicitar curso</a>
+    </div>
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}

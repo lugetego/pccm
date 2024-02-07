@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Degustaciones Matemáticas 2024</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    {{ encore_entry_link_tags('dm') }}
+{#    <link rel="stylesheet" href="{{ asset('build/dm.css') }}">#}
+</head>
+<body>
+
+<nav class="shadow navbar navbar-expand-lg navbar-light ">
+    <div class="container">
+        <div>
+            <img class="d-none d-md-inline-block" src="{{ asset('build/img/dm/escudo-unam.png') }}" alt="Escudo UNAM">
+        </div>
+        <div>
+            <img  class="ms-1 ms-sm-4" src="{{ asset('build/img/dm/escudo-ccm.png') }}" alt="Escudo CCM">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Programa</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="hero-image"></div>
+
+<section id="infographic">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-evenly">
+            <div class="d-flex flex-column mb-5">
+                <div class="info-icon">
+                    <img src="{{ asset('build/img/dm/i-calendario.png') }}" alt="calendario">
+                </div>
+                <div class="info-graph-title">Fecha</div>
+                <div class="info-graph-subtitle">14 al 16 de febrero</div>
+            </div>
+            <div class="d-flex flex-column mb-5">
+                <div class="info-icon">
+                    <img src="{{ asset('build/img/dm/i-location.png') }}" alt="Location">
+                </div>
+                <div class="info-graph-title">Auditorio Edificio Alfa</div>
+                <div class="info-graph-subtitle">FisMat UMSNH</div>
+            </div>
+            <div class="d-flex flex-column mb-5">
+                <div class="info-icon">
+                    <img src="{{ asset('build/img/dm/i-note.png') }}" alt="note">
+                </div>
+                <div class="info-graph-title">Programa</div>
+                <div class="info-graph-subtitle">10 pláticas plenarias</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="#intro">
+    <div class="container pb-5">
+        <h1>¿Quiénes somos?</h1>
+
+        <div class="d-flex justify-content-center">
+            <div class="content"><span class="orange fw-bold">Degustaciones Matemáticas</span> es una serie anual de charlas divulgativas impartidas por profesores
+                y alumnos del <span class="orange fw-bold">Posgrado en Ciencias Matemáticas</span>. En el evento, buscamos acercar al público a temas relacionados
+                con esta ciencia, además los expositores tienen la oportunidad de difundir parte del trabajo que hacen dentro
+                del posgrado.</div>
+        </div>
+
+        <h1>Pláticas plenarias</h1>
+
+{#        <div class="course">
+            <div class="course-title">Categorías aplicadas</div>
+            <div class="professor d-inline">Robert Oeckl</div><div class="university d-inline">CCM UNAM</div>
+            <div class="abstract">La teoría de categorías es vista como una de las partes más abstractas de las matemáticas.
+                Sin embargo, en años recientes ha habido un auge de la “teoría de categorías aplicada”. El espectro de
+                aplicaciones es sorprendente, desde las matemáticas mismas, teoría de computación, teoría de redes, física,
+                química, biología, ingeniería etc. Otro aspecto remarcable es un lenguaje diagramático que hace accesible a
+                la intuición estas matemáticas. Voy a presentar un pequeño panorama de la teoría de categorías aplicada.
+                También hablaré de aplicaciones en teoría de nudos.
+            </div>
+        </div>#}
+
+        <h1>Horario</h1>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="container">
+        <div class="d-flex flex-column justify-content-center flex-md-row justify-content-md-around">
+            <div class="sponsor mb-5 d-flex justify-content-center"><img class="img-fluid" src="{{ asset('build/img/dm/LOGO-UNAM.png') }}" alt="Logo UNAM"></div>
+            <div class="sponsor mb-5 d-flex justify-content-center"><img class="img-fluid" src="{{ asset('build/img/dm/LOGO-CCM.png') }}" alt="Logo CCM"></div>
+            <div class="sponsor mb-5 d-flex justify-content-center"><img class="img-fluid" src="{{ asset('build/img/dm/FISMAT_BLANCO 1.png') }}" alt="Logo FISMAT"></div>
+            <div class="sponsor mb-5 d-flex justify-content-center"><img class="img-fluid" src="{{ asset('build/img/dm/IFM.png') }}" alt="Logo IFM"></div>
+            <div class="sponsor mb-5 d-flex justify-content-center"><img class="img-fluid" src="{{ asset('build/img/dm/LOGO-UMSNH.png') }}" alt="Logo UMSNH"></div>
+        </div>
+        <hr class="white">
+        <div class="copyright text-center">
+            DEGUSTACIONES MATEMÁTICAS 2024, Centro de Ciencias Matemáticas, UNAM Campus Morelia.<br >
+            Todos los derechos reservados © 2024, UNAM.
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -2,11 +2,15 @@
 
 namespace App\Controller;
 
+use App\Entity\Semestre;
+use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use App\Entity\Semestre;
 use App\Repository\SemestreRepository;
+use App\Entity\Curso;
+use App\Form\CursoType;
+use App\Repository\CursoRepository;
 
 class SiteController extends AbstractController
 {
@@ -77,9 +81,17 @@ class SiteController extends AbstractController
     /**
      * @Route("/cursos", name="app_cursos")
      */
-    public function cursos(): Response
+    public function cursos(CursoRepository $cursoRepository, ManagerRegistry $doctrine): Response
     {
-        return $this->render('site/cursos.html.twig', ['controller_name' => 'SiteController',]);
+        $twigglobals = $this->container->get("twig")->getGlobals();
+        $nombre_semestre = $twigglobals["semestre"];
+        $semestre = $doctrine->getRepository(Semestre::class)->findOneBy(['semestre'=>$nombre_semestre]);
+        $cursos = $semestre->getCursos();
+
+        return $this->render('site/cursos.html.twig', [
+            'controller_name' => 'SiteController',
+            'cursos' => $cursos,
+            ]);
     }
 
     /**
@@ -104,5 +116,13 @@ class SiteController extends AbstractController
     public function contacto(): Response
     {
         return $this->render('site/contacto.html.twig', ['controller_name' => 'SiteController',]);
+    }
+
+    /**
+     * @Route("/dm", name="app_dm")
+     */
+    public function dm(): Response
+    {
+        return $this->render('site/dm.html.twig', ['controller_name' => 'SiteController',]);
     }
 }

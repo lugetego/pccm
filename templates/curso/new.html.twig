@@ -3,11 +3,12 @@
 {% block title %}Solicitud de curso{% endblock %}
 
 {% block body %}
+<div class="container my-5">
     <h2>Solicitud de curso </h2>
     <h5>Semestre {{ semestre }}</h5>
     <hr>
     {{ include('curso/_form.html.twig') }}
-
+</div>
 {% endblock %}
 
 {% block javascripts %}

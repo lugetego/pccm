@@ -19,68 +19,33 @@
 
         <div class="container">
 
-            <h2 class="mb-5">Cursos del Semestre 2023-1</h2>
+            <h2 class="mb-5">Cursos del Semestre  {{ semestre }}</h2>
 
-            <div>
-                <table class="table table-bordered table-striped">
+            <div class="mb-5">
+                <table class="table table-bordered table-striped mb-5">
                     <thead>
                     <tr>
                         <th class="text-center">Curso</th>
                         <th class="text-center">Tema</th>
                         <th class="text-center">Profesor</th>
-                        <th class="text-center">Horas/Semana</th>
-                        <th class="text-center">Créditos</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr><td>Análisis real</td><td></td><td>Robert Oeckl</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td>Análisis complejo</td><td></td><td>Jesús Muciño Raymundo</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td>Análisis funcional</td><td></td><td>Elmar Wagner</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td>Álgebra moderna</td><td></td><td>Ernesto Vallejo Ruiz</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td>Álgebra conmutativa</td><td></td><td>Luis Abel Castorena Martinez</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td>Geometría Algebráica </td><td></td><td>Luis Abel Castorena Martinez</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td>Solución numérica de ecuaciones diferenciales parciales</td><td></td><td>Francisco Dominguez Mota</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td>Topología algebraica</td><td></td><td>Daniel Juan Pineda</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td>Topología general</td><td></td><td>Reynaldo Rojas Hernández</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURSO1">Temas selectos de geometría</a></td><td>Geometría espín</td><td>Elmar Wagner</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURSO2">Temas selectos de geometría</a></td><td>Teoría de esquemas</td><td>Juan Bosco Frias Medina</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURSO3">Temas selectos de geometría</a></td><td>Big mapping class groups</td><td>José Ferran Valdez Lorenzo</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURSO4">Temas selectos de ecuaciones diferenciales ordinarias y parciales</a></td><td>Introducción a la teoría de control de ecuaciones diferenciales ordinarias</td><td>Abdon Eddy Choque Rivero</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURSO5">Temas selectos de ecuaciones diferenciales ordinarias y parciales </a></td><td>Soluciones fundamentales de las ecuaciones diferenciales</td><td>Anatoli Merzon</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURSO6">Temas selectos de análisis</a></td><td>Teoria de Distribuciones</td><td>Anatoli Merzon</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURSO7">Temas selectos de análisis</a></td><td>Introducción a los polinomios ortogonales y funciones especiales</td><td>Abdon Eddy Choque Rivero</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURSO8">Temas selectos de análisis</a></td><td>Suplemento de matemáticas</td><td>Carlos Osvaldo Osuna Castro</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURSO9">Temas selectos de topología</a></td><td>Teoría descriptiva de conjuntos</td><td>Osvaldo Guzmán González</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURS10">Temas selectos de topología</a></td><td>Cohomología, Clases Características y variedades</td><td>Noé Barcenas Torres</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURS11">Temas selectos de topología</a></td><td>Combinatoria Infinita y Topologia</td><td>Salvador García Ferreira</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURS12">Temas selectos de topología</a></td><td>Clases de Fraissé</td><td>Michael Hrusak</td><td class="text-center">3</td><td class="text-center">6</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURS13">Temas selectos de álgebra</a></td><td>Grupos de Coxeter</td><td>Daniel Pellicer Covarrubias</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURS14">Temas selectos de álgebra</a></td><td>Álgebra Homológica</td><td>Leonardo Salmeron Castro</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURS15">Temas selectos de álgebra</a></td><td>Introducción a la teoría geométrica de grupos</td><td>Jesús Hernández Hernández</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURS16">Temas selectos de álgebra</a></td><td>Acciones de Grupos en Árboles</td><td>Adriana Haydeé Contreras Peruyero</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURS17">Temas selectos de álgebra</a></td><td>Álgebra homológica relativa de Auslander-Buchweitz</td><td>Victor Rufino Becerril Somera</td><td class="text-center">4.5</td><td class="text-center">9</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURS18">Temas selectos de álgebra</a></td><td>Gerardo Raggi Cárdenas</td><td>Gerardo Raggi Cárdenas</td><td class="text-center">3</td><td class="text-center">6</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURS19">Temas selectos de estadística</a></td><td>Análisis estadístico de datos de Mirobioma con R</td><td>Nelly Selem Mojica</td><td class="text-center">3</td><td class="text-center">6</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#CURS20">Temas selectos de análisis numérico y computación cientifica</a></td><td>Redes Neuronales</td><td>Miguel Raggi Pérez</td><td class="text-center">3</td><td class="text-center">6</td></tr>
-
-                    <tr><td><a href="#" data-toggle="modal" data-target="#SEM00">Seminario de topología</a></td><td>Teoría Descriptiva de Conjuntos Invariante</td><td>Ulises Ariet Ramos García</td><td class="text-center">2.5</td><td class="text-center">5</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#SEM01">Seminario de topología</a></td><td>Topología y Teoría de Conjuntos</td><td>Reynaldo Rojas Hernández</td><td class="text-center">2.5</td><td class="text-center">5</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#SEM02">Seminario de topología</a></td><td>Geometría tórica</td><td>Daniel Duarte</td><td class="text-center">2.5</td><td class="text-center">5</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#SEM03">Seminario de topología</a></td><td>Técnicas avanzadas de forcing</td><td>Osvaldo Guzmán González</td><td class="text-center">2.5</td><td class="text-center">5</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#SEM04">Seminario de análisis</a></td><td>Teoría K</td><td>Elmar Wagner</td><td class="text-center">2.5</td><td class="text-center">5</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#SEM05">Seminario de álgebra</a></td><td>Representaciones de grupos finitos y funtores asociados</td><td>Benjamín Aziel García Hernández</td><td class="text-center">2.5</td><td class="text-center">5</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#SEM06">Seminario de matemáticas discretas</a></td><td>Temas de geometría convexa</td><td>Edgardo Roldan Pensado</td><td class="text-center">2.5</td><td class="text-center">5</td></tr>
-                    <tr><td><a href="#" data-toggle="modal" data-target="#SEM07">Seminario de análisis numérico y computación científica </a></td><td>Comprensión de artículos de biomatemáticas</td><td>Nelly Sélem Mojica</td><td class="text-center">2.5</td><td class="text-center">5</td></tr>
-
-                    <tr><td><a href="#" data-toggle="modal" data-target="#SEMINF">Seminario informal </a></td><td>Demos buenas clases y pláticas, y escribamos buenos textos de matemáticas</td><td>Daniel Pellicer Covarrubias</td><td class="text-center"></td><td class="text-center"></td></tr>
-
-
-
-                    </tbody>
+                    {% for curso in cursos %}
+                        {%  if 'Temas' in curso.curso or 'Seminario' in curso.curso %}
+                            <tr><td><a href="{{ path('app_curso_show', {'slug': curso.slug}) }}">{{ curso.curso }}</a></td>
+                        {% else %}
+                            <tr><td>{{ curso.curso }}</td>
+                        {% endif %}
+                        <td>{{ curso.tema }}</td><td>{{ curso.apellidos }} {{ curso.nombre }}</td></tr>
+                    {% else %}
+                        <tr>
+                            <td colspan="11">no records found</td>
+                        </tr>
+                    {% endfor %}
+                  </tbody>
                 </table>
             </div>
-
         </div>
     </section>
 {% endblock %}
