@@ -7,10 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     {{ encore_entry_link_tags('dm') }}
-{#    <link rel="stylesheet" href="{{ asset('build/dm.css') }}">#}
+
 </head>
 <body>
 
@@ -73,28 +75,401 @@
     <div class="container pb-5">
         <h1>¿Quiénes somos?</h1>
 
-        <div class="d-flex justify-content-center">
+        <div class="d-flex ">
             <div class="content"><span class="orange fw-bold">Degustaciones Matemáticas</span> es una serie anual de charlas divulgativas impartidas por profesores
                 y alumnos del <span class="orange fw-bold">Posgrado en Ciencias Matemáticas</span>. En el evento, buscamos acercar al público a temas relacionados
                 con esta ciencia, además los expositores tienen la oportunidad de difundir parte del trabajo que hacen dentro
                 del posgrado.</div>
         </div>
 
-        <h1>Pláticas plenarias</h1>
+        <h1>Miércoles 14</h1>
 
-{#        <div class="course">
-            <div class="course-title">Categorías aplicadas</div>
-            <div class="professor d-inline">Robert Oeckl</div><div class="university d-inline">CCM UNAM</div>
-            <div class="abstract">La teoría de categorías es vista como una de las partes más abstractas de las matemáticas.
-                Sin embargo, en años recientes ha habido un auge de la “teoría de categorías aplicada”. El espectro de
-                aplicaciones es sorprendente, desde las matemáticas mismas, teoría de computación, teoría de redes, física,
-                química, biología, ingeniería etc. Otro aspecto remarcable es un lenguaje diagramático que hace accesible a
-                la intuición estas matemáticas. Voy a presentar un pequeño panorama de la teoría de categorías aplicada.
-                También hablaré de aplicaciones en teoría de nudos.
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">09:00 - 10:00</div>
             </div>
-        </div>#}
+            <div>
+                <div class="course-title">Simetrías y espirales</div>
+                <div class="professor d-inline">Jorge Luis López López</div><div class="university d-inline"></div>
+                <div class="abstract">La simetría se asocia con belleza. Esto es porque en la simetría subyace un orden tangible.
+                    Aunque la belleza relacionada con la simetría se aprecie, a veces es difícil reconocer el orden subyacente porque
+                    no se cuenta con el lenguaje apropiado. En esta plática se mostrará una simetría con forma de espiral
+                    (transformaciones loxodrómicas) que es abundante e interesante en la geometría bidimensional y tridimensional.
+                    De manera natural (y abundante) se hallan curvas exóticas que poseen este tipo de simetría, tales como curvas
+                    fractales que no son diferenciables en casi ningún punto, o curvas que cubren completamente la superficie de
+                    la esfera bidimensional, llamadas curvas de Peano. Aunque parezca un sinsentido, tales curvas de Peano también
+                    poseen "oculta" mucha simetría euclidiana.
+                </div>
+            </div>
+        </div>
 
-        <h1>Horario</h1>
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">10:00 - 10:30</div>
+            </div>
+            <div>
+                <div class="course-title">Descanso </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">10:30 - 11:00</div>
+            </div>
+            <div>
+                <div class="course-title">El Tercer Problema de Hilbert mediante tetraedros</div>
+                <div class="professor d-inline">Esaú Alejandro Pérez Rosales</div><div class="university d-inline"></div>
+                <div class="abstract">De entre los 23 problemas que propuso Hilbert en el Congreso Internacional de Matemáticos
+                    de 1900, el tercer problema fue quizá el primero en ser resuelto. Planteaba la pregunta sobre si dados dos
+                    poliedros de igual volumen siempre es posible descomponer el primero en poliedros más pequeños y reacomodar
+                    estos para formar el segundo. En esta plática, construiremos una solución al Tercer Problema de Hilbert
+                    mediante tetraedros, involucrando los conceptos de función aditiva, base de Hamel, isometría y ángulo diédrico.
+                    También contaremos si esta solución es válida en otras dimensiones o en algunas geometrías no euclidianas.
+                </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">10:30 - 11:00</div>
+            </div>
+            <div>
+                <div class="course-title">Álgebras de carcaj (una equivalencia de categorias)</div>
+                <div class="professor d-inline">Gabriel Hernández Martínez</div><div class="university d-inline"></div>
+                <div class="abstract">En esta plática abordaremos una estrecha relación entre una estructura algebraica como
+                    lo es una k-algebra \(\Lambda\) (de dimensión finita) y un objeto combinatorio como lo es un carcaj (digráfica)
+                    \(C\). Daremos una realización para estos dos entes y estudiaremos un poco la equivalencia entre las
+                    categorías de los \(\Lambda\)-módulos y la categoría de representaciones del carcaj asociado a la k-algebra.
+                </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">11:30 - 12:00</div>
+            </div>
+            <div>
+                <div class="course-title">Descanso </div>
+                <div class="abstract"></div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">12:00 - 13:00</div>
+            </div>
+            <div>
+                <div class="course-title">TBA</div>
+                <div class="professor d-inline">Mustapha Lahyane.</div><div class="university d-inline"></div>
+                <div class="abstract"></div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">13:00 - 13:30</div>
+            </div>
+            <div>
+                <div class="course-title">Ideales, pequeñez y cambios de percepción.</div>
+                <div class="professor d-inline">Mario Jardón Santos</div><div class="university d-inline"></div>
+                <div class="abstract">En Teoría de conjuntos un \(\textit{ideal}\) es una generalización de las nociones de
+                    conjunto \(\textit{finito}\) o incluso de conjunto \(\textit{pequeño}\). Como tal, entre otras aplicaciones,
+                    fungirían como criterio para determinar qué subconjuntos de algún conjunto \(X\) podemos obviar.
+                    Definiciones precisas e intuiciones personales sobre dichos objetos serán compartidas.
+                </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">13:30 - 14:00</div>
+            </div>
+            <div>
+                <div class="course-title">¿Cómo se puede ir al infinito dentro de un grupo?</div>
+                <div class="professor d-inline">Carlos Adrián Pérez Estrada</div><div class="university d-inline"></div>
+                <div class="abstract">Uno de los resultados fundamentales de la Teoría de Grupos clasifica a los grupos abelianos
+                    finitamente generados en términos del grupo de los enteros, sus potencias finitas y sus cocientes. Aunque
+                    en el caso no conmutativo no se tiene una clasificación tan explícita, mediante el empleo de las \(\textit{métricas de las palabras}\)
+                    se pueden considerar los fines \(\textit{métricos}\) de un grupo finitamente generado para descomponerlo
+                    en términos de \(\textit{productos amalgamados y extensiones HNN}\) sobre grupos finitos. Intuitivamente,
+                    un fin en un grupo codifica una manera en la que se puede ir al infinito dentro de éste al ir removiendo
+                    subespacios acotados cada vez mas grandes con respecto a la métrica de las palabras.<br><br>
+
+                    En esta plática formalizaremos la discusión anterior con el objetivo de estudiar la estructura algebraica
+                    de los grupos finitamente generados que tienen únicamente 0, 2 o una infinidad de fines.
+                </div>
+            </div>
+        </div>
+
+        <h1>Jueves 15</h1>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">09:00 - 09:30</div>
+            </div>
+            <div>
+                <div class="course-title">Nociones básica de ceros de polinomios</div>
+                <div class="professor d-inline">José Amador Cruz Fuentes</div><div class="university d-inline"></div>
+                <div class="abstract">La geometría algebraica, rama apasionante de las matemáticas, se sumerge en el estudio
+                    profundo de conjuntos solución de ecuaciones polinomiales finitas. Los geómetras algebraicos exploran
+                    propiedades cruciales como conexidad, suavidad y dimensión, buscando comprender la estructura intrínseca
+                    de estos conjuntos matemáticos. En esta plática nos introduciremos a la geometría algebraica, definiremos
+                    conceptos y algunos resultados que aunque básicos deslumbran una belleza temprana.
+                </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">09:30 - 10:00</div>
+            </div>
+            <div>
+                <div class="course-title">Un breve paso por la historia de la teoría de números</div>
+                <div class="professor d-inline">Daniel Eduardo Cárdenas Romero</div><div class="university d-inline"></div>
+                <div class="abstract">La historia de las matemáticas está ligada al desarrollo de las civilizaciones humanas
+                    y está muy influenciada por los pueblos de Occidente. Pero hay más historia en otros lugares del planeta,
+                    como en Medio Oriente, China o la India. Siempre que hablamos de aritmética, pensamos en los números que
+                    nos sirven para contar, la historia nos dice un poco más. Nos habla de pensamientos abstractos incubados
+                    en la mente humana pero también de descubrimientos matemáticos sobre nuestro propio hogar, el planeta Tierra.
+                    La aritmética en sí misma evolucionó alrededor de las matemáticas como una génesis de está, en nuestra
+                    vida humana, y no solo para pensar en ella sino para vivir de una mejor manera. La aritmética evolucionó
+                    en lo que llamamos ahora la Teoría de Números. Como decía el gran matemático alemán Carl F. Gauss: <span class="fst-italic">''Las
+                        matemáticas son la reina de las ciencias, y la teoría de números es la reina de las matemáticas''</span>. En esta
+                    plática contaremos varias pequeñas historias que condujeron a grandes desarrollos en la humanidad y en el
+                    pensamiento matemático. Y algunas otras que pocas personas fuera de las ciencias conocen.
+                </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">10:00 - 10:30</div>
+            </div>
+            <div>
+                <div class="course-title">Descanso </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">10:30 - 11:00</div>
+            </div>
+            <div>
+                <div class="course-title">Principio de partición: el problema abierto más antiguo de la teoría de conjuntos</div>
+                <div class="professor d-inline">Ángel Jareb Navarro Castillo</div><div class="university d-inline"></div>
+                <div class="abstract">Presentado por Beppo Levi en 1902, el Principio de Partición (PP) sostiene que para cualquier
+                    conjunto X y una partición P de dicho conjunto, existe un subconjunto de X del mismo tamaño que P. Este
+                    principio se puede deducir fácilmente asumiendo el Axioma de Elección, sin embargo, no puede ser demostrado
+                    sin él. Además, aún desconocemos si este principio implica el axioma de elección bajo los axiomas de
+                    Zermelo-Fraenkel (ZF). En esta charla, discutiremos este y otros problemas relacionados con el axioma de elección.
+                </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">11:00 - 12:00</div>
+            </div>
+            <div>
+                <div class="course-title">Algunos invariantes en topología algebraica</div>
+                <div class="professor d-inline">Daniel Juan Pineda</div><div class="university d-inline"></div>
+                <div class="abstract">En topología algebraica se buscan funtores (invariantes) algebraicos que nos ayuden a
+                    identificar espacios topológicos, nos concentraremos en variedades cerradas y veremos algunos de estos
+                    invariantes como grupos de 	homotopía, grupos de homología y de "cobordismos". Concluiremos con algunos
+                    ejemplos donde hay muchas preguntas abiertas.
+                </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">12:00 - 12:30</div>
+            </div>
+            <div>
+                <div class="course-title">Descanso </div>
+                <div class="abstract"></div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">12:30 - 13:00</div>
+            </div>
+            <div>
+                <div class="course-title">Lógica de otra categoría</div>
+                <div class="professor d-inline">Ángel Augusto Camacho Acosta</div><div class="university d-inline"></div>
+                <div class="abstract">La Teoría de Topos es una rama de la Teoría de Categorías, la cual trabaja con categorías
+                    que se comportan como la categoría de conjuntos, lo que permite dar otra perspectiva a los fundamentos de
+                    la matemática. En esta charla, hablaremos brevemente sobre la teoría de topos y la lógica interna que se desarrolla en ella.
+                </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">13:00 - 13:30</div>
+            </div>
+            <div>
+                <div class="course-title">El problema de las monedas</div>
+                <div class="professor d-inline">Yerly Vanesa Soler Porras</div><div class="university d-inline"></div>
+                <div class="abstract">¿Cuál es la mayor cantidad de dinero que no puede obtenerse usando solo monedas de 2 y 5 pesos?
+                    <br><br>
+                    Después de pensar un poco en la situación planteada, se puede observar que, por ejemplo, 3 pesos no se podría
+                    obtener de esa manera. Entonces, surgen otras preguntas al respecto, ¿será esta cantidad la mayor? ¿existe
+                    alguna fórmula para encontrar la máxima cantidad?. Este es un problema de la Teoría de Números conocido como
+                    el problema de las monedas, o también, como el problema de Frobenius, en honor al matemático Ferdinand Frobenius.
+                    <br><br>
+                    El problema consiste en tomar una cantidad finita de números enteros positivos que sean primos relativos
+                    dos a dos y encontrar el mayor entero positivo que no puede expresarse como combinación lineal (con coeficientes
+                    enteros no negativos) de dichos números; el número que se desea encontrar recibe el nombre de número de Frobenius.
+                    En esta charla se hablará de la solución para el caso de dos números, y algunos resultados especiales en
+                    el caso de tres números. Es un problema que aún no cuenta con una solución para cualesquiera cantidad finita
+                    de números, y por tal razón es interés de estudio para algunos matemáticos.
+                </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">13:30 - 14:00</div>
+            </div>
+            <div>
+                <div class="course-title">A los hiper-espacios y más allá...</div>
+                <div class="professor d-inline">Óscar Romero González</div><div class="university d-inline"></div>
+                <div class="abstract">Dentro del estudio de la topología hay espacios con propiedades muy peculiares, como lo
+                    son la compacidad y conexidad, además si tenemos un espacio métrico no vacío, diremos que estos espacios
+                    especiales son continuos. Dado un continuo, ¿podemos construir hiper-espacios? ¿Que tanto nos permite ver
+                    nuestra imaginación para observar  hiper-espacios?, en esta charla hablaremos sobre hiper-espacios asociados
+                    a ciertos continuos y trataremos de dar respuesta a las preguntas planteadas para algunos continuos.
+                </div>
+            </div>
+        </div>
+
+        <h1>Viernes 16</h1>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">09:00 - 10:00</div>
+            </div>
+            <div>
+                <div class="course-title">TDA detecta la transferencia horizontal de genes</div>
+                <div class="professor d-inline">Adriana Haydeé Contreras Peruyero</div><div class="university d-inline"></div>
+                <div class="abstract">El análisis topológico de datos (TDA) ofrece una poderosa herramienta para identificar
+                    propiedades topológicas en conjuntos extensos de datos. Esto se logra al medir similitudes entre datos y
+                    la construcción de complejos simpliciales. El TDA se ha utilizado con éxito en diversas disciplinas como
+                    la física, neurociencia, astronomía y metagenómica. En esta charla, exploraremos los fundamentos del TDA
+                    y su aplicación en el estudio de la transferencia horizontal de genes (TGH) entre las bacterias del grupo
+                    ESKAPE, el cual es un grupo de patógenos que representan una amenaza considerable debido a su resistencia
+                    a múltiples antibióticos.
+                    <br><br>
+                    Trabajo en conjunto con S. Guerrero-Flores, J.M. Ibarra  y N. Sélem-Mojica.
+                </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">10:00 - 10:30</div>
+            </div>
+            <div>
+                <div class="course-title">Descanso </div>
+                <div class="abstract"></div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">10:30 - 11:00</div>
+            </div>
+            <div>
+                <div class="course-title">Un acercamiento a la geometría algebraica. El Teorema de Nullstellensatz</div>
+                <div class="professor d-inline">Juan Pablo Peñaloza Pacheco</div><div class="university d-inline"></div>
+                <div class="abstract">Esta exposición tiene como objetivo presentar una breve introducción a la geometría
+                    algebraica clásica y desentrañar la fascinante relación entre álgebra y geometría por medio del célebre
+                    Teorema de Nullstellensatz (también conocido como Teorema de los ceros de Hilbert). Comenzaremos con una
+                    breve inmersión en los fundamentos de la geometría algebraica, explorando los objetos básicos con los que
+                    se trabajan. A medida que avanzamos, examinaremos cómo los conceptos algebraicos y geométricos convergen
+                    naturalmente en el Teorema de Nullstellensatz, revelando conexiones profundas entre ecuaciones polinómicas
+                    y conjuntos algebraicos.
+                <br><br>
+                La presentación está diseñada principalmente para un público matemático amplio, por lo que repasaremos numerosos
+                conceptos básicos que suelen surgir en el ámbito del álgebra moderna.
+                </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">11:00 - 11:30</div>
+            </div>
+            <div>
+                <div class="course-title">Coloreando la geometría.</div>
+                <div class="professor d-inline">Cuauhtémoc Gómez Navarro</div><div class="university d-inline"></div>
+                <div class="abstract">En geometría discreta se estudian las propiedades combinatorias de objetos geométricos,
+                    como conjuntos finitos de puntos, líneas y familias de conjuntos convexos. Algunos de los teoremas en
+                    geometría discreta tienen versiones coloreadas, que consiste en tomar diferentes familias, colorear cada
+                    familia de diferente color y relacionar el mundo heterocromático con el mundo monocromático. Por lo general,
+                    los teoremas coloreados son generalizaciones de sus versiones no coloreadas.
+                    <br><br>
+                    En esta plática presentamos versiones coloreadas de los teoremas clásicos en geometría discreta y vemos las
+                    ideas principales que hay detrás de estos teoremas. amplio, por lo que repasaremos numerosos conceptos
+                    básicos que suelen surgir en el ámbito del álgebra moderna.
+                </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">11:30 - 12:00</div>
+            </div>
+            <div>
+                <div class="course-title"></div>
+                <div class="professor d-inline">Oscar Rutilio Molina Medrano</div><div class="university d-inline"></div>
+                <div class="abstract">¿Bolas cuadradas? ¿Triángulos con suma de ángulos internos diferente a 180◦? ¿Un disco
+                    con área infinita? En esta chala exploraremos un poco a cerca de geometrías diferentes a la euclideana y
+                    cómo estas, en muchos casos, son la “mejor” elección a la hora de estudiar superficies. También discutiremos
+                    cómo dotar a las superficies de estructuras geométricas, junto con el espacio de Teichmüller, el cuál está
+                    conformado por todas las posibles métricas “buenas” para una superficie dada.
+                </div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">12:00 - 12:30</div>
+            </div>
+            <div>
+                <div class="course-title">Descanso </div>
+                <div class="abstract"></div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">12:30 - 13:00</div>
+            </div>
+            <div>
+                <div class="course-title">Bienvenida PCCM </div>
+                <div class="abstract"></div>
+            </div>
+        </div>
+
+        <div class="course d-flex d-inline-flex">
+            <div>
+                <div class="time">11:30 - 12:00</div>
+            </div>
+            <div>
+                <div class="course-title">TBA</div>
+                <div class="professor d-inline">Osvaldo Guzmán González.</div><div class="university d-inline"></div>
+                <div class="abstract"></div>
+            </div>
+        </div>
+
+        <div class="my-5">
+            <h6><a href="{{ asset('build/img/dm/Prog_res.pdf') }}">Descarga el programa</a></h6>
+            <h6 class="my-4"><a href="{{ asset('build/img/dm/Prog_hor.pdf.pdf') }}">Descarga el horario</a></h6>
+        </div>
+
     </div>
 </section>
 
