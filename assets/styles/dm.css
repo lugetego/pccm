@@ -97,6 +97,21 @@ H1 {
     margin-bottom: 24px;
 }
 
+#organizadores {
+    padding: 60px 0;
+    background-color: #EA5B2E;
+}
+
+#organizadores h2 {
+    color: #621400;
+}
+
+.organizador {
+    color: #621400;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
 #footer {
     padding: 72px 0;
     background-color: #000000;
