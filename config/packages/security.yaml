@@ -44,11 +44,12 @@ security:
     access_control:
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
+        - { path: ^/curso/new, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/tutor/, roles: ROLE_ADMIN }
         - { path: ^/semestre/, roles: ROLE_ADMIN }
+        - { path: ^/materia/, roles: ROLE_ADMIN }
         - { path: ^/curso/, roles: ROLE_ADMIN }
         - { path: ^/register, roles: ROLE_ADMIN }
-
 
 when@test:
     security:
