@@ -16,11 +16,8 @@
 {% block body %}
 
     <section id="cursos">
-
         <div class="container">
-
             <h2 class="mb-5">Cursos del Semestre  {{ semestre }}</h2>
-
             <div class="mb-5">
                 <table class="table table-bordered table-striped mb-5">
                     <thead>
@@ -46,6 +43,7 @@
                   </tbody>
                 </table>
             </div>
+            <a href="{{ path('app_curso_new')}}" class="mt-3 btn btn-dark"> <i class="fa-regular fa-paper-plane"></i> Solicitar curso</a>
         </div>
     </section>
 {% endblock %}

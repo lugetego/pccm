@@ -66,7 +66,9 @@ class CursoController extends AbstractController
             $curso->setSemestre($semestre);
             $cursoRepository->add($curso, true);
 
-            return $this->redirectToRoute('app_curso_index', [], Response::HTTP_SEE_OTHER);
+           // return $this->redirectToRoute('app_curso_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('app_cursos', [], Response::HTTP_SEE_OTHER);
+
         }
 
         return $this->renderForm('curso/new.html.twig', [
