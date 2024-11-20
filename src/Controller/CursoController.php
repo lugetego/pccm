@@ -52,6 +52,10 @@ class CursoController extends AbstractController
      */
     public function new(Request $request, CursoRepository $cursoRepository, ManagerRegistry $doctrine): Response
     {
+        return $this->render('curso/curso.cerrado.html.twig', [
+
+        ]);
+
         $curso = new Curso();
         $form = $this->createForm(CursoType::class, $curso);
         $form->handleRequest($request);

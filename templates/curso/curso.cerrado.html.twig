@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Curso solicitados{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+{% endblock %}
+
+{% block body %}
+    <div class="container my-5">
+        <h2>Solicitud de Cursos</h2>
+        <h5>Semestre {{ semestre }}</h5>
+        <div class="alert alert-danger"><strong>Cerrado</strong></div>
+        <hr>
+
+        <div class="d-flex justify-content-center">
+            <div><img src="{{ asset('build/img/connectivity01.png') }}" alt="empty state"></div>
+        </div>
+        <hr>
+
+    </div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
+    <script type="application/javascript">
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+    </script>
+
+{% endblock %}
